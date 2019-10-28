@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fefc0163-a159-4d87-994c-2b1694cac3bb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/NhanVien_WCF/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="c75a0f7d-d007-4e52-aed5-1f4a279977f0" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/NhanVien_WCF/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="b9d1b69c-cabf-4a91-a8bc-47fa1c63eccb" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/NhanVien_WCF/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="9f364fea-cec0-4124-93ce-8f1183086487" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/NhanVien_WCF/mex" />
+    <MetadataFile FileName="Entities.xsd" MetadataType="Schema" ID="1279d3b6-c40d-4ee4-8a02-8e60af1a1a59" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/NhanVien_WCF/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

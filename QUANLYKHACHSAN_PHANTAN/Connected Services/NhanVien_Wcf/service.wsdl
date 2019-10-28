@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="NhanVien_WCF" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Entities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="INhanVien_WCF_GetNhanVien_by_ID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNhanVien_by_ID" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_GetNhanVien_by_ID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNhanVien_by_IDResponse" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_GetChucVu_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetChucVu" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_GetChucVu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetChucVuResponse" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_GetHoTen_NhanVien_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHoTen_NhanVien" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_GetHoTen_NhanVien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHoTen_NhanVienResponse" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_GetID_by_Email_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetID_by_Email" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_GetID_by_Email_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetID_by_EmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_GetEmail_by_ID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmail_by_ID" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_GetEmail_by_ID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmail_by_IDResponse" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_GetNhanViens_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNhanViens" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_GetNhanViens_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNhanViensResponse" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_SapXepChucVu_InputMessage">
+    <wsdl:part name="parameters" element="tns:SapXepChucVu" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_SapXepChucVu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SapXepChucVuResponse" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_SapXepCaLamViec_InputMessage">
+    <wsdl:part name="parameters" element="tns:SapXepCaLamViec" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_SapXepCaLamViec_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SapXepCaLamViecResponse" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_DangNhapHeThong_InputMessage">
+    <wsdl:part name="parameters" element="tns:DangNhapHeThong" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_DangNhapHeThong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DangNhapHeThongResponse" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_ThemNhanVien_InputMessage">
+    <wsdl:part name="parameters" element="tns:ThemNhanVien" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_ThemNhanVien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThemNhanVienResponse" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_CapNhatNhanVien_InputMessage">
+    <wsdl:part name="parameters" element="tns:CapNhatNhanVien" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_CapNhatNhanVien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CapNhatNhanVienResponse" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_CapNhatMatKhau_InputMessage">
+    <wsdl:part name="parameters" element="tns:CapNhatMatKhau" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_CapNhatMatKhau_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CapNhatMatKhauResponse" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_XoaNhanVien_by_Email_InputMessage">
+    <wsdl:part name="parameters" element="tns:XoaNhanVien_by_Email" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_XoaNhanVien_by_Email_OutputMessage">
+    <wsdl:part name="parameters" element="tns:XoaNhanVien_by_EmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_TimKiem_NhanVien_by_HoTen_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiem_NhanVien_by_HoTen" />
+  </wsdl:message>
+  <wsdl:message name="INhanVien_WCF_TimKiem_NhanVien_by_HoTen_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiem_NhanVien_by_HoTenResponse" />
+  </wsdl:message>
+  <wsdl:portType name="INhanVien_WCF">
+    <wsdl:operation name="GetNhanVien_by_ID">
+      <wsdl:input wsaw:Action="http://tempuri.org/INhanVien_WCF/GetNhanVien_by_ID" message="tns:INhanVien_WCF_GetNhanVien_by_ID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INhanVien_WCF/GetNhanVien_by_IDResponse" message="tns:INhanVien_WCF_GetNhanVien_by_ID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChucVu">
+      <wsdl:input wsaw:Action="http://tempuri.org/INhanVien_WCF/GetChucVu" message="tns:INhanVien_WCF_GetChucVu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INhanVien_WCF/GetChucVuResponse" message="tns:INhanVien_WCF_GetChucVu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHoTen_NhanVien">
+      <wsdl:input wsaw:Action="http://tempuri.org/INhanVien_WCF/GetHoTen_NhanVien" message="tns:INhanVien_WCF_GetHoTen_NhanVien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INhanVien_WCF/GetHoTen_NhanVienResponse" message="tns:INhanVien_WCF_GetHoTen_NhanVien_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetID_by_Email">
+      <wsdl:input wsaw:Action="http://tempuri.org/INhanVien_WCF/GetID_by_Email" message="tns:INhanVien_WCF_GetID_by_Email_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INhanVien_WCF/GetID_by_EmailResponse" message="tns:INhanVien_WCF_GetID_by_Email_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmail_by_ID">
+      <wsdl:input wsaw:Action="http://tempuri.org/INhanVien_WCF/GetEmail_by_ID" message="tns:INhanVien_WCF_GetEmail_by_ID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INhanVien_WCF/GetEmail_by_IDResponse" message="tns:INhanVien_WCF_GetEmail_by_ID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNhanViens">
+      <wsdl:input wsaw:Action="http://tempuri.org/INhanVien_WCF/GetNhanViens" message="tns:INhanVien_WCF_GetNhanViens_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INhanVien_WCF/GetNhanViensResponse" message="tns:INhanVien_WCF_GetNhanViens_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SapXepChucVu">
+      <wsdl:input wsaw:Action="http://tempuri.org/INhanVien_WCF/SapXepChucVu" message="tns:INhanVien_WCF_SapXepChucVu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INhanVien_WCF/SapXepChucVuResponse" message="tns:INhanVien_WCF_SapXepChucVu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SapXepCaLamViec">
+      <wsdl:input wsaw:Action="http://tempuri.org/INhanVien_WCF/SapXepCaLamViec" message="tns:INhanVien_WCF_SapXepCaLamViec_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INhanVien_WCF/SapXepCaLamViecResponse" message="tns:INhanVien_WCF_SapXepCaLamViec_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DangNhapHeThong">
+      <wsdl:input wsaw:Action="http://tempuri.org/INhanVien_WCF/DangNhapHeThong" message="tns:INhanVien_WCF_DangNhapHeThong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INhanVien_WCF/DangNhapHeThongResponse" message="tns:INhanVien_WCF_DangNhapHeThong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ThemNhanVien">
+      <wsdl:input wsaw:Action="http://tempuri.org/INhanVien_WCF/ThemNhanVien" message="tns:INhanVien_WCF_ThemNhanVien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INhanVien_WCF/ThemNhanVienResponse" message="tns:INhanVien_WCF_ThemNhanVien_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CapNhatNhanVien">
+      <wsdl:input wsaw:Action="http://tempuri.org/INhanVien_WCF/CapNhatNhanVien" message="tns:INhanVien_WCF_CapNhatNhanVien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INhanVien_WCF/CapNhatNhanVienResponse" message="tns:INhanVien_WCF_CapNhatNhanVien_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CapNhatMatKhau">
+      <wsdl:input wsaw:Action="http://tempuri.org/INhanVien_WCF/CapNhatMatKhau" message="tns:INhanVien_WCF_CapNhatMatKhau_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INhanVien_WCF/CapNhatMatKhauResponse" message="tns:INhanVien_WCF_CapNhatMatKhau_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="XoaNhanVien_by_Email">
+      <wsdl:input wsaw:Action="http://tempuri.org/INhanVien_WCF/XoaNhanVien_by_Email" message="tns:INhanVien_WCF_XoaNhanVien_by_Email_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INhanVien_WCF/XoaNhanVien_by_EmailResponse" message="tns:INhanVien_WCF_XoaNhanVien_by_Email_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiem_NhanVien_by_HoTen">
+      <wsdl:input wsaw:Action="http://tempuri.org/INhanVien_WCF/TimKiem_NhanVien_by_HoTen" message="tns:INhanVien_WCF_TimKiem_NhanVien_by_HoTen_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INhanVien_WCF/TimKiem_NhanVien_by_HoTenResponse" message="tns:INhanVien_WCF_TimKiem_NhanVien_by_HoTen_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_INhanVien_WCF" type="tns:INhanVien_WCF">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetNhanVien_by_ID">
+      <soap:operation soapAction="http://tempuri.org/INhanVien_WCF/GetNhanVien_by_ID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChucVu">
+      <soap:operation soapAction="http://tempuri.org/INhanVien_WCF/GetChucVu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHoTen_NhanVien">
+      <soap:operation soapAction="http://tempuri.org/INhanVien_WCF/GetHoTen_NhanVien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetID_by_Email">
+      <soap:operation soapAction="http://tempuri.org/INhanVien_WCF/GetID_by_Email" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmail_by_ID">
+      <soap:operation soapAction="http://tempuri.org/INhanVien_WCF/GetEmail_by_ID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNhanViens">
+      <soap:operation soapAction="http://tempuri.org/INhanVien_WCF/GetNhanViens" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SapXepChucVu">
+      <soap:operation soapAction="http://tempuri.org/INhanVien_WCF/SapXepChucVu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SapXepCaLamViec">
+      <soap:operation soapAction="http://tempuri.org/INhanVien_WCF/SapXepCaLamViec" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DangNhapHeThong">
+      <soap:operation soapAction="http://tempuri.org/INhanVien_WCF/DangNhapHeThong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemNhanVien">
+      <soap:operation soapAction="http://tempuri.org/INhanVien_WCF/ThemNhanVien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CapNhatNhanVien">
+      <soap:operation soapAction="http://tempuri.org/INhanVien_WCF/CapNhatNhanVien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CapNhatMatKhau">
+      <soap:operation soapAction="http://tempuri.org/INhanVien_WCF/CapNhatMatKhau" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaNhanVien_by_Email">
+      <soap:operation soapAction="http://tempuri.org/INhanVien_WCF/XoaNhanVien_by_Email" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiem_NhanVien_by_HoTen">
+      <soap:operation soapAction="http://tempuri.org/INhanVien_WCF/TimKiem_NhanVien_by_HoTen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="NhanVien_WCF">
+    <wsdl:port name="BasicHttpBinding_INhanVien_WCF" binding="tns:BasicHttpBinding_INhanVien_WCF">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/NhanVien_WCF/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
