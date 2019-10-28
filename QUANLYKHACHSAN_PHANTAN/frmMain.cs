@@ -185,9 +185,23 @@ namespace QUANLYKHACHSAN_PHANTAN
             open_frmQuanLyKhachHang();
         }
 
+        private void open_frmDatPhong()
+        {
+            this.pnl_SubForm.Controls.Clear();
+
+            frmDatPhong fdp = new frmDatPhong();
+            fdp.FormBorderStyle = FormBorderStyle.None;
+            fdp.TopLevel = false;
+            fdp.Dock = DockStyle.Fill;
+            fdp.ShowInTaskbar = false;
+            fdp.Show();
+
+            this.pnl_SubForm.Controls.Add(fdp);
+        }
+
         private void btnDatPhong_Click(object sender, EventArgs e)
         {
-
+            open_frmDatPhong();
         }
     }
 }

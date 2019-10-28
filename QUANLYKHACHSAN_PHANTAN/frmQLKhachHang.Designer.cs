@@ -99,8 +99,9 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -132,10 +133,9 @@
             this.btnReload.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnReload.FlatAppearance.BorderSize = 0;
             this.btnReload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReload.Location = new System.Drawing.Point(952, 0);
-            this.btnReload.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReload.Location = new System.Drawing.Point(714, 0);
             this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(60, 66);
+            this.btnReload.Size = new System.Drawing.Size(45, 54);
             this.btnReload.TabIndex = 4;
             this.btnReload.UseVisualStyleBackColor = true;
             // 
@@ -143,7 +143,7 @@
             // 
             this.bindingNavigatorCountItem.ForeColor = System.Drawing.Color.Black;
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(52, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(39, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -166,14 +166,14 @@
             this.bindingNavigatorMoveNextItem,
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2});
-            this.bn_DSKhachHang.Location = new System.Drawing.Point(0, 570);
+            this.bn_DSKhachHang.Location = new System.Drawing.Point(0, 458);
             this.bn_DSKhachHang.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bn_DSKhachHang.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.bn_DSKhachHang.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.bn_DSKhachHang.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bn_DSKhachHang.Name = "bn_DSKhachHang";
             this.bn_DSKhachHang.PositionItem = this.bindingNavigatorPositionItem;
-            this.bn_DSKhachHang.Size = new System.Drawing.Size(1012, 27);
+            this.bn_DSKhachHang.Size = new System.Drawing.Size(759, 27);
             this.bn_DSKhachHang.TabIndex = 15;
             this.bn_DSKhachHang.Text = "bn_DSNhanVien";
             // 
@@ -184,10 +184,9 @@
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Location = new System.Drawing.Point(343, 12);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTimKiem.Location = new System.Drawing.Point(257, 10);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(108, 36);
+            this.btnTimKiem.Size = new System.Drawing.Size(81, 29);
             this.btnTimKiem.TabIndex = 1;
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
@@ -200,12 +199,11 @@
             this.dgv_DSKhachHang.AllowUserToResizeRows = false;
             this.dgv_DSKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_DSKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_DSKhachHang.Location = new System.Drawing.Point(0, 107);
-            this.dgv_DSKhachHang.Margin = new System.Windows.Forms.Padding(4);
+            this.dgv_DSKhachHang.Location = new System.Drawing.Point(0, 87);
             this.dgv_DSKhachHang.Name = "dgv_DSKhachHang";
             this.dgv_DSKhachHang.ReadOnly = true;
             this.dgv_DSKhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_DSKhachHang.Size = new System.Drawing.Size(1012, 490);
+            this.dgv_DSKhachHang.Size = new System.Drawing.Size(759, 398);
             this.dgv_DSKhachHang.TabIndex = 16;
             // 
             // panel4
@@ -214,10 +212,9 @@
             this.panel4.Controls.Add(this.btnTimKiem);
             this.panel4.Controls.Add(this.txtTimKiem);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 41);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Location = new System.Drawing.Point(0, 33);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1012, 66);
+            this.panel4.Size = new System.Drawing.Size(759, 54);
             this.panel4.TabIndex = 14;
             // 
             // txtTimKiem
@@ -228,10 +225,9 @@
             this.txtTimKiem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimKiem.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtTimKiem.Location = new System.Drawing.Point(16, 12);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTimKiem.Location = new System.Drawing.Point(12, 10);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(317, 34);
+            this.txtTimKiem.Size = new System.Drawing.Size(239, 29);
             this.txtTimKiem.TabIndex = 0;
             this.txtTimKiem.Text = "Nhập CMND";
             this.txtTimKiem.Enter += new System.EventHandler(this.txtTimKiem_Enter);
@@ -244,10 +240,10 @@
             this.btnSuaKH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSuaKH.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSuaKH.ForeColor = System.Drawing.Color.White;
-            this.btnSuaKH.Location = new System.Drawing.Point(0, 119);
-            this.btnSuaKH.Margin = new System.Windows.Forms.Padding(20, 18, 20, 18);
+            this.btnSuaKH.Location = new System.Drawing.Point(0, 97);
+            this.btnSuaKH.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
             this.btnSuaKH.Name = "btnSuaKH";
-            this.btnSuaKH.Size = new System.Drawing.Size(199, 53);
+            this.btnSuaKH.Size = new System.Drawing.Size(149, 43);
             this.btnSuaKH.TabIndex = 2;
             this.btnSuaKH.Text = "Sửa Khách Hàng";
             this.btnSuaKH.UseVisualStyleBackColor = false;
@@ -260,10 +256,10 @@
             this.btnThemKH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemKH.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemKH.ForeColor = System.Drawing.Color.White;
-            this.btnThemKH.Location = new System.Drawing.Point(0, 48);
-            this.btnThemKH.Margin = new System.Windows.Forms.Padding(20, 18, 20, 18);
+            this.btnThemKH.Location = new System.Drawing.Point(0, 39);
+            this.btnThemKH.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
             this.btnThemKH.Name = "btnThemKH";
-            this.btnThemKH.Size = new System.Drawing.Size(199, 53);
+            this.btnThemKH.Size = new System.Drawing.Size(149, 43);
             this.btnThemKH.TabIndex = 1;
             this.btnThemKH.Text = "Thêm Khách Hàng";
             this.btnThemKH.UseVisualStyleBackColor = false;
@@ -272,9 +268,8 @@
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(199, 48);
+            this.panel3.Size = new System.Drawing.Size(149, 39);
             this.panel3.TabIndex = 0;
             // 
             // panel2
@@ -283,10 +278,9 @@
             this.panel2.Controls.Add(this.btnThemKH);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1012, 41);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(759, 33);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(199, 556);
+            this.panel2.Size = new System.Drawing.Size(149, 452);
             this.panel2.TabIndex = 13;
             // 
             // panel1
@@ -295,9 +289,9 @@
             this.panel1.Controls.Add(this.btnThoat);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1211, 41);
+            this.panel1.Size = new System.Drawing.Size(908, 33);
             this.panel1.TabIndex = 12;
             // 
             // label1
@@ -307,9 +301,8 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1140, 41);
+            this.label1.Size = new System.Drawing.Size(855, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "Quản Lý Khách Hàng";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -322,10 +315,10 @@
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.Location = new System.Drawing.Point(1140, 0);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btnThoat.Location = new System.Drawing.Point(855, 0);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(71, 41);
+            this.btnThoat.Size = new System.Drawing.Size(53, 33);
             this.btnThoat.TabIndex = 0;
             this.btnThoat.Text = "Đóng";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -333,17 +326,16 @@
             // 
             // frmQLKhachHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
-            this.ClientSize = new System.Drawing.Size(1211, 597);
+            this.ClientSize = new System.Drawing.Size(908, 485);
             this.Controls.Add(this.bn_DSKhachHang);
             this.Controls.Add(this.dgv_DSKhachHang);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmQLKhachHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Khách Hàng";

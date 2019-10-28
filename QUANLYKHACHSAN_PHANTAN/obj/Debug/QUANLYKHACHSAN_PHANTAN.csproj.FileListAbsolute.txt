@@ -108,3 +108,4 @@ E:\WCF\QuanLyKhachSan_PhanTan_Wcf\QUANLYKHACHSAN_PHANTAN\obj\Debug\QUANLYKHACHSA
 E:\WCF\QuanLyKhachSan_PhanTan_Wcf\QUANLYKHACHSAN_PHANTAN\obj\Debug\QUANLYKHACHSAN_PHANTAN.csproj.GenerateResource.Cache
 E:\WCF\QuanLyKhachSan_PhanTan_Wcf\QUANLYKHACHSAN_PHANTAN\obj\Debug\QUANLYKHACHSAN_PHANTAN.frmQLPhong.resources
 C:\Users\GlenOrient\Desktop\QuanLyKhachSan_PhanTan_Wcf\QUANLYKHACHSAN_PHANTAN\obj\Debug\QUANLYKHACHSAN_PHANTAN.frmQLPhong.resources
+C:\Users\GlenOrient\Desktop\QuanLyKhachSan_PhanTan_Wcf\QUANLYKHACHSAN_PHANTAN\obj\Debug\QUANLYKHACHSAN_PHANTAN.frmDatPhong.resources
