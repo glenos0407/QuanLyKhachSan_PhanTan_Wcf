@@ -118,11 +118,12 @@
             // 
             // btnXoaNV
             // 
+            this.btnXoaNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnXoaNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.btnXoaNV.FlatAppearance.BorderSize = 0;
             this.btnXoaNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoaNV.ForeColor = System.Drawing.Color.White;
-            this.btnXoaNV.Location = new System.Drawing.Point(0, 155);
+            this.btnXoaNV.Location = new System.Drawing.Point(0, 167);
             this.btnXoaNV.Name = "btnXoaNV";
             this.btnXoaNV.Size = new System.Drawing.Size(138, 43);
             this.btnXoaNV.TabIndex = 3;
@@ -132,11 +133,12 @@
             // 
             // btnSuaNV
             // 
+            this.btnSuaNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSuaNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(116)))), ((int)(((byte)(205)))));
             this.btnSuaNV.FlatAppearance.BorderSize = 0;
             this.btnSuaNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSuaNV.ForeColor = System.Drawing.Color.White;
-            this.btnSuaNV.Location = new System.Drawing.Point(0, 97);
+            this.btnSuaNV.Location = new System.Drawing.Point(0, 106);
             this.btnSuaNV.Margin = new System.Windows.Forms.Padding(15);
             this.btnSuaNV.Name = "btnSuaNV";
             this.btnSuaNV.Size = new System.Drawing.Size(138, 43);
@@ -147,12 +149,12 @@
             // 
             // btnThemNV
             // 
+            this.btnThemNV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnThemNV.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnThemNV.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnThemNV.FlatAppearance.BorderSize = 0;
             this.btnThemNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemNV.ForeColor = System.Drawing.Color.White;
-            this.btnThemNV.Location = new System.Drawing.Point(0, 39);
+            this.btnThemNV.Location = new System.Drawing.Point(0, 47);
             this.btnThemNV.Margin = new System.Windows.Forms.Padding(15);
             this.btnThemNV.Name = "btnThemNV";
             this.btnThemNV.Size = new System.Drawing.Size(138, 43);
@@ -166,7 +168,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(138, 39);
+            this.panel3.Size = new System.Drawing.Size(138, 47);
             this.panel3.TabIndex = 0;
             // 
             // panel4

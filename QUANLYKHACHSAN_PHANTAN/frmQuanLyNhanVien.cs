@@ -67,6 +67,8 @@ namespace QUANLYKHACHSAN_PHANTAN
             bs.DataSource = dt;
             bn_DSNhanVien.BindingSource = bs;
             dgv_DSNhanVien.DataSource = bs;
+
+            
         }
 
         //Lọc Danh Sách Nhân Viên

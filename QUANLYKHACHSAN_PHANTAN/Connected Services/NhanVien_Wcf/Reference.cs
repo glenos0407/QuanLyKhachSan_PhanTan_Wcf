@@ -235,10 +235,10 @@ namespace QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf {
         System.Threading.Tasks.Task<bool> ThemNhanVienAsync(QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf.NhanVien_Ent nv_ent, string matKhau);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INhanVien_WCF/CapNhatNhanVien", ReplyAction="http://tempuri.org/INhanVien_WCF/CapNhatNhanVienResponse")]
-        bool CapNhatNhanVien(QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf.NhanVien_Ent nv_ent);
+        bool CapNhatNhanVien(QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf.NhanVien_Ent nv_ent, string old_email);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INhanVien_WCF/CapNhatNhanVien", ReplyAction="http://tempuri.org/INhanVien_WCF/CapNhatNhanVienResponse")]
-        System.Threading.Tasks.Task<bool> CapNhatNhanVienAsync(QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf.NhanVien_Ent nv_ent);
+        System.Threading.Tasks.Task<bool> CapNhatNhanVienAsync(QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf.NhanVien_Ent nv_ent, string old_email);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INhanVien_WCF/CapNhatMatKhau", ReplyAction="http://tempuri.org/INhanVien_WCF/CapNhatMatKhauResponse")]
         bool CapNhatMatKhau(string email, string matKhaucu, string matkhaumoi);
@@ -366,12 +366,12 @@ namespace QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf {
             return base.Channel.ThemNhanVienAsync(nv_ent, matKhau);
         }
         
-        public bool CapNhatNhanVien(QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf.NhanVien_Ent nv_ent) {
-            return base.Channel.CapNhatNhanVien(nv_ent);
+        public bool CapNhatNhanVien(QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf.NhanVien_Ent nv_ent, string old_email) {
+            return base.Channel.CapNhatNhanVien(nv_ent, old_email);
         }
         
-        public System.Threading.Tasks.Task<bool> CapNhatNhanVienAsync(QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf.NhanVien_Ent nv_ent) {
-            return base.Channel.CapNhatNhanVienAsync(nv_ent);
+        public System.Threading.Tasks.Task<bool> CapNhatNhanVienAsync(QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf.NhanVien_Ent nv_ent, string old_email) {
+            return base.Channel.CapNhatNhanVienAsync(nv_ent, old_email);
         }
         
         public bool CapNhatMatKhau(string email, string matKhaucu, string matkhaumoi) {

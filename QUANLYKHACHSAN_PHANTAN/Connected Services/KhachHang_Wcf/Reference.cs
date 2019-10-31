@@ -26,13 +26,13 @@ namespace QUANLYKHACHSAN_PHANTAN.KhachHang_Wcf {
         private System.DateTime Date_of_birthField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool Gioi_tinhField;
+        private string Gioi_tinhField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string HoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string Id_khachField;
+        private int Id_khachField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string Quoc_tichField;
@@ -70,12 +70,12 @@ namespace QUANLYKHACHSAN_PHANTAN.KhachHang_Wcf {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool Gioi_tinh {
+        public string Gioi_tinh {
             get {
                 return this.Gioi_tinhField;
             }
             set {
-                if ((this.Gioi_tinhField.Equals(value) != true)) {
+                if ((object.ReferenceEquals(this.Gioi_tinhField, value) != true)) {
                     this.Gioi_tinhField = value;
                     this.RaisePropertyChanged("Gioi_tinh");
                 }
@@ -96,12 +96,12 @@ namespace QUANLYKHACHSAN_PHANTAN.KhachHang_Wcf {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Id_khach {
+        public int Id_khach {
             get {
                 return this.Id_khachField;
             }
             set {
-                if ((object.ReferenceEquals(this.Id_khachField, value) != true)) {
+                if ((this.Id_khachField.Equals(value) != true)) {
                     this.Id_khachField = value;
                     this.RaisePropertyChanged("Id_khach");
                 }
@@ -197,6 +197,12 @@ namespace QUANLYKHACHSAN_PHANTAN.KhachHang_Wcf {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IKhachHang_WCF/TimKiem_KhachHang_by_CMND", ReplyAction="http://tempuri.org/IKhachHang_WCF/TimKiem_KhachHang_by_CMNDResponse")]
         System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.KhachHang_Wcf.KhachHang_Ent[]> TimKiem_KhachHang_by_CMNDAsync(string CMND);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IKhachHang_WCF/GetKhachHang_byCMND", ReplyAction="http://tempuri.org/IKhachHang_WCF/GetKhachHang_byCMNDResponse")]
+        QUANLYKHACHSAN_PHANTAN.KhachHang_Wcf.KhachHang_Ent GetKhachHang_byCMND(string CMND);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IKhachHang_WCF/GetKhachHang_byCMND", ReplyAction="http://tempuri.org/IKhachHang_WCF/GetKhachHang_byCMNDResponse")]
+        System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.KhachHang_Wcf.KhachHang_Ent> GetKhachHang_byCMNDAsync(string CMND);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -256,6 +262,14 @@ namespace QUANLYKHACHSAN_PHANTAN.KhachHang_Wcf {
         
         public System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.KhachHang_Wcf.KhachHang_Ent[]> TimKiem_KhachHang_by_CMNDAsync(string CMND) {
             return base.Channel.TimKiem_KhachHang_by_CMNDAsync(CMND);
+        }
+        
+        public QUANLYKHACHSAN_PHANTAN.KhachHang_Wcf.KhachHang_Ent GetKhachHang_byCMND(string CMND) {
+            return base.Channel.GetKhachHang_byCMND(CMND);
+        }
+        
+        public System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.KhachHang_Wcf.KhachHang_Ent> GetKhachHang_byCMNDAsync(string CMND) {
+            return base.Channel.GetKhachHang_byCMNDAsync(CMND);
         }
     }
 }

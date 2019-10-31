@@ -15,6 +15,7 @@ namespace QUANLYKHACHSAN_PHANTAN
     public partial class frmTextNhanVien : Form
     {
         string lb_TitleName;
+        string old_email;
         int id_NhanVien;
         int kieuForm;
         frmQuanLyNhanVien frmQLNV;
@@ -127,6 +128,7 @@ namespace QUANLYKHACHSAN_PHANTAN
                 cbx_CaLamViec.Text = nv_ent.CaLamViec;
 
                 dtp_NgaySinh.Value = nv_ent.NgaySinh;
+                old_email = txtEmail.Text.Trim();
             }
         }
 
@@ -346,7 +348,7 @@ namespace QUANLYKHACHSAN_PHANTAN
             nv_ent.Email = txtEmail.Text.Trim();
 
             //Xử Lý Update
-            if (nv_wcf.CapNhatNhanVien(nv_ent))
+            if (nv_wcf.CapNhatNhanVien(nv_ent, old_email))
             {
                 DialogResult ds = MessageBox.Show("Lưu Thành Công, Tiếp Tục ?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 

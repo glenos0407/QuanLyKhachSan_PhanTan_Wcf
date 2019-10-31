@@ -24,5 +24,8 @@ namespace QuanLyKhachSan_Wcf
 
         [OperationContract]
         List<KhachHang_Ent> TimKiem_KhachHang_by_CMND(string CMND);
+
+        [OperationContract]
+        KhachHang_Ent GetKhachHang_byCMND(string CMND);
     }
 }

@@ -172,6 +172,7 @@ namespace QUANLYKHACHSAN_PHANTAN
             this.pnl_SubForm.Controls.Clear();
 
             frmQLKhachHang fqlkh = new frmQLKhachHang();
+            fqlkh.FormBorderStyle = FormBorderStyle.None;
             fqlkh.TopLevel = false;
             fqlkh.Dock = DockStyle.Fill;
             fqlkh.ShowInTaskbar = false;

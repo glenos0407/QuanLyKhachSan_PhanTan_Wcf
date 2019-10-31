@@ -39,26 +39,25 @@
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.btnReload = new System.Windows.Forms.Button();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bn_DSKhachHang = new System.Windows.Forms.BindingNavigator(this.components);
-            this.btnTimKiem = new System.Windows.Forms.Button();
-            this.dgv_DSKhachHang = new System.Windows.Forms.DataGridView();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.btnSuaKH = new System.Windows.Forms.Button();
-            this.btnThemKH = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSuaKH = new System.Windows.Forms.Button();
+            this.btnThemKH = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.btnReload = new System.Windows.Forms.Button();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.dgv_DSKhachHang = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.bn_DSKhachHang)).BeginInit();
             this.bn_DSKhachHang.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_DSKhachHang)).BeginInit();
-            this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_DSKhachHang)).BeginInit();
             this.SuspendLayout();
             // 
             // imgs_Button
@@ -128,17 +127,6 @@
             this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
-            // btnReload
-            // 
-            this.btnReload.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnReload.FlatAppearance.BorderSize = 0;
-            this.btnReload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReload.Location = new System.Drawing.Point(714, 0);
-            this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(45, 54);
-            this.btnReload.TabIndex = 4;
-            this.btnReload.UseVisualStyleBackColor = true;
-            // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.ForeColor = System.Drawing.Color.Black;
@@ -173,115 +161,9 @@
             this.bn_DSKhachHang.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bn_DSKhachHang.Name = "bn_DSKhachHang";
             this.bn_DSKhachHang.PositionItem = this.bindingNavigatorPositionItem;
-            this.bn_DSKhachHang.Size = new System.Drawing.Size(759, 27);
+            this.bn_DSKhachHang.Size = new System.Drawing.Size(908, 27);
             this.bn_DSKhachHang.TabIndex = 15;
             this.bn_DSKhachHang.Text = "bn_DSNhanVien";
-            // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.BackColor = System.Drawing.Color.DarkGreen;
-            this.btnTimKiem.FlatAppearance.BorderSize = 0;
-            this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Location = new System.Drawing.Point(257, 10);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(81, 29);
-            this.btnTimKiem.TabIndex = 1;
-            this.btnTimKiem.Text = "Tìm Kiếm";
-            this.btnTimKiem.UseVisualStyleBackColor = false;
-            // 
-            // dgv_DSKhachHang
-            // 
-            this.dgv_DSKhachHang.AllowUserToAddRows = false;
-            this.dgv_DSKhachHang.AllowUserToDeleteRows = false;
-            this.dgv_DSKhachHang.AllowUserToResizeColumns = false;
-            this.dgv_DSKhachHang.AllowUserToResizeRows = false;
-            this.dgv_DSKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_DSKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgv_DSKhachHang.Location = new System.Drawing.Point(0, 87);
-            this.dgv_DSKhachHang.Name = "dgv_DSKhachHang";
-            this.dgv_DSKhachHang.ReadOnly = true;
-            this.dgv_DSKhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_DSKhachHang.Size = new System.Drawing.Size(759, 398);
-            this.dgv_DSKhachHang.TabIndex = 16;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btnReload);
-            this.panel4.Controls.Add(this.btnTimKiem);
-            this.panel4.Controls.Add(this.txtTimKiem);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 33);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(759, 54);
-            this.panel4.TabIndex = 14;
-            // 
-            // txtTimKiem
-            // 
-            this.txtTimKiem.AutoCompleteCustomSource.AddRange(new string[] {
-            "Lộc",
-            "Đức"});
-            this.txtTimKiem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimKiem.ForeColor = System.Drawing.Color.DarkGray;
-            this.txtTimKiem.Location = new System.Drawing.Point(12, 10);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(239, 29);
-            this.txtTimKiem.TabIndex = 0;
-            this.txtTimKiem.Text = "Nhập CMND";
-            this.txtTimKiem.Enter += new System.EventHandler(this.txtTimKiem_Enter);
-            // 
-            // btnSuaKH
-            // 
-            this.btnSuaKH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSuaKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(116)))), ((int)(((byte)(205)))));
-            this.btnSuaKH.FlatAppearance.BorderSize = 0;
-            this.btnSuaKH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSuaKH.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSuaKH.ForeColor = System.Drawing.Color.White;
-            this.btnSuaKH.Location = new System.Drawing.Point(0, 97);
-            this.btnSuaKH.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
-            this.btnSuaKH.Name = "btnSuaKH";
-            this.btnSuaKH.Size = new System.Drawing.Size(149, 43);
-            this.btnSuaKH.TabIndex = 2;
-            this.btnSuaKH.Text = "Sửa Khách Hàng";
-            this.btnSuaKH.UseVisualStyleBackColor = false;
-            // 
-            // btnThemKH
-            // 
-            this.btnThemKH.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnThemKH.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnThemKH.FlatAppearance.BorderSize = 0;
-            this.btnThemKH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemKH.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemKH.ForeColor = System.Drawing.Color.White;
-            this.btnThemKH.Location = new System.Drawing.Point(0, 39);
-            this.btnThemKH.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
-            this.btnThemKH.Name = "btnThemKH";
-            this.btnThemKH.Size = new System.Drawing.Size(149, 43);
-            this.btnThemKH.TabIndex = 1;
-            this.btnThemKH.Text = "Thêm Khách Hàng";
-            this.btnThemKH.UseVisualStyleBackColor = false;
-            // 
-            // panel3
-            // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(149, 39);
-            this.panel3.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnSuaKH);
-            this.panel2.Controls.Add(this.btnThemKH);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(759, 33);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(149, 452);
-            this.panel2.TabIndex = 13;
             // 
             // panel1
             // 
@@ -291,7 +173,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(908, 33);
+            this.panel1.Size = new System.Drawing.Size(908, 28);
             this.panel1.TabIndex = 12;
             // 
             // label1
@@ -302,7 +184,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(855, 33);
+            this.label1.Size = new System.Drawing.Size(855, 28);
             this.label1.TabIndex = 1;
             this.label1.Text = "Quản Lý Khách Hàng";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -318,11 +200,125 @@
             this.btnThoat.Location = new System.Drawing.Point(855, 0);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(53, 33);
+            this.btnThoat.Size = new System.Drawing.Size(53, 28);
             this.btnThoat.TabIndex = 0;
             this.btnThoat.Text = "Đóng";
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnSuaKH);
+            this.panel2.Controls.Add(this.btnThemKH);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(756, 28);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(152, 430);
+            this.panel2.TabIndex = 17;
+            // 
+            // btnSuaKH
+            // 
+            this.btnSuaKH.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSuaKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(116)))), ((int)(((byte)(205)))));
+            this.btnSuaKH.FlatAppearance.BorderSize = 0;
+            this.btnSuaKH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSuaKH.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuaKH.ForeColor = System.Drawing.Color.White;
+            this.btnSuaKH.Location = new System.Drawing.Point(0, 93);
+            this.btnSuaKH.Margin = new System.Windows.Forms.Padding(15);
+            this.btnSuaKH.Name = "btnSuaKH";
+            this.btnSuaKH.Size = new System.Drawing.Size(152, 35);
+            this.btnSuaKH.TabIndex = 2;
+            this.btnSuaKH.Text = "Sửa Khách Hàng";
+            this.btnSuaKH.UseVisualStyleBackColor = false;
+            this.btnSuaKH.Click += new System.EventHandler(this.btnSuaKH_Click);
+            // 
+            // btnThemKH
+            // 
+            this.btnThemKH.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThemKH.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnThemKH.FlatAppearance.BorderSize = 0;
+            this.btnThemKH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemKH.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemKH.ForeColor = System.Drawing.Color.White;
+            this.btnThemKH.Location = new System.Drawing.Point(0, 47);
+            this.btnThemKH.Margin = new System.Windows.Forms.Padding(15);
+            this.btnThemKH.Name = "btnThemKH";
+            this.btnThemKH.Size = new System.Drawing.Size(152, 35);
+            this.btnThemKH.TabIndex = 1;
+            this.btnThemKH.Text = "Thêm Khách Hàng";
+            this.btnThemKH.UseVisualStyleBackColor = false;
+            this.btnThemKH.Click += new System.EventHandler(this.btnThemKH_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.btnTimKiem);
+            this.panel4.Controls.Add(this.btnReload);
+            this.panel4.Controls.Add(this.txtTimKiem);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 28);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(756, 47);
+            this.panel4.TabIndex = 19;
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnTimKiem.FlatAppearance.BorderSize = 0;
+            this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiem.Location = new System.Drawing.Point(265, 6);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(74, 24);
+            this.btnTimKiem.TabIndex = 5;
+            this.btnTimKiem.Text = "Tìm Kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // btnReload
+            // 
+            this.btnReload.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnReload.FlatAppearance.BorderSize = 0;
+            this.btnReload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReload.Location = new System.Drawing.Point(705, 6);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Size = new System.Drawing.Size(45, 34);
+            this.btnReload.TabIndex = 4;
+            this.btnReload.UseVisualStyleBackColor = true;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.AutoCompleteCustomSource.AddRange(new string[] {
+            "Lộc",
+            "Đức"});
+            this.txtTimKiem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiem.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtTimKiem.Location = new System.Drawing.Point(12, 8);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(247, 29);
+            this.txtTimKiem.TabIndex = 0;
+            this.txtTimKiem.Text = "Nhập CMND";
+            this.txtTimKiem.Enter += new System.EventHandler(this.txtTimKiem_Enter);
+            // 
+            // dgv_DSKhachHang
+            // 
+            this.dgv_DSKhachHang.AllowUserToAddRows = false;
+            this.dgv_DSKhachHang.AllowUserToDeleteRows = false;
+            this.dgv_DSKhachHang.AllowUserToResizeColumns = false;
+            this.dgv_DSKhachHang.AllowUserToResizeRows = false;
+            this.dgv_DSKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_DSKhachHang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgv_DSKhachHang.Location = new System.Drawing.Point(0, 75);
+            this.dgv_DSKhachHang.Name = "dgv_DSKhachHang";
+            this.dgv_DSKhachHang.ReadOnly = true;
+            this.dgv_DSKhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_DSKhachHang.Size = new System.Drawing.Size(756, 383);
+            this.dgv_DSKhachHang.TabIndex = 20;
             // 
             // frmQLKhachHang
             // 
@@ -330,12 +326,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
             this.ClientSize = new System.Drawing.Size(908, 485);
-            this.Controls.Add(this.bn_DSKhachHang);
             this.Controls.Add(this.dgv_DSKhachHang);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.bn_DSKhachHang);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmQLKhachHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Khách Hàng";
@@ -343,11 +339,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.bn_DSKhachHang)).EndInit();
             this.bn_DSKhachHang.ResumeLayout(false);
             this.bn_DSKhachHang.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_DSKhachHang)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_DSKhachHang)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -364,19 +360,18 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.Button btnReload;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.BindingNavigator bn_DSKhachHang;
-        private System.Windows.Forms.Button btnTimKiem;
-        public System.Windows.Forms.DataGridView dgv_DSKhachHang;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox txtTimKiem;
-        private System.Windows.Forms.Button btnSuaKH;
-        private System.Windows.Forms.Button btnThemKH;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnSuaKH;
+        private System.Windows.Forms.Button btnThemKH;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btnReload;
+        private System.Windows.Forms.TextBox txtTimKiem;
+        public System.Windows.Forms.DataGridView dgv_DSKhachHang;
+        private System.Windows.Forms.Button btnTimKiem;
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fefc0163-a159-4d87-994c-2b1694cac3bb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="febd4864-0f54-436c-8238-6ebd056d4e49" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,10 +22,10 @@
     <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/NhanVien_WCF/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="c75a0f7d-d007-4e52-aed5-1f4a279977f0" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/NhanVien_WCF/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="b9d1b69c-cabf-4a91-a8bc-47fa1c63eccb" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/NhanVien_WCF/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="9f364fea-cec0-4124-93ce-8f1183086487" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/NhanVien_WCF/mex" />
-    <MetadataFile FileName="Entities.xsd" MetadataType="Schema" ID="1279d3b6-c40d-4ee4-8a02-8e60af1a1a59" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/NhanVien_WCF/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="6b727609-921c-4665-bfa1-3872a8a9f560" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/NhanVien_WCF/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="29a2bc16-c996-4acb-a17c-063e05e60f13" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/NhanVien_WCF/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="2321fe67-311d-4294-8c83-fd582409c90d" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/NhanVien_WCF/mex" />
+    <MetadataFile FileName="Entities.xsd" MetadataType="Schema" ID="4842f3d1-43a7-495c-be44-e84746a1a6eb" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/NhanVien_WCF/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

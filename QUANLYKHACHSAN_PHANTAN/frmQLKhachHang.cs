@@ -66,8 +66,8 @@ namespace QUANLYKHACHSAN_PHANTAN
             dt.Columns.Add("Giới Tính", typeof(string));
             dt.Columns.Add("Ngày Sinh", typeof(DateTime));
             dt.Columns.Add("Số CMND", typeof(string));
-            dt.Columns.Add("Số điện thoại", typeof(string));
-            dt.Columns.Add("Quốc giá", typeof(string));
+            dt.Columns.Add("Số Điện Thoại", typeof(string));
+            dt.Columns.Add("Quốc Gia", typeof(string));
 
             int stt = 1;
             foreach (KhachHang_Ent kh_ent in dsKhachHang)
@@ -89,7 +89,7 @@ namespace QUANLYKHACHSAN_PHANTAN
 
                 if (column.Index == 0)
                 {
-                    column.Width = 38;
+                    column.Width = 42;
                 }
                 if (column.Index == 1)
                 {
@@ -109,7 +109,7 @@ namespace QUANLYKHACHSAN_PHANTAN
                 }
                 if (column.Index == 5)
                 {
-                    column.Width = 120;
+                    column.Width = 140;
                 }
                 if (column.Index == 6)
                 {
@@ -119,6 +119,51 @@ namespace QUANLYKHACHSAN_PHANTAN
 
             dgv.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
+        }
+
+        private void btnThemKH_Click(object sender, EventArgs e)
+        {
+            frmTextKhachHang frm = new frmTextKhachHang(this, "Thêm Khách Hàng");
+            frm.ShowDialog();
+        }
+
+        private void btnSuaKH_Click(object sender, EventArgs e)
+        {
+            if (dgv_DSKhachHang.SelectedRows.Count == 1)
+            {
+                KhachHang_WCFClient kh_wcf = new KhachHang_WCFClient();
+                KhachHang_Ent kh = kh_wcf.GetKhachHang_byCMND(dgv_DSKhachHang.SelectedRows[0].Cells[4].Value.ToString().Trim());
+                frmTextKhachHang frm = new frmTextKhachHang(this, "Sửa Khách Hàng", kh);
+                frm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Chọn 1 Nhân Viên Cần Sửa", "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                return;
+            }
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (txtTimKiem.Text.Trim() == "")
+            {
+                return;
+            }
+            else
+            {
+                KhachHang_WCFClient kh_wcf = new KhachHang_WCFClient();
+                List<KhachHang_Ent> dsKhachHang = kh_wcf.TimKiem_KhachHang_by_CMND(txtTimKiem.Text.Trim()).ToList();
+                Loading_DSKH(DataTable_DSKH(dsKhachHang));
+                Custom_DataGridView(dgv_DSKhachHang);
+            }
+        }
+
+        private void btnReload_Click(object sender, EventArgs e)
+        {
+            KhachHang_WCFClient kh_wcf = new KhachHang_WCFClient();
+            List<KhachHang_Ent> dsKhachHang = kh_wcf.GetKhachHangs().ToList();
+            Loading_DSKH(DataTable_DSKH(dsKhachHang));
+            Custom_DataGridView(dgv_DSKhachHang);
         }
     }
 }

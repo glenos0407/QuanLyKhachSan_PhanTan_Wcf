@@ -348,9 +348,9 @@ namespace QuanLyKhachSan_Wcf
             return true;
         }
 
-        public bool CapNhatNhanVien(NhanVien_Ent nv_ent)
+        public bool CapNhatNhanVien(NhanVien_Ent nv_ent, string old_email)
         {
-            NhanVien nv = db.NhanViens.Where(n => n.email.Equals(nv_ent.Email)).SingleOrDefault();
+            NhanVien nv = db.NhanViens.Where(n => n.email.Equals(old_email)).SingleOrDefault();
 
             if (nv == null)
             {

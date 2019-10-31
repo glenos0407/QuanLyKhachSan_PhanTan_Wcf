@@ -9,9 +9,9 @@
   <xs:complexType name="KhachHang_Ent">
     <xs:sequence>
       <xs:element minOccurs="0" name="Date_of_birth" type="xs:dateTime" />
-      <xs:element minOccurs="0" name="Gioi_tinh" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Gioi_tinh" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Ho" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Id_khach" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_khach" type="xs:int" />
       <xs:element minOccurs="0" name="Quoc_tich" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="So_cmnd" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Sodienthoai" nillable="true" type="xs:string" />

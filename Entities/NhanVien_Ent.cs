@@ -20,22 +20,17 @@ namespace Entities
         string chucVu;
         string caLamViec;
         string email;
-
-        public NhanVien_Ent(int id_nhanvien, string ho, string ten, string gioiTinh, DateTime ngaySinh, string chucVu, string caLamViec, string email)
-        {
-            this.id_nhanvien = id_nhanvien;
-            this.ho = ho;
-            this.ten = ten;
-            this.gioiTinh = gioiTinh;
-            this.ngaySinh = ngaySinh;
-            this.chucVu = chucVu;
-            this.caLamViec = caLamViec;
-            this.email = email;
-        }
         
         public NhanVien_Ent()
         {
-
+            this.Id_nhanvien = id_nhanvien;
+            this.Ho = ho;
+            this.Ten = ten;
+            this.GioiTinh = gioiTinh;
+            this.NgaySinh = ngaySinh;
+            this.ChucVu = chucVu;
+            this.CaLamViec = caLamViec;
+            this.Email = email;
         }
 
         

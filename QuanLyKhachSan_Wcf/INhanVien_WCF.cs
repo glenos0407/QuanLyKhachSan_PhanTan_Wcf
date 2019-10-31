@@ -44,7 +44,7 @@ namespace QuanLyKhachSan_Wcf
         bool ThemNhanVien(NhanVien_Ent nv_ent, string matKhau);
 
         [OperationContract]
-        bool CapNhatNhanVien(NhanVien_Ent nv_ent);
+        bool CapNhatNhanVien(NhanVien_Ent nv_ent, string old_email);
 
         [OperationContract]
         bool CapNhatMatKhau(string email, string matKhaucu, string matkhaumoi);

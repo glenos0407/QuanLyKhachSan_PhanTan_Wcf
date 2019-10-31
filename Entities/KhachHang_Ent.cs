@@ -11,29 +11,25 @@ namespace Entities
     [DataContract]
     public class KhachHang_Ent
     {
-        string id_khach, ho, ten, so_cmnd, sodienthoai, quoc_tich;
-        bool gioi_tinh;
+        int id_khach;
+        string ho, ten, so_cmnd, sodienthoai, quoc_tich;
+        string gioi_tinh;
         DateTime date_of_birth;
-
-        public KhachHang_Ent(string id_khach, string ho, string ten, string so_cmnd, string sodienthoai, string quoc_tich, bool gioi_tinh, DateTime date_of_birth)
-        {
-            this.id_khach = id_khach;
-            this.ho = ho;
-            this.ten = ten;
-            this.so_cmnd = so_cmnd;
-            this.sodienthoai = sodienthoai;
-            this.quoc_tich = quoc_tich;
-            this.gioi_tinh = gioi_tinh;
-            this.date_of_birth = date_of_birth;
-        }
 
         public KhachHang_Ent()
         {
-
+            this.Id_khach = id_khach;
+            this.Ho = ho;
+            this.Ten = ten;
+            this.So_cmnd = so_cmnd;
+            this.Sodienthoai = sodienthoai;
+            this.Quoc_tich = quoc_tich;
+            this.Gioi_tinh = gioi_tinh;
+            this.Date_of_birth = date_of_birth;
         }
 
         [DataMember]
-        public string Id_khach
+        public int Id_khach
         {
             get
             {
@@ -117,7 +113,7 @@ namespace Entities
         }
 
         [DataMember]
-        public bool Gioi_tinh
+        public string Gioi_tinh
         {
             get
             {
