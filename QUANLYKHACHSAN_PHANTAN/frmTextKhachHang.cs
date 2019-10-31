@@ -100,7 +100,7 @@ namespace QUANLYKHACHSAN_PHANTAN
                 dtp_NgaySinh.Value = khach.Date_of_birth;
                 txtSoDT.Text = khach.Sodienthoai;
                 txtCMND.Text = khach.So_cmnd;
-                txtQuocTich.Text = khach.Quoc_tich;
+                cbx_QuocTich.Text = khach.Quoc_tich;
             }
             else
             {
@@ -109,7 +109,7 @@ namespace QUANLYKHACHSAN_PHANTAN
                 cbx_GioiTinh.SelectedIndex = 0;
                 txtSoDT.Text = "012234567";
                 txtCMND.Text = "123456789";
-                txtQuocTich.Text = "Việt Nam";
+                cbx_QuocTich.Text = "Việt Nam";
             }
             
         }
@@ -132,7 +132,7 @@ namespace QUANLYKHACHSAN_PHANTAN
             txtTen.Text = "";
             txtCMND.Text = "";
             txtSoDT.Text = "";
-            txtQuocTich.Text = "";
+            cbx_QuocTich.SelectedIndex = -1;
             cbx_GioiTinh.SelectedIndex = -1;
             dtp_NgaySinh.Value = DateTime.Now;
         }
@@ -164,7 +164,7 @@ namespace QUANLYKHACHSAN_PHANTAN
                 kh.Ten = txtTen.Text.Trim();
                 kh.So_cmnd = txtCMND.Text.Trim();
                 kh.Sodienthoai = txtSoDT.Text.Trim();
-                kh.Quoc_tich = txtQuocTich.Text.Trim();
+                kh.Quoc_tich = cbx_QuocTich.Text.Trim();
                 if (cbx_GioiTinh.SelectedIndex == 0)
                 {
                     kh.Gioi_tinh = "nam";
@@ -221,7 +221,7 @@ namespace QUANLYKHACHSAN_PHANTAN
                 kh.Ten = txtTen.Text.Trim();
                 kh.So_cmnd = txtCMND.Text.Trim();
                 kh.Sodienthoai = txtSoDT.Text.Trim();
-                kh.Quoc_tich = txtQuocTich.Text.Trim();
+                kh.Quoc_tich = cbx_QuocTich.Text.Trim();
                 if (cbx_GioiTinh.SelectedIndex == 1)
                 {
                     kh.Gioi_tinh = "nam";

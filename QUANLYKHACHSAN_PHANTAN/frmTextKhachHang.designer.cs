@@ -39,7 +39,6 @@
             this.txtHo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtQuocTich = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -49,6 +48,7 @@
             this.txtCMND = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbTieuDe = new System.Windows.Forms.Label();
+            this.cbx_QuocTich = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -180,14 +180,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Họ";
             // 
-            // txtQuocTich
-            // 
-            this.txtQuocTich.Location = new System.Drawing.Point(431, 133);
-            this.txtQuocTich.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtQuocTich.Name = "txtQuocTich";
-            this.txtQuocTich.Size = new System.Drawing.Size(173, 29);
-            this.txtQuocTich.TabIndex = 10;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -213,6 +205,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
+            this.panel2.Controls.Add(this.cbx_QuocTich);
             this.panel2.Controls.Add(this.dtp_NgaySinh);
             this.panel2.Controls.Add(this.cbx_GioiTinh);
             this.panel2.Controls.Add(this.txtTen);
@@ -224,7 +217,6 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.txtSoDT);
             this.panel2.Controls.Add(this.txtCMND);
-            this.panel2.Controls.Add(this.txtQuocTich);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -294,6 +286,213 @@
             this.lbTieuDe.Text = "Khách Hàng";
             this.lbTieuDe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // cbx_QuocTich
+            // 
+            this.cbx_QuocTich.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_QuocTich.FormattingEnabled = true;
+            this.cbx_QuocTich.Items.AddRange(new object[] {
+            "Ả Rập Xê Út",
+            "Afghanistan",
+            "Ai Cập",
+            "Albania",
+            "Algeria",
+            "Ấn Độ",
+            "Andorra",
+            "Angola",
+            "Anh",
+            "Antigua và Barbuda",
+            "Áo",
+            "Argentina",
+            "Armenia",
+            "Azerbaijan",
+            "Ba Lan",
+            "Bắc Macedonia",
+            "Bahamas",
+            "Bahrain",
+            "Bangladesh",
+            "Barbados",
+            "Belarus",
+            "Belize",
+            "Bénin",
+            "Bhutan",
+            "Bỉ",
+            "Bờ Biển Ngà",
+            "Bồ Đào Nha",
+            "Bolivia",
+            "Bosnia và Herzegovina",
+            "Botswana",
+            "Brazil",
+            "Brunei",
+            "Bulgaria",
+            "Burkina Faso",
+            "Burundi",
+            "Các tiểu vương quốc Ả Rập Thống Nhất",
+            "Cameroon",
+            "Campuchia",
+            "Canada",
+            "Cape Verde",
+            "Chad",
+            "Chile",
+            "Colombia",
+            "Comoros",
+            "Cộng hòa Congo",
+            "Cộng hòa dân chủ Congo",
+            "Cộng hòa Dominican",
+            "Cộng hòa Séc",
+            "Cộng hòa Trung Phi",
+            "Costa Rica",
+            "Croatia",
+            "Cuba",
+            "Djibouti",
+            "Dominica",
+            "Đài Loan",
+            "Đan Mạch",
+            "Đông Timor",
+            "Đức",
+            "Ecuador",
+            "El Salvador",
+            "Eritrea",
+            "Estonia",
+            "Ethiopia",
+            "Fiji",
+            "Gabon",
+            "Gambia",
+            "Georgia",
+            "Ghana",
+            "Grenada",
+            "Guatemala",
+            "Guinea",
+            "Guinea Xích đạo",
+            "Guinea-Bissau",
+            "Guyana",
+            "Hà Lan",
+            "Haiti",
+            "Hàn Quốc",
+            "Hoa Kỳ",
+            "Honduras",
+            "Hungary",
+            "Hy Lạp",
+            "Iceland",
+            "Indonesia",
+            "Iran",
+            "Iraq",
+            "Ireland",
+            "Israel",
+            "Jamaica",
+            "Jordan",
+            "Kazakhstan",
+            "Kenya",
+            "Kiribati",
+            "Kosovo",
+            "Kuwait",
+            "Kyrgyzstan",
+            "Lào",
+            "Latvia",
+            "Lesotho",
+            "Liban",
+            "Liberia",
+            "Libya",
+            "Liechtenstein",
+            "Liên bang Micronesia",
+            "Lithuania",
+            "Luxembourg",
+            "Ma-rốc",
+            "Madagascar",
+            "Malawi",
+            "Malaysia",
+            "Maldives",
+            "Mali",
+            "Malta",
+            "Mauritania",
+            "Mauritius",
+            "Mexico",
+            "Moldova",
+            "Monaco",
+            "Mông Cổ",
+            "Montenegro",
+            "Mozambique",
+            "Myanmar",
+            "Na Uy",
+            "Nam Phi",
+            "Nam Sudan",
+            "Namibia",
+            "Nauru",
+            "Nepal",
+            "New Zealand",
+            "Nga",
+            "Nhật Bản",
+            "Nicaragua",
+            "Niger",
+            "Nigeria",
+            "Oman",
+            "Pakistan",
+            "Palau",
+            "Palestine",
+            "Panama",
+            "Papua New Guinea",
+            "Paraguay",
+            "Peru",
+            "Phần Lan",
+            "Pháp",
+            "Philippines",
+            "Qatar",
+            "Quần đảo Marshall",
+            "Quần đảo Solomon",
+            "Romania",
+            "Rwanda",
+            "Saint Kitts và Nevis",
+            "Saint Lucia",
+            "Saint Vincent và Grenadines",
+            "Samoa",
+            "San Marino",
+            "São Tomé và Príncipe",
+            "Senegal",
+            "Serbia",
+            "Seychelles",
+            "Sierra Leone",
+            "Singapore",
+            "Síp",
+            "Slovakia",
+            "Slovenia",
+            "Somalia",
+            "Sri Lanka",
+            "Sudan",
+            "Suriname",
+            "Swaziland",
+            "Syria",
+            "Tajikistan",
+            "Tanzania",
+            "Tây Ban Nha",
+            "Thái Lan",
+            "Thành Vatican",
+            "Thổ Nhĩ Kỳ",
+            "Thụy Điển",
+            "Thụy Sĩ",
+            "Togo",
+            "Tonga",
+            "Triều Tiên",
+            "Trinidad và Tobago",
+            "Trung Quốc",
+            "Tunisia",
+            "Turkmenistan",
+            "Tuvalu",
+            "Úc",
+            "Uganda",
+            "Ukraine",
+            "Uruguay",
+            "Uzbekistan",
+            "Vanuatu",
+            "Venezuela",
+            "Việt Nam",
+            "Ý",
+            "Yemen",
+            "Zambia",
+            "Zimbabwe"});
+            this.cbx_QuocTich.Location = new System.Drawing.Point(430, 133);
+            this.cbx_QuocTich.Name = "cbx_QuocTich";
+            this.cbx_QuocTich.Size = new System.Drawing.Size(174, 29);
+            this.cbx_QuocTich.TabIndex = 16;
+            // 
             // frmTextKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
@@ -331,7 +530,6 @@
         private System.Windows.Forms.TextBox txtHo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtQuocTich;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
@@ -341,5 +539,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtSoDT;
         private System.Windows.Forms.TextBox txtCMND;
+        private System.Windows.Forms.ComboBox cbx_QuocTich;
     }
 }
