@@ -68,6 +68,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="frmMuaBanDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMuaBanDichVu.Designer.cs">
+      <DependentUpon>frmMuaBanDichVu.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmQLDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource_Img.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmMuaBanDichVu.resx">
+      <DependentUpon>frmMuaBanDichVu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQLDichVu.resx">
       <DependentUpon>frmQLDichVu.cs</DependentUpon>
     </EmbeddedResource>

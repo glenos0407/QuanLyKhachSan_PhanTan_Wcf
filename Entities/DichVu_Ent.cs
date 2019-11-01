@@ -13,7 +13,7 @@ namespace Entities
     {
         string tenDichVu, tenLoaiDichVu;
         double donGia;
-        int id_LoaiDichVu; 
+        int id_LoaiDichVu;
         int id_DichVu;
         
         public DichVu_Ent()
@@ -38,6 +38,7 @@ namespace Entities
                 id_DichVu = value;
             }
         }
+
         [DataMember]
         public string TenDichVu
         {
