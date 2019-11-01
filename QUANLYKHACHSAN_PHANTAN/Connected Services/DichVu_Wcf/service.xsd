@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/Entities" />
+  <xs:element name="GetDichVus">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDichVusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="GetDichVusResult" nillable="true" type="q1:ArrayOfDichVu_Ent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDichVu_byIdDichVu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idDV" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDichVu_byIdDichVuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="GetDichVu_byIdDichVuResult" nillable="true" type="q2:DichVu_Ent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTenLoaiDichVu_byIdLoaiDichVu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idLoaiDV" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTenLoaiDichVu_byIdLoaiDichVuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTenLoaiDichVu_byIdLoaiDichVuResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimKiemDichVu_byIDLoaiDV">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IDLoaiDV" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimKiemDichVu_byIDLoaiDVResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="TimKiemDichVu_byIDLoaiDVResult" nillable="true" type="q3:ArrayOfDichVu_Ent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ThemDichVu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="dv_ent" nillable="true" type="q4:DichVu_Ent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ThemDichVuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ThemDichVuResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CapNhatDichVu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="dv_ent" nillable="true" type="q5:DichVu_Ent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CapNhatDichVuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CapNhatDichVuResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="XoaDichVu_byIDDichVu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idDichVu" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="XoaDichVu_byIDDichVuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="XoaDichVu_byIDDichVuResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIDLoaiDV_byTenLoai">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TenLoaiDV" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIDLoaiDV_byTenLoaiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetIDLoaiDV_byTenLoaiResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIDDichVu_byTenDV">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TenDV" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIDDichVu_byTenDVResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetIDDichVu_byTenDVResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimKiemDichVu_byIDDichVu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IDDichVu" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimKiemDichVu_byIDDichVuResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="TimKiemDichVu_byIDDichVuResult" nillable="true" type="q6:ArrayOfDichVu_Ent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

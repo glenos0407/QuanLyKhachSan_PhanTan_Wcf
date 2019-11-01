@@ -48,6 +48,10 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaoCao_WCF.cs" />
+    <Compile Include="DichVu_WCF.cs" />
+    <Compile Include="IBaoCao_WCF.cs" />
+    <Compile Include="IDichVu_WCF.cs" />
     <Compile Include="IKhachHang_WCF.cs" />
     <Compile Include="INhanVien_WCF.cs" />
     <Compile Include="KhachHang_WCF.cs" />

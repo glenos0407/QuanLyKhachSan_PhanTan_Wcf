@@ -51,6 +51,15 @@ namespace QUANLYKHACHSAN_PHANTAN
             this.btnTaiKhoan.Image = imgs_Button.Images[1];
             this.btnDatPhong.Image = imgs_Button.Images[2];
             this.btnKhachHang.Image = imgs_Button.Images[3];
+
+            this.btnCheckOut.Image = imgs_Button.Images[4];
+            this.btnBaoCao.Image = imgs_Button.Images[5];
+            this.btnPhong.Image = imgs_Button.Images[6];
+            this.btnDichVu.Image = imgs_Button.Images[7];
+
+            ////Loading Background Image MainForm
+            //this.pnl_SubForm.BackgroundImage = Resource_Img.bg_lobbyHotel;
+            //this.pnl_SubForm.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         private void frmMain_Load(object sender, EventArgs e)
@@ -59,7 +68,7 @@ namespace QUANLYKHACHSAN_PHANTAN
             NhanVien_WCFClient nv_wcf = new NhanVien_WCFClient();
 
             this.lbAccount.Text = "Xin Chào, " + nv_wcf.GetHoTen_NhanVien(Id_nhanvien);
-
+            this.btnCheckOut.Visible = false;
         }
 
         private void btnShowMenu_Click(object sender, EventArgs e)
@@ -203,6 +212,30 @@ namespace QUANLYKHACHSAN_PHANTAN
         private void btnDatPhong_Click(object sender, EventArgs e)
         {
             open_frmDatPhong();
+        }
+
+        private void open_frmDichVu()
+        {
+            this.pnl_SubForm.Controls.Clear();
+
+            frmQLDichVu fdp = new frmQLDichVu();
+            fdp.FormBorderStyle = FormBorderStyle.None;
+            fdp.TopLevel = false;
+            fdp.Dock = DockStyle.Fill;
+            fdp.ShowInTaskbar = false;
+            fdp.Show();
+
+            this.pnl_SubForm.Controls.Add(fdp);
+        }
+
+        private void btnDichVu_Click(object sender, EventArgs e)
+        {
+            open_frmDichVu();
+        }
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

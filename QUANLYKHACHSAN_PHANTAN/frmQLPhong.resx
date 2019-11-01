@@ -125,7 +125,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAE
-        BQAAAk1TRnQBSQFMAwEBAAEwAQABMAEAASABAAEgAQAE/wERAQAI/wFCAU0BNgcAATYDAAEoAwABgAMA
+        BQAAAk1TRnQBSQFMAwEBAAE4AQABOAEAASABAAEgAQAE/wERAQAI/wFCAU0BNgcAATYDAAEoAwABgAMA
         ASADAAEBAQABEAYAASD/AP8A/wAdAAH/AX8B/wF/CgAB/wF/Ad4BewHeAXsB3gF7Ad4BewHeAXsB3gF7
         Ad4BewHeAXsB/wF/3gAB3gF7Ad4BewYAAf8BfwHeAXsB/wF/Af8BfwHeAXsB3gF7Ad4BewHeAXsB3gF7
         Ad4BewH/AX8B/wF/Ad4BewH/AX/aAAHeAXsB3gF7BAAB3gF7Af8BfwH/AX8B3gF7Af8BfwwAAf8BfwHe
@@ -192,5 +192,8 @@
   </data>
   <metadata name="bn_DSNhanVien.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>439, 17</value>
+  </metadata>
+  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>579, 17</value>
   </metadata>
 </root>

@@ -36,6 +36,9 @@
             this.btnShowMenu = new System.Windows.Forms.Button();
             this.imgs_Button = new System.Windows.Forms.ImageList(this.components);
             this.pnl_Menu = new System.Windows.Forms.Panel();
+            this.btnBaoCao = new System.Windows.Forms.Button();
+            this.btnDichVu = new System.Windows.Forms.Button();
+            this.btnPhong = new System.Windows.Forms.Button();
             this.btnKhachHang = new System.Windows.Forms.Button();
             this.btnDatPhong = new System.Windows.Forms.Button();
             this.btnTaiKhoan = new System.Windows.Forms.Button();
@@ -45,6 +48,7 @@
             this.QuanLyTaiKhoanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DoiMatKhauToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DangXuatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnCheckOut = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pnl_Menu.SuspendLayout();
             this.cmnstrp_NhanVien.SuspendLayout();
@@ -109,18 +113,75 @@
             this.imgs_Button.Images.SetKeyName(1, "icon_Account.png");
             this.imgs_Button.Images.SetKeyName(2, "icon_door.png");
             this.imgs_Button.Images.SetKeyName(3, "icon-customer.png");
+            this.imgs_Button.Images.SetKeyName(4, "check-out.png");
+            this.imgs_Button.Images.SetKeyName(5, "growth.png");
+            this.imgs_Button.Images.SetKeyName(6, "hotel.png");
+            this.imgs_Button.Images.SetKeyName(7, "rating.png");
             // 
             // pnl_Menu
             // 
             this.pnl_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(54)))));
+            this.pnl_Menu.Controls.Add(this.btnBaoCao);
+            this.pnl_Menu.Controls.Add(this.btnDichVu);
+            this.pnl_Menu.Controls.Add(this.btnPhong);
             this.pnl_Menu.Controls.Add(this.btnKhachHang);
+            this.pnl_Menu.Controls.Add(this.btnCheckOut);
             this.pnl_Menu.Controls.Add(this.btnDatPhong);
             this.pnl_Menu.Controls.Add(this.btnTaiKhoan);
             this.pnl_Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_Menu.Location = new System.Drawing.Point(0, 38);
             this.pnl_Menu.Name = "pnl_Menu";
-            this.pnl_Menu.Size = new System.Drawing.Size(132, 631);
+            this.pnl_Menu.Size = new System.Drawing.Size(164, 631);
             this.pnl_Menu.TabIndex = 1;
+            // 
+            // btnBaoCao
+            // 
+            this.btnBaoCao.BackColor = System.Drawing.Color.Teal;
+            this.btnBaoCao.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBaoCao.FlatAppearance.BorderSize = 0;
+            this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaoCao.ForeColor = System.Drawing.Color.White;
+            this.btnBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBaoCao.Location = new System.Drawing.Point(0, 260);
+            this.btnBaoCao.Name = "btnBaoCao";
+            this.btnBaoCao.Size = new System.Drawing.Size(164, 52);
+            this.btnBaoCao.TabIndex = 13;
+            this.btnBaoCao.Text = "Báo Cáo ";
+            this.btnBaoCao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBaoCao.UseVisualStyleBackColor = false;
+            // 
+            // btnDichVu
+            // 
+            this.btnDichVu.BackColor = System.Drawing.Color.Teal;
+            this.btnDichVu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDichVu.FlatAppearance.BorderSize = 0;
+            this.btnDichVu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDichVu.ForeColor = System.Drawing.Color.White;
+            this.btnDichVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDichVu.Location = new System.Drawing.Point(0, 208);
+            this.btnDichVu.Name = "btnDichVu";
+            this.btnDichVu.Size = new System.Drawing.Size(164, 52);
+            this.btnDichVu.TabIndex = 12;
+            this.btnDichVu.Text = "QL Dịch Vụ";
+            this.btnDichVu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDichVu.UseVisualStyleBackColor = false;
+            this.btnDichVu.Click += new System.EventHandler(this.btnDichVu_Click);
+            // 
+            // btnPhong
+            // 
+            this.btnPhong.BackColor = System.Drawing.Color.Teal;
+            this.btnPhong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPhong.FlatAppearance.BorderSize = 0;
+            this.btnPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPhong.ForeColor = System.Drawing.Color.White;
+            this.btnPhong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPhong.Location = new System.Drawing.Point(0, 156);
+            this.btnPhong.Name = "btnPhong";
+            this.btnPhong.Size = new System.Drawing.Size(164, 52);
+            this.btnPhong.TabIndex = 11;
+            this.btnPhong.Text = "QL Phòng";
+            this.btnPhong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPhong.UseVisualStyleBackColor = false;
             // 
             // btnKhachHang
             // 
@@ -130,11 +191,11 @@
             this.btnKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKhachHang.ForeColor = System.Drawing.Color.White;
             this.btnKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhachHang.Location = new System.Drawing.Point(0, 52);
+            this.btnKhachHang.Location = new System.Drawing.Point(0, 104);
             this.btnKhachHang.Name = "btnKhachHang";
-            this.btnKhachHang.Size = new System.Drawing.Size(132, 52);
-            this.btnKhachHang.TabIndex = 2;
-            this.btnKhachHang.Text = "Khách Hàng";
+            this.btnKhachHang.Size = new System.Drawing.Size(164, 52);
+            this.btnKhachHang.TabIndex = 10;
+            this.btnKhachHang.Text = "QL Khách Hàng";
             this.btnKhachHang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnKhachHang.UseVisualStyleBackColor = false;
             this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
@@ -149,7 +210,7 @@
             this.btnDatPhong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDatPhong.Location = new System.Drawing.Point(0, 0);
             this.btnDatPhong.Name = "btnDatPhong";
-            this.btnDatPhong.Size = new System.Drawing.Size(132, 52);
+            this.btnDatPhong.Size = new System.Drawing.Size(164, 52);
             this.btnDatPhong.TabIndex = 1;
             this.btnDatPhong.Text = "Đặt Phòng";
             this.btnDatPhong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -166,9 +227,9 @@
             this.btnTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTaiKhoan.Location = new System.Drawing.Point(0, 579);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
-            this.btnTaiKhoan.Size = new System.Drawing.Size(132, 52);
+            this.btnTaiKhoan.Size = new System.Drawing.Size(164, 52);
             this.btnTaiKhoan.TabIndex = 0;
-            this.btnTaiKhoan.Text = "Nhân Viên";
+            this.btnTaiKhoan.Text = "QL Nhân Viên";
             this.btnTaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTaiKhoan.UseVisualStyleBackColor = false;
             this.btnTaiKhoan.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnTaiKhoan_MouseClick);
@@ -176,9 +237,9 @@
             // pnl_SubForm
             // 
             this.pnl_SubForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_SubForm.Location = new System.Drawing.Point(132, 38);
+            this.pnl_SubForm.Location = new System.Drawing.Point(164, 38);
             this.pnl_SubForm.Name = "pnl_SubForm";
-            this.pnl_SubForm.Size = new System.Drawing.Size(969, 631);
+            this.pnl_SubForm.Size = new System.Drawing.Size(937, 631);
             this.pnl_SubForm.TabIndex = 2;
             // 
             // timer_System
@@ -219,6 +280,23 @@
             this.DangXuatToolStripMenuItem.Text = "Đăng Xuất";
             this.DangXuatToolStripMenuItem.Click += new System.EventHandler(this.DangXuatToolStripMenuItem_Click);
             // 
+            // btnCheckOut
+            // 
+            this.btnCheckOut.BackColor = System.Drawing.Color.Teal;
+            this.btnCheckOut.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCheckOut.FlatAppearance.BorderSize = 0;
+            this.btnCheckOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckOut.ForeColor = System.Drawing.Color.White;
+            this.btnCheckOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCheckOut.Location = new System.Drawing.Point(0, 52);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(164, 52);
+            this.btnCheckOut.TabIndex = 2;
+            this.btnCheckOut.Text = "Trả Phòng";
+            this.btnCheckOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCheckOut.UseVisualStyleBackColor = false;
+            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
@@ -258,6 +336,10 @@
         private System.Windows.Forms.ToolStripMenuItem QuanLyTaiKhoanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem DangXuatToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem DoiMatKhauToolStripMenuItem;
+        private System.Windows.Forms.Button btnBaoCao;
+        private System.Windows.Forms.Button btnDichVu;
+        private System.Windows.Forms.Button btnPhong;
         private System.Windows.Forms.Button btnKhachHang;
+        private System.Windows.Forms.Button btnCheckOut;
     }
 }

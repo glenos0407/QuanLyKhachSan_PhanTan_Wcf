@@ -56,6 +56,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.bn_DSNhanVien)).BeginInit();
             this.bn_DSNhanVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DSNhanVien)).BeginInit();
@@ -419,5 +420,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnThoat;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

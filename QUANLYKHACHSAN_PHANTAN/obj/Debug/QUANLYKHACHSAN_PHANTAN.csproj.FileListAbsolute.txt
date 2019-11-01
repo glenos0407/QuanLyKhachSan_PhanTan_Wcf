@@ -110,3 +110,6 @@ E:\WCF\QuanLyKhachSan_PhanTan_Wcf\QUANLYKHACHSAN_PHANTAN\obj\Debug\QUANLYKHACHSA
 C:\Users\GlenOrient\Desktop\QuanLyKhachSan_PhanTan_Wcf\QUANLYKHACHSAN_PHANTAN\obj\Debug\QUANLYKHACHSAN_PHANTAN.frmQLPhong.resources
 C:\Users\GlenOrient\Desktop\QuanLyKhachSan_PhanTan_Wcf\QUANLYKHACHSAN_PHANTAN\obj\Debug\QUANLYKHACHSAN_PHANTAN.frmDatPhong.resources
 C:\Users\GlenOrient\Desktop\QuanLyKhachSan_PhanTan_Wcf\QUANLYKHACHSAN_PHANTAN\obj\Debug\QUANLYKHACHSAN_PHANTAN.frmTextKhachHang.resources
+C:\Users\GlenOrient\Desktop\QuanLyKhachSan_PhanTan_Wcf\QUANLYKHACHSAN_PHANTAN\obj\Debug\QUANLYKHACHSAN_PHANTAN.frmThongKe.resources
+C:\Users\GlenOrient\Desktop\QuanLyKhachSan_PhanTan_Wcf\QUANLYKHACHSAN_PHANTAN\obj\Debug\QUANLYKHACHSAN_PHANTAN.frmQLDichVu.resources
+C:\Users\GlenOrient\Desktop\QuanLyKhachSan_PhanTan_Wcf\QUANLYKHACHSAN_PHANTAN\obj\Debug\QUANLYKHACHSAN_PHANTAN.frmTextDichVu.resources

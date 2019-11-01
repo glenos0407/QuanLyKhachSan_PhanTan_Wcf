@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DichVu_WCF" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Entities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDichVu_WCF_GetDichVus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDichVus" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_GetDichVus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDichVusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_GetDichVu_byIdDichVu_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDichVu_byIdDichVu" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_GetDichVu_byIdDichVu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDichVu_byIdDichVuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_GetTenLoaiDichVu_byIdLoaiDichVu_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTenLoaiDichVu_byIdLoaiDichVu" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_GetTenLoaiDichVu_byIdLoaiDichVu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTenLoaiDichVu_byIdLoaiDichVuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_TimKiemDichVu_byIDLoaiDV_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemDichVu_byIDLoaiDV" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_TimKiemDichVu_byIDLoaiDV_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemDichVu_byIDLoaiDVResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_ThemDichVu_InputMessage">
+    <wsdl:part name="parameters" element="tns:ThemDichVu" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_ThemDichVu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThemDichVuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_CapNhatDichVu_InputMessage">
+    <wsdl:part name="parameters" element="tns:CapNhatDichVu" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_CapNhatDichVu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CapNhatDichVuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_XoaDichVu_byIDDichVu_InputMessage">
+    <wsdl:part name="parameters" element="tns:XoaDichVu_byIDDichVu" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_XoaDichVu_byIDDichVu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:XoaDichVu_byIDDichVuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_GetIDLoaiDV_byTenLoai_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIDLoaiDV_byTenLoai" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_GetIDLoaiDV_byTenLoai_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIDLoaiDV_byTenLoaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_GetIDDichVu_byTenDV_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIDDichVu_byTenDV" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_GetIDDichVu_byTenDV_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIDDichVu_byTenDVResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_TimKiemDichVu_byIDDichVu_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemDichVu_byIDDichVu" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_TimKiemDichVu_byIDDichVu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimKiemDichVu_byIDDichVuResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDichVu_WCF">
+    <wsdl:operation name="GetDichVus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDichVu_WCF/GetDichVus" message="tns:IDichVu_WCF_GetDichVus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDichVu_WCF/GetDichVusResponse" message="tns:IDichVu_WCF_GetDichVus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDichVu_byIdDichVu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDichVu_WCF/GetDichVu_byIdDichVu" message="tns:IDichVu_WCF_GetDichVu_byIdDichVu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDichVu_WCF/GetDichVu_byIdDichVuResponse" message="tns:IDichVu_WCF_GetDichVu_byIdDichVu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTenLoaiDichVu_byIdLoaiDichVu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDichVu_WCF/GetTenLoaiDichVu_byIdLoaiDichVu" message="tns:IDichVu_WCF_GetTenLoaiDichVu_byIdLoaiDichVu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDichVu_WCF/GetTenLoaiDichVu_byIdLoaiDichVuResponse" message="tns:IDichVu_WCF_GetTenLoaiDichVu_byIdLoaiDichVu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemDichVu_byIDLoaiDV">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDichVu_WCF/TimKiemDichVu_byIDLoaiDV" message="tns:IDichVu_WCF_TimKiemDichVu_byIDLoaiDV_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDichVu_WCF/TimKiemDichVu_byIDLoaiDVResponse" message="tns:IDichVu_WCF_TimKiemDichVu_byIDLoaiDV_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ThemDichVu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDichVu_WCF/ThemDichVu" message="tns:IDichVu_WCF_ThemDichVu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDichVu_WCF/ThemDichVuResponse" message="tns:IDichVu_WCF_ThemDichVu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CapNhatDichVu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDichVu_WCF/CapNhatDichVu" message="tns:IDichVu_WCF_CapNhatDichVu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDichVu_WCF/CapNhatDichVuResponse" message="tns:IDichVu_WCF_CapNhatDichVu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="XoaDichVu_byIDDichVu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDichVu_WCF/XoaDichVu_byIDDichVu" message="tns:IDichVu_WCF_XoaDichVu_byIDDichVu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDichVu_WCF/XoaDichVu_byIDDichVuResponse" message="tns:IDichVu_WCF_XoaDichVu_byIDDichVu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIDLoaiDV_byTenLoai">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDichVu_WCF/GetIDLoaiDV_byTenLoai" message="tns:IDichVu_WCF_GetIDLoaiDV_byTenLoai_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDichVu_WCF/GetIDLoaiDV_byTenLoaiResponse" message="tns:IDichVu_WCF_GetIDLoaiDV_byTenLoai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIDDichVu_byTenDV">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDichVu_WCF/GetIDDichVu_byTenDV" message="tns:IDichVu_WCF_GetIDDichVu_byTenDV_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDichVu_WCF/GetIDDichVu_byTenDVResponse" message="tns:IDichVu_WCF_GetIDDichVu_byTenDV_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemDichVu_byIDDichVu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDichVu_WCF/TimKiemDichVu_byIDDichVu" message="tns:IDichVu_WCF_TimKiemDichVu_byIDDichVu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDichVu_WCF/TimKiemDichVu_byIDDichVuResponse" message="tns:IDichVu_WCF_TimKiemDichVu_byIDDichVu_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IDichVu_WCF" type="tns:IDichVu_WCF">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDichVus">
+      <soap:operation soapAction="http://tempuri.org/IDichVu_WCF/GetDichVus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDichVu_byIdDichVu">
+      <soap:operation soapAction="http://tempuri.org/IDichVu_WCF/GetDichVu_byIdDichVu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTenLoaiDichVu_byIdLoaiDichVu">
+      <soap:operation soapAction="http://tempuri.org/IDichVu_WCF/GetTenLoaiDichVu_byIdLoaiDichVu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemDichVu_byIDLoaiDV">
+      <soap:operation soapAction="http://tempuri.org/IDichVu_WCF/TimKiemDichVu_byIDLoaiDV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemDichVu">
+      <soap:operation soapAction="http://tempuri.org/IDichVu_WCF/ThemDichVu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CapNhatDichVu">
+      <soap:operation soapAction="http://tempuri.org/IDichVu_WCF/CapNhatDichVu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaDichVu_byIDDichVu">
+      <soap:operation soapAction="http://tempuri.org/IDichVu_WCF/XoaDichVu_byIDDichVu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIDLoaiDV_byTenLoai">
+      <soap:operation soapAction="http://tempuri.org/IDichVu_WCF/GetIDLoaiDV_byTenLoai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIDDichVu_byTenDV">
+      <soap:operation soapAction="http://tempuri.org/IDichVu_WCF/GetIDDichVu_byTenDV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimKiemDichVu_byIDDichVu">
+      <soap:operation soapAction="http://tempuri.org/IDichVu_WCF/TimKiemDichVu_byIDDichVu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DichVu_WCF">
+    <wsdl:port name="BasicHttpBinding_IDichVu_WCF" binding="tns:BasicHttpBinding_IDichVu_WCF">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/DichVu_WCF/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
