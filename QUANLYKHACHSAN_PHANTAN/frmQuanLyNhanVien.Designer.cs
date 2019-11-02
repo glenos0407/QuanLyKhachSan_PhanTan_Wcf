@@ -138,7 +138,7 @@
             this.btnSuaNV.FlatAppearance.BorderSize = 0;
             this.btnSuaNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSuaNV.ForeColor = System.Drawing.Color.White;
-            this.btnSuaNV.Location = new System.Drawing.Point(0, 106);
+            this.btnSuaNV.Location = new System.Drawing.Point(0, 96);
             this.btnSuaNV.Margin = new System.Windows.Forms.Padding(15);
             this.btnSuaNV.Name = "btnSuaNV";
             this.btnSuaNV.Size = new System.Drawing.Size(138, 43);

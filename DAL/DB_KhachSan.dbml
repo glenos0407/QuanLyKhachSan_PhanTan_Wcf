@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="KhachSan_DB" Class="DB_KhachSanDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=THANHQUY\SQLEXPRESS;Initial Catalog=KhachSan_DB;Integrated Security=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="KhachSan_DBConnectionString4" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=GlenOrient;Initial Catalog=KhachSan_DB;Persist Security Info=True;User ID=sa" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="KhachSan_DBConnectionString3" Provider="System.Data.SqlClient" />
   <Table Name="dbo.DichVu" Member="DichVus">
     <Type Name="DichVu">
       <Column Name="id_DichVu" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -64,10 +64,10 @@
       <Column Name="soLuongDichVu" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="giam_gia" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="id_khach" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="id_DichVu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_DichVu" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="id_Phong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="id_NhanVien" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Association Name="DichVu_PhieuCheck_In" Member="DichVu" ThisKey="id_DichVu" OtherKey="id_DichVu" Type="DichVu" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="DichVu_PhieuCheck_In" Member="DichVu" ThisKey="id_DichVu" OtherKey="id_DichVu" Type="DichVu" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
       <Association Name="KhachHang_PhieuCheck_In" Member="KhachHang" ThisKey="id_khach" OtherKey="id_khach" Type="KhachHang" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
       <Association Name="NhanVien_PhieuCheck_In" Member="NhanVien" ThisKey="id_NhanVien" OtherKey="id_NhanVien" Type="NhanVien" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
       <Association Name="Phong_PhieuCheck_In" Member="Phong" ThisKey="id_Phong" OtherKey="id_Phong" Type="Phong" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />

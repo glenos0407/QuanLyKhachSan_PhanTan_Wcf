@@ -110,7 +110,7 @@
             this.dgv_DSPhong.Name = "dgv_DSPhong";
             this.dgv_DSPhong.ReadOnly = true;
             this.dgv_DSPhong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_DSPhong.Size = new System.Drawing.Size(750, 349);
+            this.dgv_DSPhong.Size = new System.Drawing.Size(813, 359);
             this.dgv_DSPhong.TabIndex = 16;
             // 
             // bindingNavigatorSeparator2
@@ -127,6 +127,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -139,11 +140,11 @@
             // 
             // btnReload
             // 
-            this.btnReload.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnReload.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
             this.btnReload.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnReload.FlatAppearance.BorderSize = 0;
             this.btnReload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReload.Location = new System.Drawing.Point(705, 0);
+            this.btnReload.Location = new System.Drawing.Point(768, 0);
             this.btnReload.Name = "btnReload";
             this.btnReload.Size = new System.Drawing.Size(45, 47);
             this.btnReload.TabIndex = 4;
@@ -161,7 +162,7 @@
             "Nhân Viên"});
             this.cbx_TinhTrang.Location = new System.Drawing.Point(472, 10);
             this.cbx_TinhTrang.Name = "cbx_TinhTrang";
-            this.cbx_TinhTrang.Size = new System.Drawing.Size(113, 36);
+            this.cbx_TinhTrang.Size = new System.Drawing.Size(113, 29);
             this.cbx_TinhTrang.TabIndex = 3;
             this.cbx_TinhTrang.SelectedIndexChanged += new System.EventHandler(this.cbx_TinhTrang_SelectedIndexChanged);
             // 
@@ -172,21 +173,21 @@
             this.cbx_Tang.FormattingEnabled = true;
             this.cbx_Tang.Location = new System.Drawing.Point(349, 10);
             this.cbx_Tang.Name = "cbx_Tang";
-            this.cbx_Tang.Size = new System.Drawing.Size(117, 36);
+            this.cbx_Tang.Size = new System.Drawing.Size(117, 29);
             this.cbx_Tang.TabIndex = 2;
             this.cbx_Tang.SelectedIndexChanged += new System.EventHandler(this.cbxTang_SelectedIndexChanged);
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(52, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(39, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
             // bn_DSPhong
             // 
             this.bn_DSPhong.AddNewItem = null;
-            this.bn_DSPhong.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.bn_DSPhong.BackColor = System.Drawing.SystemColors.Control;
             this.bn_DSPhong.CountItem = this.bindingNavigatorCountItem;
             this.bn_DSPhong.DeleteItem = null;
             this.bn_DSPhong.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -202,14 +203,14 @@
             this.bindingNavigatorMoveNextItem,
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2});
-            this.bn_DSPhong.Location = new System.Drawing.Point(0, 429);
+            this.bn_DSPhong.Location = new System.Drawing.Point(0, 439);
             this.bn_DSPhong.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bn_DSPhong.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.bn_DSPhong.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.bn_DSPhong.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bn_DSPhong.Name = "bn_DSPhong";
             this.bn_DSPhong.PositionItem = this.bindingNavigatorPositionItem;
-            this.bn_DSPhong.Size = new System.Drawing.Size(750, 27);
+            this.bn_DSPhong.Size = new System.Drawing.Size(813, 27);
             this.bn_DSPhong.TabIndex = 15;
             this.bn_DSPhong.Text = "bn_DSNhanVien";
             // 
@@ -227,7 +228,7 @@
             this.btnTimKiem.BackColor = System.Drawing.Color.DarkGreen;
             this.btnTimKiem.FlatAppearance.BorderSize = 0;
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.Location = new System.Drawing.Point(257, 10);
             this.btnTimKiem.Name = "btnTimKiem";
@@ -239,7 +240,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
             this.panel4.Controls.Add(this.cbx_LoaiPhong);
             this.panel4.Controls.Add(this.btnReload);
             this.panel4.Controls.Add(this.cbx_TinhTrang);
@@ -249,7 +250,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 33);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(750, 47);
+            this.panel4.Size = new System.Drawing.Size(813, 47);
             this.panel4.TabIndex = 14;
             // 
             // cbx_LoaiPhong
@@ -258,7 +259,7 @@
             this.cbx_LoaiPhong.FormattingEnabled = true;
             this.cbx_LoaiPhong.Location = new System.Drawing.Point(591, 10);
             this.cbx_LoaiPhong.Name = "cbx_LoaiPhong";
-            this.cbx_LoaiPhong.Size = new System.Drawing.Size(108, 33);
+            this.cbx_LoaiPhong.Size = new System.Drawing.Size(161, 28);
             this.cbx_LoaiPhong.TabIndex = 4;
             this.cbx_LoaiPhong.SelectedIndexChanged += new System.EventHandler(this.cbx_LoaiPhong_SelectedIndexChanged);
             // 
@@ -268,10 +269,11 @@
             "Lộc",
             "Đức"});
             this.txtTimKiem.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimKiem.ForeColor = System.Drawing.Color.DarkGray;
             this.txtTimKiem.Location = new System.Drawing.Point(12, 10);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(239, 30);
+            this.txtTimKiem.Size = new System.Drawing.Size(239, 29);
             this.txtTimKiem.TabIndex = 0;
             this.txtTimKiem.Text = "Tìm Kiếm theo Số Phòng";
             this.txtTimKiem.Enter += new System.EventHandler(this.txtTimKiem_Enter);
@@ -283,7 +285,7 @@
             this.btnXoa.FlatAppearance.BorderSize = 0;
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(0, 155);
+            this.btnXoa.Location = new System.Drawing.Point(0, 171);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(138, 43);
             this.btnXoa.TabIndex = 3;
@@ -297,7 +299,7 @@
             this.btnSua.FlatAppearance.BorderSize = 0;
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(0, 97);
+            this.btnSua.Location = new System.Drawing.Point(0, 98);
             this.btnSua.Margin = new System.Windows.Forms.Padding(15);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(138, 43);
@@ -313,7 +315,7 @@
             this.btnThem.FlatAppearance.BorderSize = 0;
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(0, 39);
+            this.btnThem.Location = new System.Drawing.Point(0, 47);
             this.btnThem.Margin = new System.Windows.Forms.Padding(15);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(138, 43);
@@ -327,20 +329,20 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(138, 39);
+            this.panel3.Size = new System.Drawing.Size(138, 47);
             this.panel3.TabIndex = 0;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
             this.panel2.Controls.Add(this.btnXoa);
             this.panel2.Controls.Add(this.btnSua);
             this.panel2.Controls.Add(this.btnThem);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(750, 33);
+            this.panel2.Location = new System.Drawing.Point(813, 33);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(138, 423);
+            this.panel2.Size = new System.Drawing.Size(138, 433);
             this.panel2.TabIndex = 13;
             // 
             // panel1
@@ -351,18 +353,18 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(888, 33);
+            this.panel1.Size = new System.Drawing.Size(951, 33);
             this.panel1.TabIndex = 12;
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(835, 33);
+            this.label1.Size = new System.Drawing.Size(898, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "Quản Lý Phòng Khách Sạn";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -375,7 +377,7 @@
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.Location = new System.Drawing.Point(835, 0);
+            this.btnThoat.Location = new System.Drawing.Point(898, 0);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(53, 33);
@@ -386,9 +388,10 @@
             // 
             // frmQuanLyPhong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(888, 456);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
+            this.ClientSize = new System.Drawing.Size(951, 466);
             this.Controls.Add(this.dgv_DSPhong);
             this.Controls.Add(this.bn_DSPhong);
             this.Controls.Add(this.panel4);

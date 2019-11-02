@@ -269,25 +269,24 @@
             // cmnstrp_NhanVien
             // 
             this.cmnstrp_NhanVien.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmnstrp_NhanVien.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmnstrp_NhanVien.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.QuanLyTaiKhoanToolStripMenuItem,
             this.DoiMatKhauToolStripMenuItem,
             this.DangXuatToolStripMenuItem});
             this.cmnstrp_NhanVien.Name = "cmnstrp_NhanVien";
-            this.cmnstrp_NhanVien.Size = new System.Drawing.Size(261, 100);
+            this.cmnstrp_NhanVien.Size = new System.Drawing.Size(216, 82);
             // 
             // QuanLyTaiKhoanToolStripMenuItem
             // 
             this.QuanLyTaiKhoanToolStripMenuItem.Name = "QuanLyTaiKhoanToolStripMenuItem";
-            this.QuanLyTaiKhoanToolStripMenuItem.Size = new System.Drawing.Size(260, 32);
+            this.QuanLyTaiKhoanToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
             this.QuanLyTaiKhoanToolStripMenuItem.Text = "Quản Lý Nhân Viên";
             this.QuanLyTaiKhoanToolStripMenuItem.Click += new System.EventHandler(this.QuanLyNhanVienToolStripMenuItem_Click);
             // 
             // DoiMatKhauToolStripMenuItem
             // 
             this.DoiMatKhauToolStripMenuItem.Name = "DoiMatKhauToolStripMenuItem";
-            this.DoiMatKhauToolStripMenuItem.Size = new System.Drawing.Size(260, 32);
+            this.DoiMatKhauToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
             this.DoiMatKhauToolStripMenuItem.Text = "Đổi Mật Khẩu";
             this.DoiMatKhauToolStripMenuItem.Click += new System.EventHandler(this.DoiMatKhauToolStripMenuItem_Click);
             // 
@@ -295,13 +294,13 @@
             // 
             this.DangXuatToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DangXuatToolStripMenuItem.Name = "DangXuatToolStripMenuItem";
-            this.DangXuatToolStripMenuItem.Size = new System.Drawing.Size(260, 32);
+            this.DangXuatToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
             this.DangXuatToolStripMenuItem.Text = "Đăng Xuất";
             this.DangXuatToolStripMenuItem.Click += new System.EventHandler(this.DangXuatToolStripMenuItem_Click);
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1101, 669);
             this.Controls.Add(this.pnl_SubForm);

@@ -82,6 +82,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
             this.panel3.Controls.Add(this.btnNhapLai);
             this.panel3.Controls.Add(this.btnHuy);
             this.panel3.Controls.Add(this.btnLuu);
@@ -110,12 +111,12 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(25, 232);
+            this.label8.Location = new System.Drawing.Point(44, 232);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 25);
+            this.label8.Size = new System.Drawing.Size(67, 20);
             this.label8.TabIndex = 20;
-            this.label8.Text = "Ghi chú";
+            this.label8.Text = "Ghi Chú";
             // 
             // txtGhiChu
             // 
@@ -131,12 +132,12 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(14, 170);
+            this.label7.Location = new System.Drawing.Point(37, 170);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 25);
+            this.label7.Size = new System.Drawing.Size(74, 20);
             this.label7.TabIndex = 18;
-            this.label7.Text = "Số người";
+            this.label7.Text = "Số Người";
             // 
             // cbx_SoNguoi
             // 
@@ -150,7 +151,7 @@
             "5"});
             this.cbx_SoNguoi.Location = new System.Drawing.Point(118, 170);
             this.cbx_SoNguoi.Name = "cbx_SoNguoi";
-            this.cbx_SoNguoi.Size = new System.Drawing.Size(369, 33);
+            this.cbx_SoNguoi.Size = new System.Drawing.Size(369, 28);
             this.cbx_SoNguoi.TabIndex = 17;
             // 
             // cbx_Tang
@@ -160,10 +161,11 @@
             this.cbx_Tang.Items.AddRange(new object[] {
             "1",
             "2",
-            "3"});
+            "3",
+            "4"});
             this.cbx_Tang.Location = new System.Drawing.Point(118, 121);
             this.cbx_Tang.Name = "cbx_Tang";
-            this.cbx_Tang.Size = new System.Drawing.Size(369, 33);
+            this.cbx_Tang.Size = new System.Drawing.Size(369, 28);
             this.cbx_Tang.TabIndex = 16;
             // 
             // cbx_LoaiPhong
@@ -177,7 +179,7 @@
             "Phòng VIP"});
             this.cbx_LoaiPhong.Location = new System.Drawing.Point(118, 76);
             this.cbx_LoaiPhong.Name = "cbx_LoaiPhong";
-            this.cbx_LoaiPhong.Size = new System.Drawing.Size(369, 33);
+            this.cbx_LoaiPhong.Size = new System.Drawing.Size(369, 28);
             this.cbx_LoaiPhong.TabIndex = 14;
             // 
             // txtSoPhong
@@ -185,7 +187,7 @@
             this.txtSoPhong.Location = new System.Drawing.Point(118, 37);
             this.txtSoPhong.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtSoPhong.Name = "txtSoPhong";
-            this.txtSoPhong.Size = new System.Drawing.Size(369, 30);
+            this.txtSoPhong.Size = new System.Drawing.Size(369, 26);
             this.txtSoPhong.TabIndex = 12;
             this.txtSoPhong.Text = "010";
             // 
@@ -193,32 +195,32 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(29, 37);
+            this.label6.Location = new System.Drawing.Point(32, 37);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 25);
+            this.label6.Size = new System.Drawing.Size(79, 20);
             this.label6.TabIndex = 13;
-            this.label6.Text = "Số phòng";
+            this.label6.Text = "Số Phòng";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(25, 79);
+            this.label2.Location = new System.Drawing.Point(22, 79);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 25);
+            this.label2.Size = new System.Drawing.Size(89, 20);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Loại phòng";
+            this.label2.Text = "Loại Phòng";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(41, 124);
+            this.label4.Location = new System.Drawing.Point(66, 124);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 25);
+            this.label4.Size = new System.Drawing.Size(45, 20);
             this.label4.TabIndex = 7;
             this.label4.Text = "Tầng";
             // 
@@ -266,7 +268,7 @@
             // 
             // frmTextPhong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(530, 462);
             this.Controls.Add(this.panel3);

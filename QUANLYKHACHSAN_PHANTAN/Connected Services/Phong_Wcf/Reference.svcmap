@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c3900a98-8053-4bbb-9f48-6bbd509333f2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a3033bb9-d6b1-4bf2-a551-56d1e1373a20" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,10 +22,10 @@
     <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/Phong_WCF/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="fbc4f93f-3c06-46d4-a815-d4e2cb07a74c" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/Phong_WCF/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="4107604b-ca53-4a53-92eb-5568b2f0ac7a" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/Phong_WCF/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="c78b7eea-a89a-4667-a920-a13820182800" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/Phong_WCF/mex" />
-    <MetadataFile FileName="Entities.xsd" MetadataType="Schema" ID="5553e4a4-43f2-40ea-86e8-bceb59b223b9" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/Phong_WCF/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="7c42272d-1b2b-4f71-acaa-e63bf2b0a40c" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/Phong_WCF/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="f3d557ff-7aa8-496d-a943-6c3c05ba8d96" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/Phong_WCF/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="100b9cde-7053-4c99-a379-a805524ca96b" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/Phong_WCF/mex" />
+    <MetadataFile FileName="Entities.xsd" MetadataType="Schema" ID="3bea56f0-1e29-4209-b93f-b970602315d5" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/Phong_WCF/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

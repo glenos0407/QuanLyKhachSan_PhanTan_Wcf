@@ -214,6 +214,13 @@ namespace QuanLyKhachSan_Wcf
 
         public bool ThemPhong(Phong_Ent phong_ent)
         {
+            Phong ph = db.Phongs.Where(n => n.so_Phong.Equals(phong_ent.So_Phong)).SingleOrDefault();
+            
+            if(ph != null)
+            {
+                return false;
+            }
+
             try
             {
                 Phong p = new Phong();

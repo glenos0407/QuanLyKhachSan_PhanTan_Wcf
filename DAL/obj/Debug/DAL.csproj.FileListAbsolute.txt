@@ -49,11 +49,3 @@ E:\WCF\QuanLyKhachSan_PhanTan_Wcf\DAL\bin\Debug\Entities.pdb
 E:\WCF\QuanLyKhachSan_PhanTan_Wcf\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 E:\WCF\QuanLyKhachSan_PhanTan_Wcf\DAL\obj\Debug\DAL.dll
 E:\WCF\QuanLyKhachSan_PhanTan_Wcf\DAL\obj\Debug\DAL.pdb
-E:\QuanLyKhachSan_PhanTan_Wcf\DAL\bin\Debug\DAL.dll.config
-E:\QuanLyKhachSan_PhanTan_Wcf\DAL\bin\Debug\DAL.dll
-E:\QuanLyKhachSan_PhanTan_Wcf\DAL\bin\Debug\DAL.pdb
-E:\QuanLyKhachSan_PhanTan_Wcf\DAL\bin\Debug\Entities.dll
-E:\QuanLyKhachSan_PhanTan_Wcf\DAL\bin\Debug\Entities.pdb
-E:\QuanLyKhachSan_PhanTan_Wcf\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-E:\QuanLyKhachSan_PhanTan_Wcf\DAL\obj\Debug\DAL.dll
-E:\QuanLyKhachSan_PhanTan_Wcf\DAL\obj\Debug\DAL.pdb

@@ -238,7 +238,7 @@ namespace QUANLYKHACHSAN_PHANTAN
 
         }
 
-        private void open_frmPhong()
+        private void open_frmQuanLyPhong()
         {
             this.pnl_SubForm.Controls.Clear();
 
@@ -254,7 +254,7 @@ namespace QUANLYKHACHSAN_PHANTAN
 
         private void btnPhong_Click(object sender, EventArgs e)
         {
-            open_frmPhong();
+            open_frmQuanLyPhong();
         }
     }
 }

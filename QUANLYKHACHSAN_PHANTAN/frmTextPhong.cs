@@ -233,7 +233,7 @@ namespace QUANLYKHACHSAN_PHANTAN
             
             if (p_wcf.ThemPhong(p_ent))
             {
-                DialogResult ds = MessageBox.Show("Lưu Thành Công, Tiếp Tục ?", "THÔNG BÁO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DialogResult ds = MessageBox.Show("Lưu Thành Công, Tiếp Tục ?", "THÔNG BÁO", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                 if (ds == DialogResult.Yes)
                 {
                     Clear_TextBox();
@@ -246,7 +246,7 @@ namespace QUANLYKHACHSAN_PHANTAN
             }
             else
             {
-                DialogResult ds = MessageBox.Show("Lưu Thất Bại, Thử Lại ?", "LỖI", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                DialogResult ds = MessageBox.Show("Lưu Thất Bại, Thử Lại ?", "Lỗi", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
                 if (ds == DialogResult.Yes)
                 {
                     return;
@@ -343,7 +343,7 @@ namespace QUANLYKHACHSAN_PHANTAN
             }
             else
             {
-                DialogResult ds = MessageBox.Show("Lưu Thất Bại, Thử Lại ?", "LỖI", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                DialogResult ds = MessageBox.Show("Lưu Thất Bại, Thử Lại ?", "Lỗi", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
                 if (ds == DialogResult.Yes)
                 {
                     return;

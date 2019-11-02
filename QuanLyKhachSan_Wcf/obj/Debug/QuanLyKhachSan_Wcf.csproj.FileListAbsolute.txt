@@ -20,13 +20,3 @@ E:\WCF\QuanLyKhachSan_PhanTan_Wcf\QuanLyKhachSan_Wcf\bin\Debug\Entities.pdb
 E:\WCF\QuanLyKhachSan_PhanTan_Wcf\QuanLyKhachSan_Wcf\obj\Debug\QuanLyKhachSan_Wcf.csprojResolveAssemblyReference.cache
 E:\WCF\QuanLyKhachSan_PhanTan_Wcf\QuanLyKhachSan_Wcf\obj\Debug\QuanLyKhachSan_Wcf.dll
 E:\WCF\QuanLyKhachSan_PhanTan_Wcf\QuanLyKhachSan_Wcf\obj\Debug\QuanLyKhachSan_Wcf.pdb
-E:\QuanLyKhachSan_PhanTan_Wcf\QuanLyKhachSan_Wcf\obj\Debug\QuanLyKhachSan_Wcf.csprojResolveAssemblyReference.cache
-E:\QuanLyKhachSan_PhanTan_Wcf\QuanLyKhachSan_Wcf\obj\Debug\QuanLyKhachSan_Wcf.dll
-E:\QuanLyKhachSan_PhanTan_Wcf\QuanLyKhachSan_Wcf\obj\Debug\QuanLyKhachSan_Wcf.pdb
-E:\QuanLyKhachSan_PhanTan_Wcf\QuanLyKhachSan_Wcf\bin\Debug\QuanLyKhachSan_Wcf.dll.config
-E:\QuanLyKhachSan_PhanTan_Wcf\QuanLyKhachSan_Wcf\bin\Debug\QuanLyKhachSan_Wcf.dll
-E:\QuanLyKhachSan_PhanTan_Wcf\QuanLyKhachSan_Wcf\bin\Debug\QuanLyKhachSan_Wcf.pdb
-E:\QuanLyKhachSan_PhanTan_Wcf\QuanLyKhachSan_Wcf\bin\Debug\DAL.dll
-E:\QuanLyKhachSan_PhanTan_Wcf\QuanLyKhachSan_Wcf\bin\Debug\Entities.dll
-E:\QuanLyKhachSan_PhanTan_Wcf\QuanLyKhachSan_Wcf\bin\Debug\DAL.pdb
-E:\QuanLyKhachSan_PhanTan_Wcf\QuanLyKhachSan_Wcf\bin\Debug\Entities.pdb

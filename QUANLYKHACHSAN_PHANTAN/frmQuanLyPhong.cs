@@ -116,32 +116,22 @@ namespace QUANLYKHACHSAN_PHANTAN
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            //if (dgv_DSPhong.SelectedRows.Count >= 1)
-            //{
-            //    Phong_WCFClient p_wcf;
-            //    Phong_Ent p_ent = new Phong_Ent();              
-            //    for (int i = 0; i < dgv_DSPhong.SelectedRows.Count; i++)
-            //    {
-            //        p_ent.Id_Phong = dgv_DSPhong.SelectedRows[i].Cells[1].Value.ToString().Trim();
-            //        p_wcf = new Phong_WCFClient();
-            //        if (!p_wcf.CapNhatPhong(p_ent))
-            //        {
-            //            break;
-            //        }
-            //    }
-            //    p_wcf = new Phong_WCFClient();
-            //    Loading_DSP(DataTable_DSP(p_wcf.GetPhongs().ToList()));
-            //    Custom_DataGridView(dgv_DSPhong);
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Chọn 1 Phòng Cần Sửa", "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            //    return;
-            //}
-            string idp = dgv_DSPhong.SelectedRows[0].Cells[1].Value.ToString().Trim();
-           // MessageBox.Show(idp);
-            frmTextPhong ftp = new frmTextPhong(this, "Sửa Phòng",idp);
-            ftp.ShowDialog();
+            if (dgv_DSPhong.SelectedRows.Count == 1)
+            {
+                Phong_WCFClient ph_wcf = new Phong_WCFClient();
+                int id = ph_wcf.getIDPhong(dgv_DSPhong.SelectedRows[0].Cells[1].Value.ToString().Trim());
+                frmTextPhong ftph = new frmTextPhong(this, "Sửa Nhân Viên", id.ToString());
+                ftph.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Chọn 1 Phòng Cần Sửa", "", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                return;
+            }
+            // string idp = dgv_DSPhong.SelectedRows[0].Cells[1].Value.ToString().Trim();
+            //// MessageBox.Show(idp);
+            // frmTextPhong ftp = new frmTextPhong(this, "Sửa Phòng",idp);
+            // ftp.ShowDialog();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -159,7 +149,7 @@ namespace QUANLYKHACHSAN_PHANTAN
 
                     for (int i = 0; i < dgv_DSPhong.SelectedRows.Count; i++)
                     {
-                        string id = dgv_DSPhong.SelectedRows[i].Cells[1].Value.ToString().Trim();
+                        string id = dgv_DSPhong.SelectedRows[i].Cells[0].Value.ToString().Trim();
                         p_wcf = new Phong_WCFClient();
                         if (!p_wcf.XoaPhong(id))
                         {

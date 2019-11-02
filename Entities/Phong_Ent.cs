@@ -116,18 +116,14 @@ namespace Entities
 
         public Phong_Ent()
         {
-
-        }
-
-        public Phong_Ent(int id_Phong, string id_loai_phong, string so_Phong, string ghi_chu, int tang, int so_luong_nguoi, string tinh_trang)
-        {
-            this.id_Phong = id_Phong;
+            this.Id_Phong = id_Phong;
             this.Id_loai_phong = id_loai_phong;
-            this.so_Phong = so_Phong;
-            this.ghi_chu = ghi_chu;
-            this.tang = tang;
-            this.so_luong_nguoi = so_luong_nguoi;
-            this.tinh_trang = tinh_trang;
+            this.So_Phong = so_Phong;
+            this.Ghi_chu = ghi_chu;
+            this.Tang = tang;
+            this.So_luong_nguoi = so_luong_nguoi;
+            this.Tinh_trang = tinh_trang;
         }
+       
     }
 }

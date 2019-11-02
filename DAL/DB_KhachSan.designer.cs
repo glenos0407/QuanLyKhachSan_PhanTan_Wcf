@@ -54,7 +54,7 @@ namespace DAL
     #endregion
 		
 		public DB_KhachSanDataContext() : 
-				base(global::DAL.Properties.Settings.Default.KhachSan_DBConnectionString4, mappingSource)
+				base(global::DAL.Properties.Settings.Default.KhachSan_DBConnectionString3, mappingSource)
 		{
 			OnCreated();
 		}
@@ -1183,7 +1183,7 @@ namespace DAL
 		
 		private int _id_khach;
 		
-		private System.Nullable<int> _id_DichVu;
+		private int _id_DichVu;
 		
 		private int _id_Phong;
 		
@@ -1219,7 +1219,7 @@ namespace DAL
     partial void Ongiam_giaChanged();
     partial void Onid_khachChanging(int value);
     partial void Onid_khachChanged();
-    partial void Onid_DichVuChanging(System.Nullable<int> value);
+    partial void Onid_DichVuChanging(int value);
     partial void Onid_DichVuChanged();
     partial void Onid_PhongChanging(int value);
     partial void Onid_PhongChanged();
@@ -1420,8 +1420,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_DichVu", DbType="Int")]
-		public System.Nullable<int> id_DichVu
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_DichVu", DbType="Int NOT NULL")]
+		public int id_DichVu
 		{
 			get
 			{
@@ -1492,7 +1492,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DichVu_PhieuCheck_In", Storage="_DichVu", ThisKey="id_DichVu", OtherKey="id_DichVu", IsForeignKey=true, DeleteRule="CASCADE")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DichVu_PhieuCheck_In", Storage="_DichVu", ThisKey="id_DichVu", OtherKey="id_DichVu", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
 		public DichVu DichVu
 		{
 			get
@@ -1519,7 +1519,7 @@ namespace DAL
 					}
 					else
 					{
-						this._id_DichVu = default(Nullable<int>);
+						this._id_DichVu = default(int);
 					}
 					this.SendPropertyChanged("DichVu");
 				}
