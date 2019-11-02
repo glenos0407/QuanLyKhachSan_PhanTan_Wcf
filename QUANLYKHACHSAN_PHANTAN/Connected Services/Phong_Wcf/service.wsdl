@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Phong_WCF" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Entities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPhong_WCF_GetPhongs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhongs" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_GetPhongs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhongsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_ThemPhong_InputMessage">
+    <wsdl:part name="parameters" element="tns:ThemPhong" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_ThemPhong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThemPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_CapNhatPhong_InputMessage">
+    <wsdl:part name="parameters" element="tns:CapNhatPhong" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_CapNhatPhong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CapNhatPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_XoaPhong_InputMessage">
+    <wsdl:part name="parameters" element="tns:XoaPhong" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_XoaPhong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:XoaPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_GetPhong_by_ID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhong_by_ID" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_GetPhong_by_ID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhong_by_IDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_SapXepTang_InputMessage">
+    <wsdl:part name="parameters" element="tns:SapXepTang" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_SapXepTang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SapXepTangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_SapXepTinhTrang_InputMessage">
+    <wsdl:part name="parameters" element="tns:SapXepTinhTrang" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_SapXepTinhTrang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SapXepTinhTrangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_SapXepLoaiPhong_InputMessage">
+    <wsdl:part name="parameters" element="tns:SapXepLoaiPhong" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_SapXepLoaiPhong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SapXepLoaiPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_Tim_Kiem_By_SoPhong_InputMessage">
+    <wsdl:part name="parameters" element="tns:Tim_Kiem_By_SoPhong" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_Tim_Kiem_By_SoPhong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Tim_Kiem_By_SoPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_PhongTrong_LoaiPhong_InputMessage">
+    <wsdl:part name="parameters" element="tns:PhongTrong_LoaiPhong" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_PhongTrong_LoaiPhong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PhongTrong_LoaiPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_DonGia_InputMessage">
+    <wsdl:part name="parameters" element="tns:DonGia" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_DonGia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DonGiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_getIDPhong_InputMessage">
+    <wsdl:part name="parameters" element="tns:getIDPhong" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_getIDPhong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getIDPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_getsoPhong_byID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getsoPhong_byID" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_getsoPhong_byID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getsoPhong_byIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPhong_WCF">
+    <wsdl:operation name="GetPhongs">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhong_WCF/GetPhongs" message="tns:IPhong_WCF_GetPhongs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhong_WCF/GetPhongsResponse" message="tns:IPhong_WCF_GetPhongs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ThemPhong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhong_WCF/ThemPhong" message="tns:IPhong_WCF_ThemPhong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhong_WCF/ThemPhongResponse" message="tns:IPhong_WCF_ThemPhong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CapNhatPhong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhong_WCF/CapNhatPhong" message="tns:IPhong_WCF_CapNhatPhong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhong_WCF/CapNhatPhongResponse" message="tns:IPhong_WCF_CapNhatPhong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="XoaPhong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhong_WCF/XoaPhong" message="tns:IPhong_WCF_XoaPhong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhong_WCF/XoaPhongResponse" message="tns:IPhong_WCF_XoaPhong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhong_by_ID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhong_WCF/GetPhong_by_ID" message="tns:IPhong_WCF_GetPhong_by_ID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhong_WCF/GetPhong_by_IDResponse" message="tns:IPhong_WCF_GetPhong_by_ID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SapXepTang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhong_WCF/SapXepTang" message="tns:IPhong_WCF_SapXepTang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhong_WCF/SapXepTangResponse" message="tns:IPhong_WCF_SapXepTang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SapXepTinhTrang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhong_WCF/SapXepTinhTrang" message="tns:IPhong_WCF_SapXepTinhTrang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhong_WCF/SapXepTinhTrangResponse" message="tns:IPhong_WCF_SapXepTinhTrang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SapXepLoaiPhong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhong_WCF/SapXepLoaiPhong" message="tns:IPhong_WCF_SapXepLoaiPhong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhong_WCF/SapXepLoaiPhongResponse" message="tns:IPhong_WCF_SapXepLoaiPhong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Tim_Kiem_By_SoPhong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhong_WCF/Tim_Kiem_By_SoPhong" message="tns:IPhong_WCF_Tim_Kiem_By_SoPhong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhong_WCF/Tim_Kiem_By_SoPhongResponse" message="tns:IPhong_WCF_Tim_Kiem_By_SoPhong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PhongTrong_LoaiPhong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhong_WCF/PhongTrong_LoaiPhong" message="tns:IPhong_WCF_PhongTrong_LoaiPhong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhong_WCF/PhongTrong_LoaiPhongResponse" message="tns:IPhong_WCF_PhongTrong_LoaiPhong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DonGia">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhong_WCF/DonGia" message="tns:IPhong_WCF_DonGia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhong_WCF/DonGiaResponse" message="tns:IPhong_WCF_DonGia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getIDPhong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhong_WCF/getIDPhong" message="tns:IPhong_WCF_getIDPhong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhong_WCF/getIDPhongResponse" message="tns:IPhong_WCF_getIDPhong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getsoPhong_byID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhong_WCF/getsoPhong_byID" message="tns:IPhong_WCF_getsoPhong_byID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhong_WCF/getsoPhong_byIDResponse" message="tns:IPhong_WCF_getsoPhong_byID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPhong_WCF" type="tns:IPhong_WCF">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPhongs">
+      <soap:operation soapAction="http://tempuri.org/IPhong_WCF/GetPhongs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ThemPhong">
+      <soap:operation soapAction="http://tempuri.org/IPhong_WCF/ThemPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CapNhatPhong">
+      <soap:operation soapAction="http://tempuri.org/IPhong_WCF/CapNhatPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XoaPhong">
+      <soap:operation soapAction="http://tempuri.org/IPhong_WCF/XoaPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhong_by_ID">
+      <soap:operation soapAction="http://tempuri.org/IPhong_WCF/GetPhong_by_ID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SapXepTang">
+      <soap:operation soapAction="http://tempuri.org/IPhong_WCF/SapXepTang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SapXepTinhTrang">
+      <soap:operation soapAction="http://tempuri.org/IPhong_WCF/SapXepTinhTrang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SapXepLoaiPhong">
+      <soap:operation soapAction="http://tempuri.org/IPhong_WCF/SapXepLoaiPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tim_Kiem_By_SoPhong">
+      <soap:operation soapAction="http://tempuri.org/IPhong_WCF/Tim_Kiem_By_SoPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PhongTrong_LoaiPhong">
+      <soap:operation soapAction="http://tempuri.org/IPhong_WCF/PhongTrong_LoaiPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DonGia">
+      <soap:operation soapAction="http://tempuri.org/IPhong_WCF/DonGia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getIDPhong">
+      <soap:operation soapAction="http://tempuri.org/IPhong_WCF/getIDPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getsoPhong_byID">
+      <soap:operation soapAction="http://tempuri.org/IPhong_WCF/getsoPhong_byID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Phong_WCF">
+    <wsdl:port name="BasicHttpBinding_IPhong_WCF" binding="tns:BasicHttpBinding_IPhong_WCF">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/QuanLyKhachSan_Wcf/Phong_WCF/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

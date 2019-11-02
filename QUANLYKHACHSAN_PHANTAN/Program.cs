@@ -16,7 +16,7 @@ namespace QUANLYKHACHSAN_PHANTAN
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMuaBanDichVu());
+            Application.Run(new frmLogin());
         }
     }
 }

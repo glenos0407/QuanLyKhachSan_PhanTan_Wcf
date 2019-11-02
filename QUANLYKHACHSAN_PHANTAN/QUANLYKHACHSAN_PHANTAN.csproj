@@ -68,6 +68,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\Phong_Wcf\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="frmMuaBanDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,11 +85,23 @@
     <Compile Include="frmQLDichVu.designer.cs">
       <DependentUpon>frmQLDichVu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQuanLyPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyPhong.designer.cs">
+      <DependentUpon>frmQuanLyPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTextDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmTextDichVu.designer.cs">
       <DependentUpon>frmTextDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTextPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTextPhong.designer.cs">
+      <DependentUpon>frmTextPhong.cs</DependentUpon>
     </Compile>
     <Compile Include="frmThongKe.cs">
       <SubType>Form</SubType>
@@ -122,12 +139,6 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmQLPhong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmQLPhong.Designer.cs">
-      <DependentUpon>frmQLPhong.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmQuanLyNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,8 +170,14 @@
     <EmbeddedResource Include="frmQLDichVu.resx">
       <DependentUpon>frmQLDichVu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyPhong.resx">
+      <DependentUpon>frmQuanLyPhong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTextDichVu.resx">
       <DependentUpon>frmTextDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTextPhong.resx">
+      <DependentUpon>frmTextPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThongKe.resx">
       <DependentUpon>frmThongKe.cs</DependentUpon>
@@ -179,9 +196,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmQLPhong.resx">
-      <DependentUpon>frmQLPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuanLyNhanVien.resx">
       <DependentUpon>frmQuanLyNhanVien.cs</DependentUpon>
@@ -257,6 +271,19 @@
     <None Include="Connected Services\NhanVien_Wcf\service1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\Phong_Wcf\Entities.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Phong_Wcf\QUANLYKHACHSAN_PHANTAN.Phong_Wcf.Phong_Ent.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\Phong_Wcf\service.wsdl" />
+    <None Include="Connected Services\Phong_Wcf\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\Phong_Wcf\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\DataSources\Entities.KhachHang_Ent.datasource" />
     <None Include="Properties\DataSources\Entities.NhanVien_Ent.datasource" />
     <None Include="Properties\Settings.settings">
@@ -286,6 +313,7 @@
     <WCFMetadataStorage Include="Connected Services\DichVu_Wcf\" />
     <WCFMetadataStorage Include="Connected Services\KhachHang_Wcf\" />
     <WCFMetadataStorage Include="Connected Services\NhanVien_Wcf\" />
+    <WCFMetadataStorage Include="Connected Services\Phong_Wcf\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\KhachHang_Wcf\configuration91.svcinfo" />
@@ -334,6 +362,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\DichVu_Wcf\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Phong_Wcf\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Phong_Wcf\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\Phong_Wcf\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

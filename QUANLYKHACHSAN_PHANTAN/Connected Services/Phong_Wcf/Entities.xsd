@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Entities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Entities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfPhong_Ent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Phong_Ent" nillable="true" type="tns:Phong_Ent" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPhong_Ent" nillable="true" type="tns:ArrayOfPhong_Ent" />
+  <xs:complexType name="Phong_Ent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ghi_chu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_Phong" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_loai_phong" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="So_Phong" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="So_luong_nguoi" type="xs:int" />
+      <xs:element minOccurs="0" name="Tang" type="xs:int" />
+      <xs:element minOccurs="0" name="Tinh_trang" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Phong_Ent" nillable="true" type="tns:Phong_Ent" />
+</xs:schema>

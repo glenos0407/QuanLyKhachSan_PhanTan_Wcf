@@ -28,3 +28,8 @@ C:\Users\GlenOrient\Desktop\QuanLyKhachSan_PhanTan_Wcf\Entities\bin\Debug\Entiti
 C:\Users\GlenOrient\Desktop\QuanLyKhachSan_PhanTan_Wcf\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
 C:\Users\GlenOrient\Desktop\QuanLyKhachSan_PhanTan_Wcf\Entities\obj\Debug\Entities.dll
 C:\Users\GlenOrient\Desktop\QuanLyKhachSan_PhanTan_Wcf\Entities\obj\Debug\Entities.pdb
+E:\QuanLyKhachSan_PhanTan_Wcf\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
+E:\QuanLyKhachSan_PhanTan_Wcf\Entities\obj\Debug\Entities.dll
+E:\QuanLyKhachSan_PhanTan_Wcf\Entities\obj\Debug\Entities.pdb
+E:\QuanLyKhachSan_PhanTan_Wcf\Entities\bin\Debug\Entities.dll
+E:\QuanLyKhachSan_PhanTan_Wcf\Entities\bin\Debug\Entities.pdb
