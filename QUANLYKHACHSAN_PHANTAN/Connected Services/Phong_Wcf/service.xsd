@@ -13,6 +13,20 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="GetIDPhong_by_SoPhong">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIDPhong_by_SoPhongResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetIDPhong_by_SoPhongResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="ThemPhong">
     <xs:complexType>
       <xs:sequence>
@@ -125,17 +139,17 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="PhongTrong_LoaiPhong">
+  <xs:element name="GetPhongTrong_byLoaiPhong">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="idLoaiPhong" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idLoaiPhong" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="PhongTrong_LoaiPhongResponse">
+  <xs:element name="GetPhongTrong_byLoaiPhongResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="PhongTrong_LoaiPhongResult" nillable="true" type="q9:ArrayOfPhong_Ent" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="GetPhongTrong_byLoaiPhongResult" nillable="true" type="q9:ArrayOfPhong_Ent" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -178,6 +192,50 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="getsoPhong_byIDResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TinhTienPhong">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idLoaiPhong" type="xs:int" />
+        <xs:element minOccurs="0" name="soNgay" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TinhTienPhongResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TinhTienPhongResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="update_TinhTrangPhong">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idPhong" type="xs:int" />
+        <xs:element minOccurs="0" name="trangThai" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="update_TinhTrangPhongResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="update_TinhTrangPhongResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTenLoaiPhong_by_IDLoai">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTenLoaiPhong_by_IDLoaiResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTenLoaiPhong_by_IDLoaiResult" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

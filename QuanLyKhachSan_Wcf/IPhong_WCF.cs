@@ -17,6 +17,9 @@ namespace QuanLyKhachSan_Wcf
         List<Phong_Ent> GetPhongs();
 
         [OperationContract]
+        int GetIDPhong_by_SoPhong(string sp);
+
+        [OperationContract]
         bool ThemPhong(Phong_Ent phong_ent);
 
         [OperationContract]
@@ -41,7 +44,7 @@ namespace QuanLyKhachSan_Wcf
         List<Phong_Ent> Tim_Kiem_By_SoPhong(string soPhong);
 
         [OperationContract]
-        List<Phong_Ent> PhongTrong_LoaiPhong(string idLoaiPhong);
+        List<Phong_Ent> GetPhongTrong_byLoaiPhong(int idLoaiPhong);
 
         [OperationContract]
         decimal DonGia(string id_LoaiPhong);
@@ -51,5 +54,14 @@ namespace QuanLyKhachSan_Wcf
 
         [OperationContract]
         string getsoPhong_byID(int id);
+
+        [OperationContract]
+        double TinhTienPhong(int idLoaiPhong, int soNgay);
+
+        [OperationContract]
+        bool update_TinhTrangPhong(int idPhong, int trangThai);
+
+        [OperationContract]
+        string GetTenLoaiPhong_by_IDLoai(int id);
     }
 }

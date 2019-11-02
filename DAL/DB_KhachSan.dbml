@@ -56,21 +56,22 @@
   <Table Name="dbo.PhieuCheck_In" Member="PhieuCheck_Ins">
     <Type Name="PhieuCheck_In">
       <Column Name="id_phieu_checkin" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="ngay_check_in" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="gio_check_in" Type="System.TimeSpan" DbType="Time NOT NULL" CanBeNull="false" />
-      <Column Name="ngay_check_out" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="gio_check_out" Type="System.TimeSpan" DbType="Time NOT NULL" CanBeNull="false" />
-      <Column Name="soLuongKhach" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ngay_check_in" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="gio_check_in" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="ngay_check_out" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="gio_check_out" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="soLuongKhach" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="soLuongDichVu" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="giam_gia" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="id_khach" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="id_DichVu" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="id_Phong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="id_NhanVien" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Association Name="DichVu_PhieuCheck_In" Member="DichVu" ThisKey="id_DichVu" OtherKey="id_DichVu" Type="DichVu" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
-      <Association Name="KhachHang_PhieuCheck_In" Member="KhachHang" ThisKey="id_khach" OtherKey="id_khach" Type="KhachHang" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
-      <Association Name="NhanVien_PhieuCheck_In" Member="NhanVien" ThisKey="id_NhanVien" OtherKey="id_NhanVien" Type="NhanVien" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
-      <Association Name="Phong_PhieuCheck_In" Member="Phong" ThisKey="id_Phong" OtherKey="id_Phong" Type="Phong" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Column Name="TrangThaiPhieuCK" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_khach" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_DichVu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_Phong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_NhanVien" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="DichVu_PhieuCheck_In" Member="DichVu" ThisKey="id_DichVu" OtherKey="id_DichVu" Type="DichVu" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="KhachHang_PhieuCheck_In" Member="KhachHang" ThisKey="id_khach" OtherKey="id_khach" Type="KhachHang" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="NhanVien_PhieuCheck_In" Member="NhanVien" ThisKey="id_NhanVien" OtherKey="id_NhanVien" Type="NhanVien" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="Phong_PhieuCheck_In" Member="Phong" ThisKey="id_Phong" OtherKey="id_Phong" Type="Phong" IsForeignKey="true" DeleteRule="CASCADE" />
     </Type>
   </Table>
   <Table Name="dbo.Phong" Member="Phongs">

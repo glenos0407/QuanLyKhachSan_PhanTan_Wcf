@@ -56,6 +56,7 @@ namespace QUANLYKHACHSAN_PHANTAN
             this.btnBaoCao.Image = imgs_Button.Images[5];
             this.btnPhong.Image = imgs_Button.Images[6];
             this.btnDichVu.Image = imgs_Button.Images[7];
+            this.btnDatDichVu.Image = imgs_Button.Images[8];
 
             ////Loading Background Image MainForm
             //this.pnl_SubForm.BackgroundImage = Resource_Img.bg_lobbyHotel;
@@ -69,6 +70,8 @@ namespace QUANLYKHACHSAN_PHANTAN
 
             this.lbAccount.Text = "Xin Chào, " + nv_wcf.GetHoTen_NhanVien(Id_nhanvien);
             this.btnCheckOut.Visible = false;
+
+            open_frmDatPhong();
         }
 
         private void btnShowMenu_Click(object sender, EventArgs e)
@@ -199,7 +202,7 @@ namespace QUANLYKHACHSAN_PHANTAN
         {
             this.pnl_SubForm.Controls.Clear();
 
-            frmDatPhong fdp = new frmDatPhong();
+            frmDatPhong fdp = new frmDatPhong(Id_nhanvien);
             fdp.FormBorderStyle = FormBorderStyle.None;
             fdp.TopLevel = false;
             fdp.Dock = DockStyle.Fill;
@@ -255,6 +258,12 @@ namespace QUANLYKHACHSAN_PHANTAN
         private void btnPhong_Click(object sender, EventArgs e)
         {
             open_frmQuanLyPhong();
+        }
+
+        private void btnDatDichVu_Click(object sender, EventArgs e)
+        {
+            frmMuaBanDichVu frmMua = new frmMuaBanDichVu(Id_nhanvien);
+            frmMua.ShowDialog();
         }
     }
 }

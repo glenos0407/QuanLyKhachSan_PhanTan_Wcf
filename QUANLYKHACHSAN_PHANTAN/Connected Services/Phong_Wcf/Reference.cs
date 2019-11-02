@@ -164,6 +164,12 @@ namespace QUANLYKHACHSAN_PHANTAN.Phong_Wcf {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/GetPhongs", ReplyAction="http://tempuri.org/IPhong_WCF/GetPhongsResponse")]
         System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.Phong_Wcf.Phong_Ent[]> GetPhongsAsync();
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/GetIDPhong_by_SoPhong", ReplyAction="http://tempuri.org/IPhong_WCF/GetIDPhong_by_SoPhongResponse")]
+        int GetIDPhong_by_SoPhong(string sp);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/GetIDPhong_by_SoPhong", ReplyAction="http://tempuri.org/IPhong_WCF/GetIDPhong_by_SoPhongResponse")]
+        System.Threading.Tasks.Task<int> GetIDPhong_by_SoPhongAsync(string sp);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/ThemPhong", ReplyAction="http://tempuri.org/IPhong_WCF/ThemPhongResponse")]
         bool ThemPhong(QUANLYKHACHSAN_PHANTAN.Phong_Wcf.Phong_Ent phong_ent);
         
@@ -212,11 +218,11 @@ namespace QUANLYKHACHSAN_PHANTAN.Phong_Wcf {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/Tim_Kiem_By_SoPhong", ReplyAction="http://tempuri.org/IPhong_WCF/Tim_Kiem_By_SoPhongResponse")]
         System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.Phong_Wcf.Phong_Ent[]> Tim_Kiem_By_SoPhongAsync(string soPhong);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/PhongTrong_LoaiPhong", ReplyAction="http://tempuri.org/IPhong_WCF/PhongTrong_LoaiPhongResponse")]
-        QUANLYKHACHSAN_PHANTAN.Phong_Wcf.Phong_Ent[] PhongTrong_LoaiPhong(string idLoaiPhong);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/GetPhongTrong_byLoaiPhong", ReplyAction="http://tempuri.org/IPhong_WCF/GetPhongTrong_byLoaiPhongResponse")]
+        QUANLYKHACHSAN_PHANTAN.Phong_Wcf.Phong_Ent[] GetPhongTrong_byLoaiPhong(int idLoaiPhong);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/PhongTrong_LoaiPhong", ReplyAction="http://tempuri.org/IPhong_WCF/PhongTrong_LoaiPhongResponse")]
-        System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.Phong_Wcf.Phong_Ent[]> PhongTrong_LoaiPhongAsync(string idLoaiPhong);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/GetPhongTrong_byLoaiPhong", ReplyAction="http://tempuri.org/IPhong_WCF/GetPhongTrong_byLoaiPhongResponse")]
+        System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.Phong_Wcf.Phong_Ent[]> GetPhongTrong_byLoaiPhongAsync(int idLoaiPhong);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/DonGia", ReplyAction="http://tempuri.org/IPhong_WCF/DonGiaResponse")]
         decimal DonGia(string id_LoaiPhong);
@@ -235,6 +241,24 @@ namespace QUANLYKHACHSAN_PHANTAN.Phong_Wcf {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/getsoPhong_byID", ReplyAction="http://tempuri.org/IPhong_WCF/getsoPhong_byIDResponse")]
         System.Threading.Tasks.Task<string> getsoPhong_byIDAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/TinhTienPhong", ReplyAction="http://tempuri.org/IPhong_WCF/TinhTienPhongResponse")]
+        double TinhTienPhong(int idLoaiPhong, int soNgay);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/TinhTienPhong", ReplyAction="http://tempuri.org/IPhong_WCF/TinhTienPhongResponse")]
+        System.Threading.Tasks.Task<double> TinhTienPhongAsync(int idLoaiPhong, int soNgay);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/update_TinhTrangPhong", ReplyAction="http://tempuri.org/IPhong_WCF/update_TinhTrangPhongResponse")]
+        bool update_TinhTrangPhong(int idPhong, int trangThai);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/update_TinhTrangPhong", ReplyAction="http://tempuri.org/IPhong_WCF/update_TinhTrangPhongResponse")]
+        System.Threading.Tasks.Task<bool> update_TinhTrangPhongAsync(int idPhong, int trangThai);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/GetTenLoaiPhong_by_IDLoai", ReplyAction="http://tempuri.org/IPhong_WCF/GetTenLoaiPhong_by_IDLoaiResponse")]
+        string GetTenLoaiPhong_by_IDLoai(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/GetTenLoaiPhong_by_IDLoai", ReplyAction="http://tempuri.org/IPhong_WCF/GetTenLoaiPhong_by_IDLoaiResponse")]
+        System.Threading.Tasks.Task<string> GetTenLoaiPhong_by_IDLoaiAsync(int id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -270,6 +294,14 @@ namespace QUANLYKHACHSAN_PHANTAN.Phong_Wcf {
         
         public System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.Phong_Wcf.Phong_Ent[]> GetPhongsAsync() {
             return base.Channel.GetPhongsAsync();
+        }
+        
+        public int GetIDPhong_by_SoPhong(string sp) {
+            return base.Channel.GetIDPhong_by_SoPhong(sp);
+        }
+        
+        public System.Threading.Tasks.Task<int> GetIDPhong_by_SoPhongAsync(string sp) {
+            return base.Channel.GetIDPhong_by_SoPhongAsync(sp);
         }
         
         public bool ThemPhong(QUANLYKHACHSAN_PHANTAN.Phong_Wcf.Phong_Ent phong_ent) {
@@ -336,12 +368,12 @@ namespace QUANLYKHACHSAN_PHANTAN.Phong_Wcf {
             return base.Channel.Tim_Kiem_By_SoPhongAsync(soPhong);
         }
         
-        public QUANLYKHACHSAN_PHANTAN.Phong_Wcf.Phong_Ent[] PhongTrong_LoaiPhong(string idLoaiPhong) {
-            return base.Channel.PhongTrong_LoaiPhong(idLoaiPhong);
+        public QUANLYKHACHSAN_PHANTAN.Phong_Wcf.Phong_Ent[] GetPhongTrong_byLoaiPhong(int idLoaiPhong) {
+            return base.Channel.GetPhongTrong_byLoaiPhong(idLoaiPhong);
         }
         
-        public System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.Phong_Wcf.Phong_Ent[]> PhongTrong_LoaiPhongAsync(string idLoaiPhong) {
-            return base.Channel.PhongTrong_LoaiPhongAsync(idLoaiPhong);
+        public System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.Phong_Wcf.Phong_Ent[]> GetPhongTrong_byLoaiPhongAsync(int idLoaiPhong) {
+            return base.Channel.GetPhongTrong_byLoaiPhongAsync(idLoaiPhong);
         }
         
         public decimal DonGia(string id_LoaiPhong) {
@@ -366,6 +398,30 @@ namespace QUANLYKHACHSAN_PHANTAN.Phong_Wcf {
         
         public System.Threading.Tasks.Task<string> getsoPhong_byIDAsync(int id) {
             return base.Channel.getsoPhong_byIDAsync(id);
+        }
+        
+        public double TinhTienPhong(int idLoaiPhong, int soNgay) {
+            return base.Channel.TinhTienPhong(idLoaiPhong, soNgay);
+        }
+        
+        public System.Threading.Tasks.Task<double> TinhTienPhongAsync(int idLoaiPhong, int soNgay) {
+            return base.Channel.TinhTienPhongAsync(idLoaiPhong, soNgay);
+        }
+        
+        public bool update_TinhTrangPhong(int idPhong, int trangThai) {
+            return base.Channel.update_TinhTrangPhong(idPhong, trangThai);
+        }
+        
+        public System.Threading.Tasks.Task<bool> update_TinhTrangPhongAsync(int idPhong, int trangThai) {
+            return base.Channel.update_TinhTrangPhongAsync(idPhong, trangThai);
+        }
+        
+        public string GetTenLoaiPhong_by_IDLoai(int id) {
+            return base.Channel.GetTenLoaiPhong_by_IDLoai(id);
+        }
+        
+        public System.Threading.Tasks.Task<string> GetTenLoaiPhong_by_IDLoaiAsync(int id) {
+            return base.Channel.GetTenLoaiPhong_by_IDLoaiAsync(id);
         }
     }
 }

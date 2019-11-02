@@ -179,5 +179,31 @@ namespace QuanLyKhachSan_Wcf
             }
             return kh_ents;
         }
+
+        public string getTenKhacHang_byID(int id)
+        {
+            KhachHang kh = db.KhachHangs.Where(n => n.id_khach == id).SingleOrDefault();
+            
+            if (kh == null)
+
+            {
+                return "";
+            }
+
+            return kh.ten;
+        }
+
+        public string getHoKhacHang_byID(int id)
+        {
+            KhachHang kh = db.KhachHangs.Where(n => n.id_khach == id).SingleOrDefault();
+            
+            if(kh == null)
+            
+            {
+                return "";
+            }
+
+            return kh.ho;
+        }
     }
 }

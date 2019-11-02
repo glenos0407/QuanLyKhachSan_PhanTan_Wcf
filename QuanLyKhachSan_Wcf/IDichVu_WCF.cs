@@ -43,5 +43,8 @@ namespace QuanLyKhachSan_Wcf
 
         [OperationContract]
         List<DichVu_Ent> TimKiemDichVu_byIDDichVu(int IDDichVu);
+
+        [OperationContract]
+        string GetTenDichVu_byIdDichVu(int idDV);
     }
 }

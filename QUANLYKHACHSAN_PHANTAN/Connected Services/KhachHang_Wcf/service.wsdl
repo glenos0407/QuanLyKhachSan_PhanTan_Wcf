@@ -37,6 +37,18 @@
   <wsdl:message name="IKhachHang_WCF_GetKhachHang_byCMND_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetKhachHang_byCMNDResponse" />
   </wsdl:message>
+  <wsdl:message name="IKhachHang_WCF_getTenKhacHang_byID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTenKhacHang_byID" />
+  </wsdl:message>
+  <wsdl:message name="IKhachHang_WCF_getTenKhacHang_byID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTenKhacHang_byIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKhachHang_WCF_getHoKhacHang_byID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getHoKhacHang_byID" />
+  </wsdl:message>
+  <wsdl:message name="IKhachHang_WCF_getHoKhacHang_byID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getHoKhacHang_byIDResponse" />
+  </wsdl:message>
   <wsdl:portType name="IKhachHang_WCF">
     <wsdl:operation name="GetKhachHangs">
       <wsdl:input wsaw:Action="http://tempuri.org/IKhachHang_WCF/GetKhachHangs" message="tns:IKhachHang_WCF_GetKhachHangs_InputMessage" />
@@ -57,6 +69,14 @@
     <wsdl:operation name="GetKhachHang_byCMND">
       <wsdl:input wsaw:Action="http://tempuri.org/IKhachHang_WCF/GetKhachHang_byCMND" message="tns:IKhachHang_WCF_GetKhachHang_byCMND_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IKhachHang_WCF/GetKhachHang_byCMNDResponse" message="tns:IKhachHang_WCF_GetKhachHang_byCMND_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTenKhacHang_byID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKhachHang_WCF/getTenKhacHang_byID" message="tns:IKhachHang_WCF_getTenKhacHang_byID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKhachHang_WCF/getTenKhacHang_byIDResponse" message="tns:IKhachHang_WCF_getTenKhacHang_byID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getHoKhacHang_byID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IKhachHang_WCF/getHoKhacHang_byID" message="tns:IKhachHang_WCF_getHoKhacHang_byID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IKhachHang_WCF/getHoKhacHang_byIDResponse" message="tns:IKhachHang_WCF_getHoKhacHang_byID_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IKhachHang_WCF" type="tns:IKhachHang_WCF">
@@ -99,6 +119,24 @@
     </wsdl:operation>
     <wsdl:operation name="GetKhachHang_byCMND">
       <soap:operation soapAction="http://tempuri.org/IKhachHang_WCF/GetKhachHang_byCMND" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTenKhacHang_byID">
+      <soap:operation soapAction="http://tempuri.org/IKhachHang_WCF/getTenKhacHang_byID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getHoKhacHang_byID">
+      <soap:operation soapAction="http://tempuri.org/IKhachHang_WCF/getHoKhacHang_byID" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

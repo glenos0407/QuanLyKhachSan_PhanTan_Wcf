@@ -98,6 +98,30 @@ namespace QuanLyKhachSan_Wcf
             return p_ent;
         }
 
+        public int GetIDPhong_by_SoPhong(string sp)
+        {
+            Phong p = db.Phongs.Where(n => n.so_Phong.Equals(sp)).SingleOrDefault();
+
+            if (p != null)
+            {
+                return p.id_Phong;
+            }
+            
+            return 0;
+        }
+
+        public string GetTenLoaiPhong_by_IDLoai(int id)
+        {
+            Phong ph = db.Phongs.Where(n=>n.id_Phong == id).SingleOrDefault();
+            LoaiPhong p = db.LoaiPhongs.Where(n => n.id_loai_phong == ph.id_loai_phong).SingleOrDefault();
+
+            if (p != null)
+            {
+                return p.ten_loai_phong;
+            }
+            return "";
+        }
+
         public List<Phong_Ent> SapXepTang(int Tang)
         {
             List<Phong_Ent> p_ents = new List<Phong_Ent>();
@@ -292,15 +316,12 @@ namespace QuanLyKhachSan_Wcf
             return p_ents;
         }
 
-        public List<Phong_Ent> PhongTrong_LoaiPhong(string idLoaiPhong)
+        public List<Phong_Ent> GetPhongTrong_byLoaiPhong(int idLoaiPhong)
         {
             List<Phong_Ent> p_ents = new List<Phong_Ent>();
-            string temp = "";
-            if (idLoaiPhong.Equals("Phòng Standard")) temp = "1";
-            if (idLoaiPhong.Equals("Phòng Deluxe")) temp = "2";
-            if (idLoaiPhong.Equals("Phòng Express View")) temp = "3";
-            if (idLoaiPhong.Equals("Phòng VIP")) temp = "4";
-            IQueryable phongs = db.Phongs.Where(n => n.id_loai_phong == Convert.ToInt32(temp) && n.tinh_trang == 0);
+
+            IQueryable phongs = db.Phongs.Where(n => n.id_loai_phong == Convert.ToInt32(idLoaiPhong) && n.tinh_trang == 0);
+
             if (phongs != null)
             {
                 foreach (Phong p in phongs)
@@ -345,6 +366,32 @@ namespace QuanLyKhachSan_Wcf
         {
             Phong p = db.Phongs.Where(n => n.id_Phong == id).SingleOrDefault();
             return p.so_Phong;
+        }
+
+        public double TinhTienPhong(int idLoaiPhong, int soNgay)
+        {
+            double GiaPhong = db.LoaiPhongs.Where(n => n.id_loai_phong == idLoaiPhong).SingleOrDefault().gia_loai_phong;
+
+            return GiaPhong*soNgay;
+        }
+
+        //0: Trống; 1: Có Khách
+        public bool update_TinhTrangPhong(int idPhong, int trangThai)
+        {
+            Phong ph = db.Phongs.Where(n => n.id_Phong == idPhong).SingleOrDefault();
+
+            try
+            {
+                ph.tinh_trang = trangThai;
+
+                db.SubmitChanges();
+            }
+            catch
+            {
+                return false;
+            }
+
+            return true;
         }
     }
 }

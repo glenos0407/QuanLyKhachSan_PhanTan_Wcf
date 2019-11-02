@@ -16,7 +16,9 @@ namespace QUANLYKHACHSAN_PHANTAN
         string lb_TitleName;
         KhachHang_Ent khach;
         int kieuForm;
+        bool isShortCutCreate = false;//Lưu Trạng Thái Nếu Có Tham Chiếu Đến Form Này Không Trực Tiếp Từ Form Quản Lý Khách Hàng
         frmQLKhachHang frmQLKH;
+        frmDatPhong frmDPh;
         
         public string Lb_TitleName
         {
@@ -79,6 +81,18 @@ namespace QUANLYKHACHSAN_PHANTAN
             KieuForm = 2;
             this.Size = new Size(664, 389);
             frmQLKH = fql;
+        }
+
+        //Mở frmTextKhachHang qua Lối Tắt từ Form Đặt Phòng
+        public frmTextKhachHang(frmDatPhong fdph, string title)
+        {
+            InitializeComponent();
+            isShortCutCreate = true;
+            this.Text = "Thêm Khách Hàng";
+            Lb_TitleName = title;
+            KieuForm = 1;
+            this.Size = new Size(664, 389);
+            frmDPh = fdph;
         }
 
         public frmTextKhachHang()
@@ -261,6 +275,11 @@ namespace QUANLYKHACHSAN_PHANTAN
 
         private void frmTextKhachHang_FormClosing(object sender, FormClosingEventArgs e)
         {
+            if(isShortCutCreate)
+            {
+                return;
+            }
+
             KhachHang_WCFClient kh_wcf = new KhachHang_WCFClient();
             frmQLKH.Loading_DSKH(frmQLKH.DataTable_DSKH(kh_wcf.GetKhachHangs().ToList()));
             frmQLKH.Custom_DataGridView(frmQLKH.dgv_DSKhachHang);

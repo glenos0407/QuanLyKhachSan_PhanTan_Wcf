@@ -1167,27 +1167,29 @@ namespace DAL
 		
 		private int _id_phieu_checkin;
 		
-		private System.DateTime _ngay_check_in;
+		private System.Nullable<System.DateTime> _ngay_check_in;
 		
-		private System.TimeSpan _gio_check_in;
+		private System.Nullable<System.TimeSpan> _gio_check_in;
 		
-		private System.DateTime _ngay_check_out;
+		private System.Nullable<System.DateTime> _ngay_check_out;
 		
-		private System.TimeSpan _gio_check_out;
+		private System.Nullable<System.TimeSpan> _gio_check_out;
 		
-		private int _soLuongKhach;
+		private System.Nullable<int> _soLuongKhach;
 		
 		private System.Nullable<int> _soLuongDichVu;
 		
 		private System.Nullable<double> _giam_gia;
 		
-		private int _id_khach;
+		private System.Nullable<int> _TrangThaiPhieuCK;
 		
-		private int _id_DichVu;
+		private System.Nullable<int> _id_khach;
 		
-		private int _id_Phong;
+		private System.Nullable<int> _id_DichVu;
 		
-		private int _id_NhanVien;
+		private System.Nullable<int> _id_Phong;
+		
+		private System.Nullable<int> _id_NhanVien;
 		
 		private EntityRef<DichVu> _DichVu;
 		
@@ -1203,27 +1205,29 @@ namespace DAL
     partial void OnCreated();
     partial void Onid_phieu_checkinChanging(int value);
     partial void Onid_phieu_checkinChanged();
-    partial void Onngay_check_inChanging(System.DateTime value);
+    partial void Onngay_check_inChanging(System.Nullable<System.DateTime> value);
     partial void Onngay_check_inChanged();
-    partial void Ongio_check_inChanging(System.TimeSpan value);
+    partial void Ongio_check_inChanging(System.Nullable<System.TimeSpan> value);
     partial void Ongio_check_inChanged();
-    partial void Onngay_check_outChanging(System.DateTime value);
+    partial void Onngay_check_outChanging(System.Nullable<System.DateTime> value);
     partial void Onngay_check_outChanged();
-    partial void Ongio_check_outChanging(System.TimeSpan value);
+    partial void Ongio_check_outChanging(System.Nullable<System.TimeSpan> value);
     partial void Ongio_check_outChanged();
-    partial void OnsoLuongKhachChanging(int value);
+    partial void OnsoLuongKhachChanging(System.Nullable<int> value);
     partial void OnsoLuongKhachChanged();
     partial void OnsoLuongDichVuChanging(System.Nullable<int> value);
     partial void OnsoLuongDichVuChanged();
     partial void Ongiam_giaChanging(System.Nullable<double> value);
     partial void Ongiam_giaChanged();
-    partial void Onid_khachChanging(int value);
+    partial void OnTrangThaiPhieuCKChanging(System.Nullable<int> value);
+    partial void OnTrangThaiPhieuCKChanged();
+    partial void Onid_khachChanging(System.Nullable<int> value);
     partial void Onid_khachChanged();
-    partial void Onid_DichVuChanging(int value);
+    partial void Onid_DichVuChanging(System.Nullable<int> value);
     partial void Onid_DichVuChanged();
-    partial void Onid_PhongChanging(int value);
+    partial void Onid_PhongChanging(System.Nullable<int> value);
     partial void Onid_PhongChanged();
-    partial void Onid_NhanVienChanging(int value);
+    partial void Onid_NhanVienChanging(System.Nullable<int> value);
     partial void Onid_NhanVienChanged();
     #endregion
 		
@@ -1256,8 +1260,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngay_check_in", DbType="Date NOT NULL")]
-		public System.DateTime ngay_check_in
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngay_check_in", DbType="Date")]
+		public System.Nullable<System.DateTime> ngay_check_in
 		{
 			get
 			{
@@ -1276,8 +1280,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_gio_check_in", DbType="Time NOT NULL")]
-		public System.TimeSpan gio_check_in
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_gio_check_in", DbType="Time")]
+		public System.Nullable<System.TimeSpan> gio_check_in
 		{
 			get
 			{
@@ -1296,8 +1300,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngay_check_out", DbType="Date NOT NULL")]
-		public System.DateTime ngay_check_out
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngay_check_out", DbType="Date")]
+		public System.Nullable<System.DateTime> ngay_check_out
 		{
 			get
 			{
@@ -1316,8 +1320,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_gio_check_out", DbType="Time NOT NULL")]
-		public System.TimeSpan gio_check_out
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_gio_check_out", DbType="Time")]
+		public System.Nullable<System.TimeSpan> gio_check_out
 		{
 			get
 			{
@@ -1336,8 +1340,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_soLuongKhach", DbType="Int NOT NULL")]
-		public int soLuongKhach
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_soLuongKhach", DbType="Int")]
+		public System.Nullable<int> soLuongKhach
 		{
 			get
 			{
@@ -1396,8 +1400,28 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_khach", DbType="Int NOT NULL")]
-		public int id_khach
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TrangThaiPhieuCK", DbType="Int")]
+		public System.Nullable<int> TrangThaiPhieuCK
+		{
+			get
+			{
+				return this._TrangThaiPhieuCK;
+			}
+			set
+			{
+				if ((this._TrangThaiPhieuCK != value))
+				{
+					this.OnTrangThaiPhieuCKChanging(value);
+					this.SendPropertyChanging();
+					this._TrangThaiPhieuCK = value;
+					this.SendPropertyChanged("TrangThaiPhieuCK");
+					this.OnTrangThaiPhieuCKChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_khach", DbType="Int")]
+		public System.Nullable<int> id_khach
 		{
 			get
 			{
@@ -1420,8 +1444,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_DichVu", DbType="Int NOT NULL")]
-		public int id_DichVu
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_DichVu", DbType="Int")]
+		public System.Nullable<int> id_DichVu
 		{
 			get
 			{
@@ -1444,8 +1468,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_Phong", DbType="Int NOT NULL")]
-		public int id_Phong
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_Phong", DbType="Int")]
+		public System.Nullable<int> id_Phong
 		{
 			get
 			{
@@ -1468,8 +1492,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_NhanVien", DbType="Int NOT NULL")]
-		public int id_NhanVien
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_NhanVien", DbType="Int")]
+		public System.Nullable<int> id_NhanVien
 		{
 			get
 			{
@@ -1492,7 +1516,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DichVu_PhieuCheck_In", Storage="_DichVu", ThisKey="id_DichVu", OtherKey="id_DichVu", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DichVu_PhieuCheck_In", Storage="_DichVu", ThisKey="id_DichVu", OtherKey="id_DichVu", IsForeignKey=true, DeleteRule="CASCADE")]
 		public DichVu DichVu
 		{
 			get
@@ -1519,14 +1543,14 @@ namespace DAL
 					}
 					else
 					{
-						this._id_DichVu = default(int);
+						this._id_DichVu = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("DichVu");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhachHang_PhieuCheck_In", Storage="_KhachHang", ThisKey="id_khach", OtherKey="id_khach", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhachHang_PhieuCheck_In", Storage="_KhachHang", ThisKey="id_khach", OtherKey="id_khach", IsForeignKey=true, DeleteRule="CASCADE")]
 		public KhachHang KhachHang
 		{
 			get
@@ -1553,14 +1577,14 @@ namespace DAL
 					}
 					else
 					{
-						this._id_khach = default(int);
+						this._id_khach = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("KhachHang");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NhanVien_PhieuCheck_In", Storage="_NhanVien", ThisKey="id_NhanVien", OtherKey="id_NhanVien", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NhanVien_PhieuCheck_In", Storage="_NhanVien", ThisKey="id_NhanVien", OtherKey="id_NhanVien", IsForeignKey=true, DeleteRule="CASCADE")]
 		public NhanVien NhanVien
 		{
 			get
@@ -1587,14 +1611,14 @@ namespace DAL
 					}
 					else
 					{
-						this._id_NhanVien = default(int);
+						this._id_NhanVien = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("NhanVien");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Phong_PhieuCheck_In", Storage="_Phong", ThisKey="id_Phong", OtherKey="id_Phong", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Phong_PhieuCheck_In", Storage="_Phong", ThisKey="id_Phong", OtherKey="id_Phong", IsForeignKey=true, DeleteRule="CASCADE")]
 		public Phong Phong
 		{
 			get
@@ -1621,7 +1645,7 @@ namespace DAL
 					}
 					else
 					{
-						this._id_Phong = default(int);
+						this._id_Phong = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("Phong");
 				}

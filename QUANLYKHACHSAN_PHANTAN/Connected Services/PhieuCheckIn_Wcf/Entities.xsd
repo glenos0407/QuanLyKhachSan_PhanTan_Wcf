@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Entities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Entities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="PhieuCheckIn_Ent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Giam_gia" type="xs:double" />
+      <xs:element minOccurs="0" name="Gio_check_in" type="ser:duration" />
+      <xs:element minOccurs="0" name="Gio_check_out" type="ser:duration" />
+      <xs:element minOccurs="0" name="Id_DichVu" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_NhanVien" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_Phong" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_khach" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_phieu_checkin" type="xs:int" />
+      <xs:element minOccurs="0" name="Ngay_check_in" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Ngay_check_out" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SoLuongDichVu" type="xs:int" />
+      <xs:element minOccurs="0" name="SoLuongKhach" type="xs:int" />
+      <xs:element minOccurs="0" name="TrangThaiHoaDon" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PhieuCheckIn_Ent" nillable="true" type="tns:PhieuCheckIn_Ent" />
+  <xs:complexType name="ArrayOfPhieuCheckIn_Ent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PhieuCheckIn_Ent" nillable="true" type="tns:PhieuCheckIn_Ent" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPhieuCheckIn_Ent" nillable="true" type="tns:ArrayOfPhieuCheckIn_Ent" />
+</xs:schema>

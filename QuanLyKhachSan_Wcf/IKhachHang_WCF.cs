@@ -27,5 +27,11 @@ namespace QuanLyKhachSan_Wcf
 
         [OperationContract]
         KhachHang_Ent GetKhachHang_byCMND(string CMND);
+
+        [OperationContract]
+        string getTenKhacHang_byID(int id);
+
+        [OperationContract]
+        string getHoKhacHang_byID(int id);
     }
 }

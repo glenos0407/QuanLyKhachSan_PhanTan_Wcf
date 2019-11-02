@@ -105,6 +105,18 @@ namespace QuanLyKhachSan_Wcf
             return "";
         }
 
+        public string GetTenDichVu_byIdDichVu(int idDV)
+        {
+            DichVu dv = db.DichVus.Where(n => n.id_DichVu == idDV).SingleOrDefault();
+
+            if (dv != null)
+            {
+                return dv.ten_dich_vu.Trim();
+            }
+
+            return "";
+        }
+
         public DichVu_Ent GetDichVu_byIdDichVu(int idDV)
         {
             DichVu dv = db.DichVus.Where(n => n.id_DichVu == idDV).SingleOrDefault();

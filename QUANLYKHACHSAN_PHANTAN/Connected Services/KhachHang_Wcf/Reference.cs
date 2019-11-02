@@ -203,6 +203,18 @@ namespace QUANLYKHACHSAN_PHANTAN.KhachHang_Wcf {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IKhachHang_WCF/GetKhachHang_byCMND", ReplyAction="http://tempuri.org/IKhachHang_WCF/GetKhachHang_byCMNDResponse")]
         System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.KhachHang_Wcf.KhachHang_Ent> GetKhachHang_byCMNDAsync(string CMND);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IKhachHang_WCF/getTenKhacHang_byID", ReplyAction="http://tempuri.org/IKhachHang_WCF/getTenKhacHang_byIDResponse")]
+        string getTenKhacHang_byID(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IKhachHang_WCF/getTenKhacHang_byID", ReplyAction="http://tempuri.org/IKhachHang_WCF/getTenKhacHang_byIDResponse")]
+        System.Threading.Tasks.Task<string> getTenKhacHang_byIDAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IKhachHang_WCF/getHoKhacHang_byID", ReplyAction="http://tempuri.org/IKhachHang_WCF/getHoKhacHang_byIDResponse")]
+        string getHoKhacHang_byID(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IKhachHang_WCF/getHoKhacHang_byID", ReplyAction="http://tempuri.org/IKhachHang_WCF/getHoKhacHang_byIDResponse")]
+        System.Threading.Tasks.Task<string> getHoKhacHang_byIDAsync(int id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -270,6 +282,22 @@ namespace QUANLYKHACHSAN_PHANTAN.KhachHang_Wcf {
         
         public System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.KhachHang_Wcf.KhachHang_Ent> GetKhachHang_byCMNDAsync(string CMND) {
             return base.Channel.GetKhachHang_byCMNDAsync(CMND);
+        }
+        
+        public string getTenKhacHang_byID(int id) {
+            return base.Channel.getTenKhacHang_byID(id);
+        }
+        
+        public System.Threading.Tasks.Task<string> getTenKhacHang_byIDAsync(int id) {
+            return base.Channel.getTenKhacHang_byIDAsync(id);
+        }
+        
+        public string getHoKhacHang_byID(int id) {
+            return base.Channel.getHoKhacHang_byID(id);
+        }
+        
+        public System.Threading.Tasks.Task<string> getHoKhacHang_byIDAsync(int id) {
+            return base.Channel.getHoKhacHang_byIDAsync(id);
         }
     }
 }

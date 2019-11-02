@@ -54,9 +54,11 @@
     <Compile Include="IDichVu_WCF.cs" />
     <Compile Include="IKhachHang_WCF.cs" />
     <Compile Include="INhanVien_WCF.cs" />
+    <Compile Include="IPhieuCheckIn_WCF.cs" />
     <Compile Include="IPhong_WCF.cs" />
     <Compile Include="KhachHang_WCF.cs" />
     <Compile Include="NhanVien_WCF.cs" />
+    <Compile Include="PhieuCheckIn_WCF.cs" />
     <Compile Include="Phong_WCF.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

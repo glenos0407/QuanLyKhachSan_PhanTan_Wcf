@@ -68,15 +68,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\PhieuCheckIn_Wcf\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\Phong_Wcf\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="frmDatPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatPhong.designer.cs">
+      <DependentUpon>frmDatPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMuaBanDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMuaBanDichVu.Designer.cs">
+    <Compile Include="frmMuaBanDichVu.designer.cs">
       <DependentUpon>frmMuaBanDichVu.cs</DependentUpon>
     </Compile>
     <Compile Include="frmQLDichVu.cs">
@@ -90,6 +101,12 @@
     </Compile>
     <Compile Include="frmQuanLyPhong.designer.cs">
       <DependentUpon>frmQuanLyPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSoLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSoLuong.Designer.cs">
+      <DependentUpon>frmSoLuong.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTextDichVu.cs">
       <SubType>Form</SubType>
@@ -108,12 +125,6 @@
     </Compile>
     <Compile Include="frmThongKe.Designer.cs">
       <DependentUpon>frmThongKe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmDatPhong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDatPhong.Designer.cs">
-      <DependentUpon>frmDatPhong.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDoiMatKhau.cs">
       <SubType>Form</SubType>
@@ -170,6 +181,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource_Img.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmDatPhong.resx">
+      <DependentUpon>frmDatPhong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMuaBanDichVu.resx">
       <DependentUpon>frmMuaBanDichVu.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +193,9 @@
     <EmbeddedResource Include="frmQuanLyPhong.resx">
       <DependentUpon>frmQuanLyPhong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSoLuong.resx">
+      <DependentUpon>frmSoLuong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTextDichVu.resx">
       <DependentUpon>frmTextDichVu.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,9 +204,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmThongKe.resx">
       <DependentUpon>frmThongKe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmDatPhong.resx">
-      <DependentUpon>frmDatPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDoiMatKhau.resx">
       <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
@@ -280,6 +294,19 @@
     <None Include="Connected Services\NhanVien_Wcf\service1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\PhieuCheckIn_Wcf\Entities.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\PhieuCheckIn_Wcf\QUANLYKHACHSAN_PHANTAN.PhieuCheckIn_Wcf.PhieuCheckIn_Ent.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\PhieuCheckIn_Wcf\service.wsdl" />
+    <None Include="Connected Services\PhieuCheckIn_Wcf\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\PhieuCheckIn_Wcf\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\Phong_Wcf\Entities.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -322,6 +349,7 @@
     <WCFMetadataStorage Include="Connected Services\DichVu_Wcf\" />
     <WCFMetadataStorage Include="Connected Services\KhachHang_Wcf\" />
     <WCFMetadataStorage Include="Connected Services\NhanVien_Wcf\" />
+    <WCFMetadataStorage Include="Connected Services\PhieuCheckIn_Wcf\" />
     <WCFMetadataStorage Include="Connected Services\Phong_Wcf\" />
   </ItemGroup>
   <ItemGroup>
@@ -386,6 +414,21 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\PhieuCheckIn_Wcf\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\PhieuCheckIn_Wcf\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\PhieuCheckIn_Wcf\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\icon_reload.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
