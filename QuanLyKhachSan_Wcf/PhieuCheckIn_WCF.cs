@@ -56,6 +56,7 @@ namespace QuanLyKhachSan_Wcf
                 p.gio_check_out = phieucheckin_ent.Gio_check_out;
                 p.soLuongDichVu = phieucheckin_ent.SoLuongDichVu;
                 p.soLuongKhach = phieucheckin_ent.SoLuongKhach;
+                p.TrangThaiPhieuCK = 1;
                 db.PhieuCheck_Ins.InsertOnSubmit(p);
                 db.SubmitChanges();
             }
