@@ -59,6 +59,12 @@ namespace QUANLYKHACHSAN_PHANTAN.PhieuCheckIn_Wcf {
         private int SoLuongKhachField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double TienDichVuField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double TienPhongField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int TrangThaiHoaDonField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
@@ -228,6 +234,32 @@ namespace QUANLYKHACHSAN_PHANTAN.PhieuCheckIn_Wcf {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public double TienDichVu {
+            get {
+                return this.TienDichVuField;
+            }
+            set {
+                if ((this.TienDichVuField.Equals(value) != true)) {
+                    this.TienDichVuField = value;
+                    this.RaisePropertyChanged("TienDichVu");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double TienPhong {
+            get {
+                return this.TienPhongField;
+            }
+            set {
+                if ((this.TienPhongField.Equals(value) != true)) {
+                    this.TienPhongField = value;
+                    this.RaisePropertyChanged("TienPhong");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public int TrangThaiHoaDon {
             get {
                 return this.TrangThaiHoaDonField;
@@ -289,6 +321,32 @@ namespace QUANLYKHACHSAN_PHANTAN.PhieuCheckIn_Wcf {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhieuCheckIn_WCF/GetPhieuCheckIns_NoCheckOut", ReplyAction="http://tempuri.org/IPhieuCheckIn_WCF/GetPhieuCheckIns_NoCheckOutResponse")]
         System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.PhieuCheckIn_Wcf.PhieuCheckIn_Ent[]> GetPhieuCheckIns_NoCheckOutAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhieuCheckIn_WCF/TraPhong", ReplyAction="http://tempuri.org/IPhieuCheckIn_WCF/TraPhongResponse")]
+        bool TraPhong(int maPhieu, System.TimeSpan gioOut, System.DateTime ngayOut);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhieuCheckIn_WCF/TraPhong", ReplyAction="http://tempuri.org/IPhieuCheckIn_WCF/TraPhongResponse")]
+        System.Threading.Tasks.Task<bool> TraPhongAsync(int maPhieu, System.TimeSpan gioOut, System.DateTime ngayOut);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhieuCheckIn_WCF/isKhachThue", ReplyAction="http://tempuri.org/IPhieuCheckIn_WCF/isKhachThueResponse")]
+        bool isKhachThue(int idKhach);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhieuCheckIn_WCF/isKhachThue", ReplyAction="http://tempuri.org/IPhieuCheckIn_WCF/isKhachThueResponse")]
+        System.Threading.Tasks.Task<bool> isKhachThueAsync(int idKhach);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhieuCheckIn_WCF/GetPhieuCheckIns_NoCheckOut_byIDKhach", ReplyAction="http://tempuri.org/IPhieuCheckIn_WCF/GetPhieuCheckIns_NoCheckOut_byIDKhachRespons" +
+            "e")]
+        QUANLYKHACHSAN_PHANTAN.PhieuCheckIn_Wcf.PhieuCheckIn_Ent[] GetPhieuCheckIns_NoCheckOut_byIDKhach(int idKhach);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhieuCheckIn_WCF/GetPhieuCheckIns_NoCheckOut_byIDKhach", ReplyAction="http://tempuri.org/IPhieuCheckIn_WCF/GetPhieuCheckIns_NoCheckOut_byIDKhachRespons" +
+            "e")]
+        System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.PhieuCheckIn_Wcf.PhieuCheckIn_Ent[]> GetPhieuCheckIns_NoCheckOut_byIDKhachAsync(int idKhach);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhieuCheckIn_WCF/lsPhieuCheckIn_ToMonth", ReplyAction="http://tempuri.org/IPhieuCheckIn_WCF/lsPhieuCheckIn_ToMonthResponse")]
+        QUANLYKHACHSAN_PHANTAN.PhieuCheckIn_Wcf.PhieuCheckIn_Ent[] lsPhieuCheckIn_ToMonth(System.DateTime date);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhieuCheckIn_WCF/lsPhieuCheckIn_ToMonth", ReplyAction="http://tempuri.org/IPhieuCheckIn_WCF/lsPhieuCheckIn_ToMonthResponse")]
+        System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.PhieuCheckIn_Wcf.PhieuCheckIn_Ent[]> lsPhieuCheckIn_ToMonthAsync(System.DateTime date);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -364,6 +422,38 @@ namespace QUANLYKHACHSAN_PHANTAN.PhieuCheckIn_Wcf {
         
         public System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.PhieuCheckIn_Wcf.PhieuCheckIn_Ent[]> GetPhieuCheckIns_NoCheckOutAsync() {
             return base.Channel.GetPhieuCheckIns_NoCheckOutAsync();
+        }
+        
+        public bool TraPhong(int maPhieu, System.TimeSpan gioOut, System.DateTime ngayOut) {
+            return base.Channel.TraPhong(maPhieu, gioOut, ngayOut);
+        }
+        
+        public System.Threading.Tasks.Task<bool> TraPhongAsync(int maPhieu, System.TimeSpan gioOut, System.DateTime ngayOut) {
+            return base.Channel.TraPhongAsync(maPhieu, gioOut, ngayOut);
+        }
+        
+        public bool isKhachThue(int idKhach) {
+            return base.Channel.isKhachThue(idKhach);
+        }
+        
+        public System.Threading.Tasks.Task<bool> isKhachThueAsync(int idKhach) {
+            return base.Channel.isKhachThueAsync(idKhach);
+        }
+        
+        public QUANLYKHACHSAN_PHANTAN.PhieuCheckIn_Wcf.PhieuCheckIn_Ent[] GetPhieuCheckIns_NoCheckOut_byIDKhach(int idKhach) {
+            return base.Channel.GetPhieuCheckIns_NoCheckOut_byIDKhach(idKhach);
+        }
+        
+        public System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.PhieuCheckIn_Wcf.PhieuCheckIn_Ent[]> GetPhieuCheckIns_NoCheckOut_byIDKhachAsync(int idKhach) {
+            return base.Channel.GetPhieuCheckIns_NoCheckOut_byIDKhachAsync(idKhach);
+        }
+        
+        public QUANLYKHACHSAN_PHANTAN.PhieuCheckIn_Wcf.PhieuCheckIn_Ent[] lsPhieuCheckIn_ToMonth(System.DateTime date) {
+            return base.Channel.lsPhieuCheckIn_ToMonth(date);
+        }
+        
+        public System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.PhieuCheckIn_Wcf.PhieuCheckIn_Ent[]> lsPhieuCheckIn_ToMonthAsync(System.DateTime date) {
+            return base.Channel.lsPhieuCheckIn_ToMonthAsync(date);
         }
     }
 }

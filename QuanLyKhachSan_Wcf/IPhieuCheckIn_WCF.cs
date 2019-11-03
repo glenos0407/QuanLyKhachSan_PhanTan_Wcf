@@ -30,5 +30,17 @@ namespace QuanLyKhachSan_Wcf
 
         [OperationContract]
         List<PhieuCheckIn_Ent> GetPhieuCheckIns_NoCheckOut();
+
+        [OperationContract]
+        bool TraPhong(int maPhieu, TimeSpan gioOut, DateTime ngayOut);
+
+        [OperationContract]
+        bool isKhachThue(int idKhach);
+
+        [OperationContract]
+        List<PhieuCheckIn_Ent> GetPhieuCheckIns_NoCheckOut_byIDKhach(int idKhach);
+
+        [OperationContract]
+        List<PhieuCheckIn_Ent> lsPhieuCheckIn_ToMonth(DateTime date);
     }
 }

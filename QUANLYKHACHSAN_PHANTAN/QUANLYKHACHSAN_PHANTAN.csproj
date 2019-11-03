@@ -48,11 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\BaoCao_Wcf\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Connected Services\DichVu_Wcf\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -174,6 +169,12 @@
     <Compile Include="frmTextNhanVien.Designer.cs">
       <DependentUpon>frmTextNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTraPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTraPhong.designer.cs">
+      <DependentUpon>frmTraPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resource_Img.Designer.cs">
@@ -229,6 +230,9 @@
     <EmbeddedResource Include="frmTextNhanVien.resx">
       <DependentUpon>frmTextNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmTraPhong.resx">
+      <DependentUpon>frmTraPhong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -242,19 +246,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource_Img.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Connected Services\BaoCao_Wcf\Entities.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\BaoCao_Wcf\QUANLYKHACHSAN_PHANTAN.BaoCao_Wcf.BaoCao_Ent.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\BaoCao_Wcf\service.wsdl" />
-    <None Include="Connected Services\BaoCao_Wcf\service.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\BaoCao_Wcf\service1.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Connected Services\DichVu_Wcf\Entities.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -345,7 +336,6 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\BaoCao_Wcf\" />
     <WCFMetadataStorage Include="Connected Services\DichVu_Wcf\" />
     <WCFMetadataStorage Include="Connected Services\KhachHang_Wcf\" />
     <WCFMetadataStorage Include="Connected Services\NhanVien_Wcf\" />
@@ -372,18 +362,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\NhanVien_Wcf\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\BaoCao_Wcf\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\BaoCao_Wcf\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\BaoCao_Wcf\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

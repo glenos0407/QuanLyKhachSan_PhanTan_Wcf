@@ -109,6 +109,12 @@
   <wsdl:message name="IPhong_WCF_GetTenLoaiPhong_by_IDLoai_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetTenLoaiPhong_by_IDLoaiResponse" />
   </wsdl:message>
+  <wsdl:message name="IPhong_WCF_GetIDLoaiPhong_by_IDPhong_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIDLoaiPhong_by_IDPhong" />
+  </wsdl:message>
+  <wsdl:message name="IPhong_WCF_GetIDLoaiPhong_by_IDPhong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIDLoaiPhong_by_IDPhongResponse" />
+  </wsdl:message>
   <wsdl:portType name="IPhong_WCF">
     <wsdl:operation name="GetPhongs">
       <wsdl:input wsaw:Action="http://tempuri.org/IPhong_WCF/GetPhongs" message="tns:IPhong_WCF_GetPhongs_InputMessage" />
@@ -177,6 +183,10 @@
     <wsdl:operation name="GetTenLoaiPhong_by_IDLoai">
       <wsdl:input wsaw:Action="http://tempuri.org/IPhong_WCF/GetTenLoaiPhong_by_IDLoai" message="tns:IPhong_WCF_GetTenLoaiPhong_by_IDLoai_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IPhong_WCF/GetTenLoaiPhong_by_IDLoaiResponse" message="tns:IPhong_WCF_GetTenLoaiPhong_by_IDLoai_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIDLoaiPhong_by_IDPhong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhong_WCF/GetIDLoaiPhong_by_IDPhong" message="tns:IPhong_WCF_GetIDLoaiPhong_by_IDPhong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhong_WCF/GetIDLoaiPhong_by_IDPhongResponse" message="tns:IPhong_WCF_GetIDLoaiPhong_by_IDPhong_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IPhong_WCF" type="tns:IPhong_WCF">
@@ -327,6 +337,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetTenLoaiPhong_by_IDLoai">
       <soap:operation soapAction="http://tempuri.org/IPhong_WCF/GetTenLoaiPhong_by_IDLoai" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIDLoaiPhong_by_IDPhong">
+      <soap:operation soapAction="http://tempuri.org/IPhong_WCF/GetIDLoaiPhong_by_IDPhong" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -110,6 +110,18 @@ namespace QuanLyKhachSan_Wcf
             return 0;
         }
 
+        public int GetIDLoaiPhong_by_IDPhong(int idPhong)
+        {
+            Phong ph = db.Phongs.Where(n => n.id_Phong == idPhong).SingleOrDefault();
+            LoaiPhong p = db.LoaiPhongs.Where(n => n.id_loai_phong == ph.id_loai_phong).SingleOrDefault();
+
+            if (p != null)
+            {
+                return p.id_loai_phong;
+            }
+            return 0;
+        }
+
         public string GetTenLoaiPhong_by_IDLoai(int id)
         {
             Phong ph = db.Phongs.Where(n=>n.id_Phong == id).SingleOrDefault();
@@ -291,7 +303,7 @@ namespace QuanLyKhachSan_Wcf
         {
             List<Phong_Ent> p_ents = new List<Phong_Ent>();
 
-            foreach (Phong p in db.Phongs.Where(n => n.so_Phong.Equals(soPhong)))
+            foreach (Phong p in db.Phongs.Where(n => n.so_Phong.Contains(soPhong)))
             {
                 Phong_Ent p_ent = new Phong_Ent();
                 p_ent.Id_Phong = Convert.ToInt32(p.id_Phong);
@@ -393,5 +405,7 @@ namespace QuanLyKhachSan_Wcf
 
             return true;
         }
+
+        
     }
 }

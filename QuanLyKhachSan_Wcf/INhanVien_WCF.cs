@@ -53,7 +53,7 @@ namespace QuanLyKhachSan_Wcf
         bool XoaNhanVien_by_Email(string email);
 
         [OperationContract]
-        List<NhanVien_Ent> TimKiem_NhanVien_by_HoTen(string ho, string ten);
+        List<NhanVien_Ent> TimKiem_NhanVien_by_HoTen(string hoTen);
 
     }
 }

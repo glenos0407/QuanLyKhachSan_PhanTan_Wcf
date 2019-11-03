@@ -66,9 +66,7 @@ namespace QUANLYKHACHSAN_PHANTAN
             BindingSource bs = new BindingSource();
             bs.DataSource = dt;
             bn_DSNhanVien.BindingSource = bs;
-            dgv_DSNhanVien.DataSource = bs;
-
-            
+            dgv_DSNhanVien.DataSource = bs;  
         }
 
         //Lọc Danh Sách Nhân Viên
@@ -278,19 +276,19 @@ namespace QUANLYKHACHSAN_PHANTAN
             }
             else
             {
-                //Tách Họ Tên**
-                string[] strTimKiem = txtTimKiem.Text.Split(' ');
-                string ten = strTimKiem[strTimKiem.Count() - 1];
-                string ho = "";
+                ////Tách Họ Tên**
+                //string[] strTimKiem = txtTimKiem.Text.Split(' ');
+                //string ten = strTimKiem[strTimKiem.Count() - 1];
+                //string ho = "";
 
-                for (int i = 0; i < (strTimKiem.Count()-1); i++)
-                {
-                    ho += strTimKiem[i] + " ";
-                }
-                //**
+                //for (int i = 0; i < (strTimKiem.Count()-1); i++)
+                //{
+                //    ho += strTimKiem[i] + " ";
+                //}
+                ////**
 
                 NhanVien_WCFClient nv_wcf = new NhanVien_WCFClient();
-                List<NhanVien_Ent> dsNhanVien = nv_wcf.TimKiem_NhanVien_by_HoTen(ho.Trim(), ten.Trim()).ToList();
+                List<NhanVien_Ent> dsNhanVien = nv_wcf.TimKiem_NhanVien_by_HoTen(txtTimKiem.Text.Trim()).ToList();
                 Loading_DSNhanVien(DataTable_DSNhanVien(dsNhanVien));
                 Custom_DataGridView(dgv_DSNhanVien);
             }

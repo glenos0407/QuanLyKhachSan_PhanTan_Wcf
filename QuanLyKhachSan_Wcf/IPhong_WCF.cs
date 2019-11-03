@@ -63,5 +63,8 @@ namespace QuanLyKhachSan_Wcf
 
         [OperationContract]
         string GetTenLoaiPhong_by_IDLoai(int id);
+
+        [OperationContract]
+        int GetIDLoaiPhong_by_IDPhong(int idPhong);
     }
 }

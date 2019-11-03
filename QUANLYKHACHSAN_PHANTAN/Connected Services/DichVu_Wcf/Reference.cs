@@ -191,6 +191,12 @@ namespace QUANLYKHACHSAN_PHANTAN.DichVu_Wcf {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDichVu_WCF/GetTenDichVu_byIdDichVu", ReplyAction="http://tempuri.org/IDichVu_WCF/GetTenDichVu_byIdDichVuResponse")]
         System.Threading.Tasks.Task<string> GetTenDichVu_byIdDichVuAsync(int idDV);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDichVu_WCF/GetGiaDichVu_byIdDichVu", ReplyAction="http://tempuri.org/IDichVu_WCF/GetGiaDichVu_byIdDichVuResponse")]
+        double GetGiaDichVu_byIdDichVu(int idDV);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDichVu_WCF/GetGiaDichVu_byIdDichVu", ReplyAction="http://tempuri.org/IDichVu_WCF/GetGiaDichVu_byIdDichVuResponse")]
+        System.Threading.Tasks.Task<double> GetGiaDichVu_byIdDichVuAsync(int idDV);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -306,6 +312,14 @@ namespace QUANLYKHACHSAN_PHANTAN.DichVu_Wcf {
         
         public System.Threading.Tasks.Task<string> GetTenDichVu_byIdDichVuAsync(int idDV) {
             return base.Channel.GetTenDichVu_byIdDichVuAsync(idDV);
+        }
+        
+        public double GetGiaDichVu_byIdDichVu(int idDV) {
+            return base.Channel.GetGiaDichVu_byIdDichVu(idDV);
+        }
+        
+        public System.Threading.Tasks.Task<double> GetGiaDichVu_byIdDichVuAsync(int idDV) {
+            return base.Channel.GetGiaDichVu_byIdDichVuAsync(idDV);
         }
     }
 }

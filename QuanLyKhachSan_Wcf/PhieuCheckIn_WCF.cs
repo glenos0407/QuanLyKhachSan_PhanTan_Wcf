@@ -16,18 +16,72 @@ namespace QuanLyKhachSan_Wcf
 
         public List<PhieuCheckIn_Ent> lsPhieuCheckIn_ToDate(DateTime date)
         {
+            PhieuCheckIn_Ent p_ent;
+            
             List<PhieuCheckIn_Ent> ls = new List<PhieuCheckIn_Ent>();
-            foreach (PhieuCheck_In p in db.PhieuCheck_Ins.Where(n => n.ngay_check_in == date))
+            var p = db.PhieuCheck_Ins.Where(n => n.ngay_check_in == date);
+
+            if (p == null)
             {
-                PhieuCheckIn_Ent p_ent = new PhieuCheckIn_Ent();
-                p_ent.Id_Phong = Convert.ToInt32(p.id_Phong);
-                p_ent.Id_phieu_checkin = p.id_phieu_checkin;
-                p_ent.Id_khach = Convert.ToInt32(p.id_khach);
-                p_ent.Ngay_check_in = (DateTime) p.ngay_check_in;
-                p_ent.Ngay_check_out = (DateTime) p.ngay_check_out;
-                p_ent.Gio_check_in = (TimeSpan) p.gio_check_in;
-                p_ent.Gio_check_out = (TimeSpan) p.gio_check_out;
-                ls.Add(p_ent);
+                return null;
+            }
+            else
+            {
+                foreach (var item in p)
+                {
+                    p_ent = new PhieuCheckIn_Ent();
+                    p_ent.Id_Phong = Convert.ToInt32(item.id_Phong);
+                    p_ent.Id_phieu_checkin = item.id_phieu_checkin;
+                    p_ent.Id_khach = Convert.ToInt32(item.id_khach);
+                    p_ent.Ngay_check_in = (DateTime)item.ngay_check_in;
+                    p_ent.Ngay_check_out = (DateTime)item.ngay_check_out;
+                    p_ent.Gio_check_in = (TimeSpan)item.gio_check_in;
+                    p_ent.Gio_check_out = (TimeSpan)item.gio_check_out;
+                    p_ent.Id_NhanVien = Convert.ToInt32(item.id_NhanVien);
+                    p_ent.Id_DichVu = Convert.ToInt32(item.id_DichVu);
+                    p_ent.SoLuongDichVu = Convert.ToInt32(item.soLuongDichVu);
+                    p_ent.TrangThaiHoaDon = Convert.ToInt32(item.TrangThaiPhieuCK);
+
+                    ls.Add(p_ent);
+                }
+            }
+            return ls;
+        }
+
+        public List<PhieuCheckIn_Ent> lsPhieuCheckIn_ToMonth(DateTime date)
+        {
+            PhieuCheckIn_Ent p_ent;
+
+            List<PhieuCheckIn_Ent> ls = new List<PhieuCheckIn_Ent>();
+
+            var p = db.PhieuCheck_Ins;
+
+            if (p == null)
+            {
+                return null;
+            }
+            else
+            {
+                foreach (var item in p)
+                {
+                    if(item.ngay_check_in.Value.Month == date.Month && item.ngay_check_in.Value.Year == date.Year)
+                    {
+                        p_ent = new PhieuCheckIn_Ent();
+                        p_ent.Id_Phong = Convert.ToInt32(item.id_Phong);
+                        p_ent.Id_phieu_checkin = item.id_phieu_checkin;
+                        p_ent.Id_khach = Convert.ToInt32(item.id_khach);
+                        p_ent.Ngay_check_in = (DateTime)item.ngay_check_in;
+                        p_ent.Ngay_check_out = (DateTime)item.ngay_check_out;
+                        p_ent.Gio_check_in = (TimeSpan)item.gio_check_in;
+                        p_ent.Gio_check_out = (TimeSpan)item.gio_check_out;
+                        p_ent.Id_NhanVien = Convert.ToInt32(item.id_NhanVien);
+                        p_ent.Id_DichVu = Convert.ToInt32(item.id_DichVu);
+                        p_ent.SoLuongDichVu = Convert.ToInt32(item.soLuongDichVu);
+                        p_ent.TrangThaiHoaDon = Convert.ToInt32(item.TrangThaiPhieuCK);
+
+                        ls.Add(p_ent);
+                    }
+                }
             }
             return ls;
         }
@@ -56,7 +110,7 @@ namespace QuanLyKhachSan_Wcf
                 p.gio_check_out = phieucheckin_ent.Gio_check_out;
                 p.soLuongDichVu = phieucheckin_ent.SoLuongDichVu;
                 p.soLuongKhach = phieucheckin_ent.SoLuongKhach;
-                p.TrangThaiPhieuCK = 1;
+                p.TrangThaiPhieuCK = 0;
                 db.PhieuCheck_Ins.InsertOnSubmit(p);
                 db.SubmitChanges();
             }
@@ -70,6 +124,7 @@ namespace QuanLyKhachSan_Wcf
         public List<PhieuCheckIn_Ent> GetPhieuCheckIns()
         {
             PhieuCheckIn_Ent p_ent;
+            
             List<PhieuCheckIn_Ent> ls = new List<PhieuCheckIn_Ent>();
             var p = db.PhieuCheck_Ins;
 
@@ -93,6 +148,7 @@ namespace QuanLyKhachSan_Wcf
                     p_ent.Id_DichVu = Convert.ToInt32(item.id_DichVu);
                     p_ent.SoLuongDichVu = Convert.ToInt32(item.soLuongDichVu);
                     p_ent.TrangThaiHoaDon = Convert.ToInt32(item.TrangThaiPhieuCK);
+
                     ls.Add(p_ent);
                 }
             }
@@ -201,6 +257,69 @@ namespace QuanLyKhachSan_Wcf
             {
                 return false;
             }
+            return true;
+        }
+
+        public bool TraPhong(int maPhieu, TimeSpan gioOut, DateTime ngayOut)
+        {
+            PhieuCheck_In p = db.PhieuCheck_Ins.Where(n => n.id_phieu_checkin == maPhieu).SingleOrDefault();
+
+            try
+            {
+                p.gio_check_out =(TimeSpan)gioOut;
+                p.ngay_check_out = (DateTime) ngayOut;
+                p.TrangThaiPhieuCK = 1;
+                db.SubmitChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
+        }
+
+        public List<PhieuCheckIn_Ent> GetPhieuCheckIns_NoCheckOut_byIDKhach(int idKhach)
+        {
+            PhieuCheckIn_Ent p_ent;
+            List<PhieuCheckIn_Ent> ls = new List<PhieuCheckIn_Ent>();
+            var p = db.PhieuCheck_Ins.Where(n => n.TrangThaiPhieuCK == 0 && n.id_khach == idKhach);
+
+            if (p == null)
+            {
+                return null;
+            }
+            else
+            {
+                foreach (var item in p)
+                {
+                    p_ent = new PhieuCheckIn_Ent();
+                    p_ent.Id_Phong = Convert.ToInt32(item.id_Phong);
+                    p_ent.Id_phieu_checkin = item.id_phieu_checkin;
+                    p_ent.Id_khach = Convert.ToInt32(item.id_khach);
+                    p_ent.Ngay_check_in = (DateTime)item.ngay_check_in;
+                    p_ent.Ngay_check_out = (DateTime)item.ngay_check_out;
+                    p_ent.Gio_check_in = (TimeSpan)item.gio_check_in;
+                    p_ent.Gio_check_out = (TimeSpan)item.gio_check_out;
+                    p_ent.Id_NhanVien = Convert.ToInt32(item.id_NhanVien);
+                    p_ent.Id_DichVu = Convert.ToInt32(item.id_DichVu);
+                    p_ent.SoLuongDichVu = Convert.ToInt32(item.soLuongDichVu);
+                    p_ent.TrangThaiHoaDon = Convert.ToInt32(item.TrangThaiPhieuCK);
+                    ls.Add(p_ent);
+                }
+            }
+            return ls;
+        }
+
+        public bool isKhachThue(int idKhach)
+        {
+            PhieuCheck_In pck = db.PhieuCheck_Ins.Where(n => n.id_khach == idKhach && n.TrangThaiPhieuCK == 0).SingleOrDefault();
+
+            if (pck == null)
+            {
+                return false;
+            }
+
             return true;
         }
     }

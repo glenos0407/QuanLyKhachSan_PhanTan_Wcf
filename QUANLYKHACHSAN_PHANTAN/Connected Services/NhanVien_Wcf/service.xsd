@@ -189,8 +189,7 @@
   <xs:element name="TimKiem_NhanVien_by_HoTen">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="ho" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="ten" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="hoTen" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

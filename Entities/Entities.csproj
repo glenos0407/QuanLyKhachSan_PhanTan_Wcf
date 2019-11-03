@@ -46,7 +46,6 @@
     <Compile Include="DichVu_Ent.cs" />
     <Compile Include="KhachHang_Ent.cs" />
     <Compile Include="NhanVien_Ent.cs" />
-    <Compile Include="BaoCao_Ent.cs" />
     <Compile Include="PhieuCheckIn_Ent.cs" />
     <Compile Include="Phong_Ent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

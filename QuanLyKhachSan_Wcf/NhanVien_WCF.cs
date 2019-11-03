@@ -460,11 +460,11 @@ namespace QuanLyKhachSan_Wcf
             return true;
         }
 
-        public List<NhanVien_Ent> TimKiem_NhanVien_by_HoTen(string ho, string ten)
+        public List<NhanVien_Ent> TimKiem_NhanVien_by_HoTen(string hoTen)
         {
             List<NhanVien_Ent> nv_ents = new List<NhanVien_Ent>();
 
-            foreach (NhanVien nv in db.NhanViens.Where(n => n.ho.Equals(ho) || n.ten.Equals(ten)))
+            foreach (NhanVien nv in db.NhanViens.Where(n => n.ho.Contains(hoTen) || n.ten.Contains(hoTen)))
             {
                 NhanVien_Ent nv_ent = new NhanVien_Ent();
 

@@ -117,6 +117,18 @@ namespace QuanLyKhachSan_Wcf
             return "";
         }
 
+        public double GetGiaDichVu_byIdDichVu(int idDV)
+        {
+            DichVu dv = db.DichVus.Where(n => n.id_DichVu == idDV).SingleOrDefault();
+
+            if (dv != null)
+            {
+                return dv.gia_dich_vu;
+            }
+
+            return 0;
+        }
+
         public DichVu_Ent GetDichVu_byIdDichVu(int idDV)
         {
             DichVu dv = db.DichVus.Where(n => n.id_DichVu == idDV).SingleOrDefault();
@@ -196,7 +208,7 @@ namespace QuanLyKhachSan_Wcf
 
         public int GetIDDichVu_byTenDV(string TenDV)
         {
-            DichVu ldv = db.DichVus.Where(n => n.ten_dich_vu.Equals(TenDV)).SingleOrDefault();
+            DichVu ldv = db.DichVus.Where(n => n.ten_dich_vu.Contains(TenDV)).FirstOrDefault();
 
             if (ldv == null)
             {

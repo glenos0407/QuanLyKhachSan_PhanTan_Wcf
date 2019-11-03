@@ -253,10 +253,10 @@ namespace QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf {
         System.Threading.Tasks.Task<bool> XoaNhanVien_by_EmailAsync(string email);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INhanVien_WCF/TimKiem_NhanVien_by_HoTen", ReplyAction="http://tempuri.org/INhanVien_WCF/TimKiem_NhanVien_by_HoTenResponse")]
-        QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf.NhanVien_Ent[] TimKiem_NhanVien_by_HoTen(string ho, string ten);
+        QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf.NhanVien_Ent[] TimKiem_NhanVien_by_HoTen(string hoTen);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INhanVien_WCF/TimKiem_NhanVien_by_HoTen", ReplyAction="http://tempuri.org/INhanVien_WCF/TimKiem_NhanVien_by_HoTenResponse")]
-        System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf.NhanVien_Ent[]> TimKiem_NhanVien_by_HoTenAsync(string ho, string ten);
+        System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf.NhanVien_Ent[]> TimKiem_NhanVien_by_HoTenAsync(string hoTen);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -390,12 +390,12 @@ namespace QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf {
             return base.Channel.XoaNhanVien_by_EmailAsync(email);
         }
         
-        public QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf.NhanVien_Ent[] TimKiem_NhanVien_by_HoTen(string ho, string ten) {
-            return base.Channel.TimKiem_NhanVien_by_HoTen(ho, ten);
+        public QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf.NhanVien_Ent[] TimKiem_NhanVien_by_HoTen(string hoTen) {
+            return base.Channel.TimKiem_NhanVien_by_HoTen(hoTen);
         }
         
-        public System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf.NhanVien_Ent[]> TimKiem_NhanVien_by_HoTenAsync(string ho, string ten) {
-            return base.Channel.TimKiem_NhanVien_by_HoTenAsync(ho, ten);
+        public System.Threading.Tasks.Task<QUANLYKHACHSAN_PHANTAN.NhanVien_Wcf.NhanVien_Ent[]> TimKiem_NhanVien_by_HoTenAsync(string hoTen) {
+            return base.Channel.TimKiem_NhanVien_by_HoTenAsync(hoTen);
         }
     }
 }

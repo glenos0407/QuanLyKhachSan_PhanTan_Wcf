@@ -15,9 +15,10 @@ namespace Entities
         private DateTime ngay_check_in, ngay_check_out;
         private TimeSpan gio_check_in, gio_check_out;
         private double giam_gia;
+        private double tienPhong, tienDichVu;
         private int trangThaiHoaDon;
 
-        public PhieuCheckIn_Ent(int id_phieu_checkin, int soLuongKhach, int soLuongDichVu, int id_khach, int id_DichVu, int id_Phong, int id_NhanVien, DateTime ngay_check_in, DateTime ngay_check_out, TimeSpan gio_check_in, TimeSpan gio_check_out, double giam_gia, int trangThaiHoaDon)
+        public PhieuCheckIn_Ent(int id_phieu_checkin, int soLuongKhach, int soLuongDichVu, int id_khach, int id_DichVu, int id_Phong, int id_NhanVien, DateTime ngay_check_in, DateTime ngay_check_out, TimeSpan gio_check_in, TimeSpan gio_check_out, double giam_gia, int trangThaiHoaDon, double tienPhong, double tienDichVu)
         {
             this.Id_phieu_checkin = id_phieu_checkin;
             this.SoLuongKhach = soLuongKhach;
@@ -32,6 +33,8 @@ namespace Entities
             this.Gio_check_out = gio_check_out;
             this.Giam_gia = giam_gia;
             this.TrangThaiHoaDon = trangThaiHoaDon;
+            this.TienPhong = tienPhong;
+            this.TienDichVu = tienDichVu;
         }
 
         public PhieuCheckIn_Ent()
@@ -218,6 +221,34 @@ namespace Entities
             set
             {
                 trangThaiHoaDon = value;
+            }
+        }
+
+        [DataMember]
+        public double TienPhong
+        {
+            get
+            {
+                return tienPhong;
+            }
+
+            set
+            {
+                tienPhong = value;
+            }
+        }
+
+        [DataMember]
+        public double TienDichVu
+        {
+            get
+            {
+                return tienDichVu;
+            }
+
+            set
+            {
+                tienDichVu = value;
             }
         }
     }

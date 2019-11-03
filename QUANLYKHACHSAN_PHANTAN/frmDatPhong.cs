@@ -178,6 +178,7 @@ namespace QUANLYKHACHSAN_PHANTAN
         {
             Phong_WCFClient p_wcf = new Phong_WCFClient();
             decimal donGia = 0;
+
             if (cbx_LoaiPhong.Text.Equals("Phòng Standard"))
             {
                 donGia = p_wcf.DonGia("1");
@@ -293,13 +294,14 @@ namespace QUANLYKHACHSAN_PHANTAN
 
                 txtTienPhong.Text = (donGia * Convert.ToInt32(date.Days)).ToString();
             }
+
+
         }
 
         private decimal ThanhToan()
         {
             TimeSpan date = dtpNgayTraPhong.Value - DateTime.Now.Date;
             return Convert.ToDecimal(date.Days);
-
         }
 
         private bool CheckNull()
@@ -321,6 +323,15 @@ namespace QUANLYKHACHSAN_PHANTAN
 
         private void btnLuuDatPhong_Click(object sender, EventArgs e)
         {
+            TimeSpan date = dtpNgayTraPhong.Value - DateTime.Now.Date;
+
+            if (date.Days <= 0)
+            {
+                MessageBox.Show("Nhập Ngày Lớn Hơn Ngày Hiện Tại", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                dtpNgayTraPhong.Focus();
+                return;
+            }
+
             Phong_WCFClient ph_wcf = new Phong_WCFClient();
             NhanVien_WCFClient nv_wcf = new NhanVien_WCFClient();
             PhieuCheckIn_WCFClient phieu_wcf = new PhieuCheckIn_WCFClient();
@@ -377,7 +388,6 @@ namespace QUANLYKHACHSAN_PHANTAN
         {
             cbx_SoPhong.Items.Clear();
             locPhong();
-
             
             TimeSpan date = dtpNgayTraPhong.Value - DateTime.Now.Date;
 
@@ -392,6 +402,7 @@ namespace QUANLYKHACHSAN_PHANTAN
             {
                 MessageBox.Show("Nhập Ngày Lớn Hơn Ngày Hiện Tại", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dtpNgayTraPhong.Focus();
+                return;
             }
             else
             {
@@ -466,6 +477,16 @@ namespace QUANLYKHACHSAN_PHANTAN
             PhieuCheckIn_WCFClient p_wcf = new PhieuCheckIn_WCFClient();
             List<PhieuCheckIn_Ent> list = new List<PhieuCheckIn_Ent>();
             list = p_wcf.GetPhieuCheckIns().ToList();
+
+            Loading_DSP(DataTable_DSP(list));
+            Custom_DataGridView(dgv_DSPhieuCheckIn);
+        }
+
+        private void btnShowKhachThue_Click(object sender, EventArgs e)
+        {
+            PhieuCheckIn_WCFClient p_wcf = new PhieuCheckIn_WCFClient();
+            List<PhieuCheckIn_Ent> list = new List<PhieuCheckIn_Ent>();
+            list = p_wcf.GetPhieuCheckIns_NoCheckOut().ToList();
 
             Loading_DSP(DataTable_DSP(list));
             Custom_DataGridView(dgv_DSPhieuCheckIn);

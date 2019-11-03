@@ -59,9 +59,13 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.bn_DSDatPhong = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnLuuDatPhong = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -87,10 +91,7 @@
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnThemKhach = new System.Windows.Forms.Button();
             this.btnReaload = new System.Windows.Forms.Button();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.btnShowKhachThue = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DSPhieuCheckIn)).BeginInit();
             this.gbx_ThongTinPhong.SuspendLayout();
             this.gbxThongTinKhach.SuspendLayout();
@@ -110,7 +111,7 @@
             this.dgv_DSPhieuCheckIn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_DSPhieuCheckIn.Location = new System.Drawing.Point(0, 290);
             this.dgv_DSPhieuCheckIn.Name = "dgv_DSPhieuCheckIn";
-            this.dgv_DSPhieuCheckIn.Size = new System.Drawing.Size(1109, 361);
+            this.dgv_DSPhieuCheckIn.Size = new System.Drawing.Size(1150, 367);
             this.dgv_DSPhieuCheckIn.TabIndex = 9;
             // 
             // gbx_ThongTinPhong
@@ -369,7 +370,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1109, 33);
+            this.panel2.Size = new System.Drawing.Size(1150, 33);
             this.panel2.TabIndex = 13;
             // 
             // label1
@@ -380,7 +381,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1056, 33);
+            this.label1.Size = new System.Drawing.Size(1097, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "Giao Diện Đặt Phòng";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -393,7 +394,7 @@
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.Location = new System.Drawing.Point(1056, 0);
+            this.btnThoat.Location = new System.Drawing.Point(1097, 0);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(53, 33);
@@ -406,9 +407,9 @@
             // 
             this.panel3.Controls.Add(this.bn_DSDatPhong);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 626);
+            this.panel3.Location = new System.Drawing.Point(0, 632);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1109, 25);
+            this.panel3.Size = new System.Drawing.Size(1150, 25);
             this.panel3.TabIndex = 13;
             // 
             // bn_DSDatPhong
@@ -436,7 +437,7 @@
             this.bn_DSDatPhong.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bn_DSDatPhong.Name = "bn_DSDatPhong";
             this.bn_DSDatPhong.PositionItem = this.bindingNavigatorPositionItem;
-            this.bn_DSDatPhong.Size = new System.Drawing.Size(1109, 27);
+            this.bn_DSDatPhong.Size = new System.Drawing.Size(1150, 27);
             this.bn_DSDatPhong.TabIndex = 11;
             this.bn_DSDatPhong.Text = "bindingNavigator1";
             // 
@@ -446,6 +447,24 @@
             this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
@@ -466,6 +485,24 @@
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
@@ -754,55 +791,35 @@
             this.btnReaload.FlatAppearance.BorderSize = 0;
             this.btnReaload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReaload.ForeColor = System.Drawing.Color.Transparent;
-            this.btnReaload.Location = new System.Drawing.Point(1079, 257);
+            this.btnReaload.Location = new System.Drawing.Point(1120, 257);
             this.btnReaload.Name = "btnReaload";
             this.btnReaload.Size = new System.Drawing.Size(30, 30);
             this.btnReaload.TabIndex = 20;
             this.btnReaload.UseVisualStyleBackColor = false;
             this.btnReaload.Click += new System.EventHandler(this.btnReaload_Click);
             // 
-            // bindingNavigatorMoveFirstItem
+            // btnShowKhachThue
             // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            this.btnShowKhachThue.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnShowKhachThue.FlatAppearance.BorderSize = 0;
+            this.btnShowKhachThue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowKhachThue.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowKhachThue.ForeColor = System.Drawing.Color.White;
+            this.btnShowKhachThue.Location = new System.Drawing.Point(497, 257);
+            this.btnShowKhachThue.Name = "btnShowKhachThue";
+            this.btnShowKhachThue.Size = new System.Drawing.Size(241, 30);
+            this.btnShowKhachThue.TabIndex = 21;
+            this.btnShowKhachThue.Text = "Hiển Thị Khách Đang Thuê";
+            this.btnShowKhachThue.UseVisualStyleBackColor = false;
+            this.btnShowKhachThue.Click += new System.EventHandler(this.btnShowKhachThue_Click);
             // 
             // frmDatPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
-            this.ClientSize = new System.Drawing.Size(1109, 651);
+            this.ClientSize = new System.Drawing.Size(1150, 657);
+            this.Controls.Add(this.btnShowKhachThue);
             this.Controls.Add(this.btnReaload);
             this.Controls.Add(this.btnThemKhach);
             this.Controls.Add(this.btnTimKiem);
@@ -904,5 +921,6 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.Button btnThemKhach;
         private System.Windows.Forms.Button btnReaload;
+        private System.Windows.Forms.Button btnShowKhachThue;
     }
 }

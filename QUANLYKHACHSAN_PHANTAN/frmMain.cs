@@ -69,7 +69,7 @@ namespace QUANLYKHACHSAN_PHANTAN
             NhanVien_WCFClient nv_wcf = new NhanVien_WCFClient();
 
             this.lbAccount.Text = "Xin Chào, " + nv_wcf.GetHoTen_NhanVien(Id_nhanvien);
-            this.btnCheckOut.Visible = false;
+           //this.btnCheckOut.Visible = false;
 
             open_frmDatPhong();
         }
@@ -238,7 +238,7 @@ namespace QUANLYKHACHSAN_PHANTAN
 
         private void btnCheckOut_Click(object sender, EventArgs e)
         {
-
+            open_frmTraPhong();
         }
 
         private void open_frmQuanLyPhong()
@@ -264,6 +264,40 @@ namespace QUANLYKHACHSAN_PHANTAN
         {
             frmMuaBanDichVu frmMua = new frmMuaBanDichVu(Id_nhanvien);
             frmMua.ShowDialog();
+        }
+
+        private void open_frmTraPhong()
+        {
+            this.pnl_SubForm.Controls.Clear();
+
+            frmTraPhong fdp = new frmTraPhong();
+            fdp.FormBorderStyle = FormBorderStyle.None;
+            fdp.TopLevel = false;
+            fdp.Dock = DockStyle.Fill;
+            fdp.ShowInTaskbar = false;
+            fdp.Show();
+
+            this.pnl_SubForm.Controls.Add(fdp);
+        }
+
+
+        private void open_frmThongKe()
+        {
+            this.pnl_SubForm.Controls.Clear();
+
+            frmThongKe fdp = new frmThongKe();
+            fdp.FormBorderStyle = FormBorderStyle.None;
+            fdp.TopLevel = false;
+            fdp.Dock = DockStyle.Fill;
+            fdp.ShowInTaskbar = false;
+            fdp.Show();
+
+            this.pnl_SubForm.Controls.Add(fdp);
+        }
+
+        private void btnBaoCao_Click(object sender, EventArgs e)
+        {
+            open_frmThongKe();
         }
     }
 }

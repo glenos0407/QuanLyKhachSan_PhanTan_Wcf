@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import namespace="http://schemas.datacontract.org/2004/07/Entities" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
   <xs:element name="ThemPhieuCheckIn">
     <xs:complexType>
       <xs:sequence>
@@ -78,6 +79,64 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="GetPhieuCheckIns_NoCheckOutResult" nillable="true" type="q6:ArrayOfPhieuCheckIn_Ent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TraPhong">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="maPhieu" type="xs:int" />
+        <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="gioOut" type="q7:duration" />
+        <xs:element minOccurs="0" name="ngayOut" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TraPhongResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TraPhongResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="isKhachThue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idKhach" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="isKhachThueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isKhachThueResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPhieuCheckIns_NoCheckOut_byIDKhach">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idKhach" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPhieuCheckIns_NoCheckOut_byIDKhachResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="GetPhieuCheckIns_NoCheckOut_byIDKhachResult" nillable="true" type="q8:ArrayOfPhieuCheckIn_Ent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="lsPhieuCheckIn_ToMonth">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="date" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="lsPhieuCheckIn_ToMonthResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/Entities" minOccurs="0" name="lsPhieuCheckIn_ToMonthResult" nillable="true" type="q9:ArrayOfPhieuCheckIn_Ent" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

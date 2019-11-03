@@ -259,6 +259,12 @@ namespace QUANLYKHACHSAN_PHANTAN.Phong_Wcf {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/GetTenLoaiPhong_by_IDLoai", ReplyAction="http://tempuri.org/IPhong_WCF/GetTenLoaiPhong_by_IDLoaiResponse")]
         System.Threading.Tasks.Task<string> GetTenLoaiPhong_by_IDLoaiAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/GetIDLoaiPhong_by_IDPhong", ReplyAction="http://tempuri.org/IPhong_WCF/GetIDLoaiPhong_by_IDPhongResponse")]
+        int GetIDLoaiPhong_by_IDPhong(int idPhong);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPhong_WCF/GetIDLoaiPhong_by_IDPhong", ReplyAction="http://tempuri.org/IPhong_WCF/GetIDLoaiPhong_by_IDPhongResponse")]
+        System.Threading.Tasks.Task<int> GetIDLoaiPhong_by_IDPhongAsync(int idPhong);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -422,6 +428,14 @@ namespace QUANLYKHACHSAN_PHANTAN.Phong_Wcf {
         
         public System.Threading.Tasks.Task<string> GetTenLoaiPhong_by_IDLoaiAsync(int id) {
             return base.Channel.GetTenLoaiPhong_by_IDLoaiAsync(id);
+        }
+        
+        public int GetIDLoaiPhong_by_IDPhong(int idPhong) {
+            return base.Channel.GetIDLoaiPhong_by_IDPhong(idPhong);
+        }
+        
+        public System.Threading.Tasks.Task<int> GetIDLoaiPhong_by_IDPhongAsync(int idPhong) {
+            return base.Channel.GetIDLoaiPhong_by_IDPhongAsync(idPhong);
         }
     }
 }

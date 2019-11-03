@@ -239,4 +239,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="GetIDLoaiPhong_by_IDPhong">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idPhong" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIDLoaiPhong_by_IDPhongResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetIDLoaiPhong_by_IDPhongResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

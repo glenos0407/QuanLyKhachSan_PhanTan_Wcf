@@ -73,6 +73,12 @@
   <wsdl:message name="IDichVu_WCF_GetTenDichVu_byIdDichVu_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetTenDichVu_byIdDichVuResponse" />
   </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_GetGiaDichVu_byIdDichVu_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGiaDichVu_byIdDichVu" />
+  </wsdl:message>
+  <wsdl:message name="IDichVu_WCF_GetGiaDichVu_byIdDichVu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGiaDichVu_byIdDichVuResponse" />
+  </wsdl:message>
   <wsdl:portType name="IDichVu_WCF">
     <wsdl:operation name="GetDichVus">
       <wsdl:input wsaw:Action="http://tempuri.org/IDichVu_WCF/GetDichVus" message="tns:IDichVu_WCF_GetDichVus_InputMessage" />
@@ -117,6 +123,10 @@
     <wsdl:operation name="GetTenDichVu_byIdDichVu">
       <wsdl:input wsaw:Action="http://tempuri.org/IDichVu_WCF/GetTenDichVu_byIdDichVu" message="tns:IDichVu_WCF_GetTenDichVu_byIdDichVu_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IDichVu_WCF/GetTenDichVu_byIdDichVuResponse" message="tns:IDichVu_WCF_GetTenDichVu_byIdDichVu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGiaDichVu_byIdDichVu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDichVu_WCF/GetGiaDichVu_byIdDichVu" message="tns:IDichVu_WCF_GetGiaDichVu_byIdDichVu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDichVu_WCF/GetGiaDichVu_byIdDichVuResponse" message="tns:IDichVu_WCF_GetGiaDichVu_byIdDichVu_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IDichVu_WCF" type="tns:IDichVu_WCF">
@@ -213,6 +223,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetTenDichVu_byIdDichVu">
       <soap:operation soapAction="http://tempuri.org/IDichVu_WCF/GetTenDichVu_byIdDichVu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGiaDichVu_byIdDichVu">
+      <soap:operation soapAction="http://tempuri.org/IDichVu_WCF/GetGiaDichVu_byIdDichVu" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -46,5 +46,8 @@ namespace QuanLyKhachSan_Wcf
 
         [OperationContract]
         string GetTenDichVu_byIdDichVu(int idDV);
+
+        [OperationContract]
+        double GetGiaDichVu_byIdDichVu(int idDV);
     }
 }

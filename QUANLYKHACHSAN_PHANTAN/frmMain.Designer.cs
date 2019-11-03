@@ -36,6 +36,12 @@
             this.btnShowMenu = new System.Windows.Forms.Button();
             this.imgs_Button = new System.Windows.Forms.ImageList(this.components);
             this.pnl_Menu = new System.Windows.Forms.Panel();
+            this.btnBaoCao = new System.Windows.Forms.Button();
+            this.btnDichVu = new System.Windows.Forms.Button();
+            this.btnPhong = new System.Windows.Forms.Button();
+            this.btnKhachHang = new System.Windows.Forms.Button();
+            this.btnCheckOut = new System.Windows.Forms.Button();
+            this.btnDatDichVu = new System.Windows.Forms.Button();
             this.btnDatPhong = new System.Windows.Forms.Button();
             this.btnTaiKhoan = new System.Windows.Forms.Button();
             this.pnl_SubForm = new System.Windows.Forms.Panel();
@@ -44,12 +50,6 @@
             this.QuanLyTaiKhoanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DoiMatKhauToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DangXuatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnDatDichVu = new System.Windows.Forms.Button();
-            this.btnBaoCao = new System.Windows.Forms.Button();
-            this.btnDichVu = new System.Windows.Forms.Button();
-            this.btnPhong = new System.Windows.Forms.Button();
-            this.btnKhachHang = new System.Windows.Forms.Button();
-            this.btnCheckOut = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pnl_Menu.SuspendLayout();
             this.cmnstrp_NhanVien.SuspendLayout();
@@ -137,6 +137,108 @@
             this.pnl_Menu.Size = new System.Drawing.Size(164, 631);
             this.pnl_Menu.TabIndex = 1;
             // 
+            // btnBaoCao
+            // 
+            this.btnBaoCao.BackColor = System.Drawing.Color.Teal;
+            this.btnBaoCao.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBaoCao.FlatAppearance.BorderSize = 0;
+            this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaoCao.ForeColor = System.Drawing.Color.White;
+            this.btnBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBaoCao.Location = new System.Drawing.Point(0, 312);
+            this.btnBaoCao.Name = "btnBaoCao";
+            this.btnBaoCao.Size = new System.Drawing.Size(164, 52);
+            this.btnBaoCao.TabIndex = 19;
+            this.btnBaoCao.Text = "Báo Cáo ";
+            this.btnBaoCao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBaoCao.UseVisualStyleBackColor = false;
+            this.btnBaoCao.Click += new System.EventHandler(this.btnBaoCao_Click);
+            // 
+            // btnDichVu
+            // 
+            this.btnDichVu.BackColor = System.Drawing.Color.Teal;
+            this.btnDichVu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDichVu.FlatAppearance.BorderSize = 0;
+            this.btnDichVu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDichVu.ForeColor = System.Drawing.Color.White;
+            this.btnDichVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDichVu.Location = new System.Drawing.Point(0, 260);
+            this.btnDichVu.Name = "btnDichVu";
+            this.btnDichVu.Size = new System.Drawing.Size(164, 52);
+            this.btnDichVu.TabIndex = 18;
+            this.btnDichVu.Text = "QL Dịch Vụ";
+            this.btnDichVu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDichVu.UseVisualStyleBackColor = false;
+            this.btnDichVu.Click += new System.EventHandler(this.btnDichVu_Click);
+            // 
+            // btnPhong
+            // 
+            this.btnPhong.BackColor = System.Drawing.Color.Teal;
+            this.btnPhong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPhong.FlatAppearance.BorderSize = 0;
+            this.btnPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPhong.ForeColor = System.Drawing.Color.White;
+            this.btnPhong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPhong.Location = new System.Drawing.Point(0, 208);
+            this.btnPhong.Name = "btnPhong";
+            this.btnPhong.Size = new System.Drawing.Size(164, 52);
+            this.btnPhong.TabIndex = 17;
+            this.btnPhong.Text = "QL Phòng";
+            this.btnPhong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPhong.UseVisualStyleBackColor = false;
+            this.btnPhong.Click += new System.EventHandler(this.btnPhong_Click);
+            // 
+            // btnKhachHang
+            // 
+            this.btnKhachHang.BackColor = System.Drawing.Color.Teal;
+            this.btnKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnKhachHang.FlatAppearance.BorderSize = 0;
+            this.btnKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKhachHang.ForeColor = System.Drawing.Color.White;
+            this.btnKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKhachHang.Location = new System.Drawing.Point(0, 156);
+            this.btnKhachHang.Name = "btnKhachHang";
+            this.btnKhachHang.Size = new System.Drawing.Size(164, 52);
+            this.btnKhachHang.TabIndex = 16;
+            this.btnKhachHang.Text = "QL Khách Hàng";
+            this.btnKhachHang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnKhachHang.UseVisualStyleBackColor = false;
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
+            // 
+            // btnCheckOut
+            // 
+            this.btnCheckOut.BackColor = System.Drawing.Color.Teal;
+            this.btnCheckOut.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCheckOut.FlatAppearance.BorderSize = 0;
+            this.btnCheckOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckOut.ForeColor = System.Drawing.Color.White;
+            this.btnCheckOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCheckOut.Location = new System.Drawing.Point(0, 104);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(164, 52);
+            this.btnCheckOut.TabIndex = 15;
+            this.btnCheckOut.Text = "Trả Phòng";
+            this.btnCheckOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCheckOut.UseVisualStyleBackColor = false;
+            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
+            // 
+            // btnDatDichVu
+            // 
+            this.btnDatDichVu.BackColor = System.Drawing.Color.Teal;
+            this.btnDatDichVu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDatDichVu.FlatAppearance.BorderSize = 0;
+            this.btnDatDichVu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDatDichVu.ForeColor = System.Drawing.Color.White;
+            this.btnDatDichVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDatDichVu.Location = new System.Drawing.Point(0, 52);
+            this.btnDatDichVu.Name = "btnDatDichVu";
+            this.btnDatDichVu.Size = new System.Drawing.Size(164, 52);
+            this.btnDatDichVu.TabIndex = 14;
+            this.btnDatDichVu.Text = "Đặt Dịch Vụ";
+            this.btnDatDichVu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDatDichVu.UseVisualStyleBackColor = false;
+            this.btnDatDichVu.Click += new System.EventHandler(this.btnDatDichVu_Click);
+            // 
             // btnDatPhong
             // 
             this.btnDatPhong.BackColor = System.Drawing.Color.Teal;
@@ -216,106 +318,6 @@
             this.DangXuatToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
             this.DangXuatToolStripMenuItem.Text = "Đăng Xuất";
             this.DangXuatToolStripMenuItem.Click += new System.EventHandler(this.DangXuatToolStripMenuItem_Click);
-            // 
-            // btnDatDichVu
-            // 
-            this.btnDatDichVu.BackColor = System.Drawing.Color.Teal;
-            this.btnDatDichVu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDatDichVu.FlatAppearance.BorderSize = 0;
-            this.btnDatDichVu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDatDichVu.ForeColor = System.Drawing.Color.White;
-            this.btnDatDichVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDatDichVu.Location = new System.Drawing.Point(0, 52);
-            this.btnDatDichVu.Name = "btnDatDichVu";
-            this.btnDatDichVu.Size = new System.Drawing.Size(164, 52);
-            this.btnDatDichVu.TabIndex = 14;
-            this.btnDatDichVu.Text = "Đặt Dịch Vụ";
-            this.btnDatDichVu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDatDichVu.UseVisualStyleBackColor = false;
-            this.btnDatDichVu.Click += new System.EventHandler(this.btnDatDichVu_Click);
-            // 
-            // btnBaoCao
-            // 
-            this.btnBaoCao.BackColor = System.Drawing.Color.Teal;
-            this.btnBaoCao.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBaoCao.FlatAppearance.BorderSize = 0;
-            this.btnBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBaoCao.ForeColor = System.Drawing.Color.White;
-            this.btnBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBaoCao.Location = new System.Drawing.Point(0, 312);
-            this.btnBaoCao.Name = "btnBaoCao";
-            this.btnBaoCao.Size = new System.Drawing.Size(164, 52);
-            this.btnBaoCao.TabIndex = 19;
-            this.btnBaoCao.Text = "Báo Cáo ";
-            this.btnBaoCao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBaoCao.UseVisualStyleBackColor = false;
-            // 
-            // btnDichVu
-            // 
-            this.btnDichVu.BackColor = System.Drawing.Color.Teal;
-            this.btnDichVu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDichVu.FlatAppearance.BorderSize = 0;
-            this.btnDichVu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDichVu.ForeColor = System.Drawing.Color.White;
-            this.btnDichVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDichVu.Location = new System.Drawing.Point(0, 260);
-            this.btnDichVu.Name = "btnDichVu";
-            this.btnDichVu.Size = new System.Drawing.Size(164, 52);
-            this.btnDichVu.TabIndex = 18;
-            this.btnDichVu.Text = "QL Dịch Vụ";
-            this.btnDichVu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDichVu.UseVisualStyleBackColor = false;
-            this.btnDichVu.Click += new System.EventHandler(this.btnDichVu_Click);
-            // 
-            // btnPhong
-            // 
-            this.btnPhong.BackColor = System.Drawing.Color.Teal;
-            this.btnPhong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPhong.FlatAppearance.BorderSize = 0;
-            this.btnPhong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPhong.ForeColor = System.Drawing.Color.White;
-            this.btnPhong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPhong.Location = new System.Drawing.Point(0, 208);
-            this.btnPhong.Name = "btnPhong";
-            this.btnPhong.Size = new System.Drawing.Size(164, 52);
-            this.btnPhong.TabIndex = 17;
-            this.btnPhong.Text = "QL Phòng";
-            this.btnPhong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPhong.UseVisualStyleBackColor = false;
-            this.btnPhong.Click += new System.EventHandler(this.btnPhong_Click);
-            // 
-            // btnKhachHang
-            // 
-            this.btnKhachHang.BackColor = System.Drawing.Color.Teal;
-            this.btnKhachHang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnKhachHang.FlatAppearance.BorderSize = 0;
-            this.btnKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKhachHang.ForeColor = System.Drawing.Color.White;
-            this.btnKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhachHang.Location = new System.Drawing.Point(0, 156);
-            this.btnKhachHang.Name = "btnKhachHang";
-            this.btnKhachHang.Size = new System.Drawing.Size(164, 52);
-            this.btnKhachHang.TabIndex = 16;
-            this.btnKhachHang.Text = "QL Khách Hàng";
-            this.btnKhachHang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnKhachHang.UseVisualStyleBackColor = false;
-            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
-            // 
-            // btnCheckOut
-            // 
-            this.btnCheckOut.BackColor = System.Drawing.Color.Teal;
-            this.btnCheckOut.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCheckOut.FlatAppearance.BorderSize = 0;
-            this.btnCheckOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCheckOut.ForeColor = System.Drawing.Color.White;
-            this.btnCheckOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCheckOut.Location = new System.Drawing.Point(0, 104);
-            this.btnCheckOut.Name = "btnCheckOut";
-            this.btnCheckOut.Size = new System.Drawing.Size(164, 52);
-            this.btnCheckOut.TabIndex = 15;
-            this.btnCheckOut.Text = "Trả Phòng";
-            this.btnCheckOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCheckOut.UseVisualStyleBackColor = false;
             // 
             // frmMain
             // 

@@ -117,3 +117,4 @@ C:\Users\GlenOrient\Desktop\QuanLyKhachSan_PhanTan_Wcf\QUANLYKHACHSAN_PHANTAN\ob
 C:\Users\GlenOrient\Desktop\QuanLyKhachSan_PhanTan_Wcf\QUANLYKHACHSAN_PHANTAN\obj\Debug\QUANLYKHACHSAN_PHANTAN.frmQuanLyPhong.resources
 C:\Users\GlenOrient\Desktop\QuanLyKhachSan_PhanTan_Wcf\QUANLYKHACHSAN_PHANTAN\obj\Debug\QUANLYKHACHSAN_PHANTAN.frmTextPhong.resources
 C:\Users\GlenOrient\Desktop\QuanLyKhachSan_PhanTan_Wcf\QUANLYKHACHSAN_PHANTAN\obj\Debug\QUANLYKHACHSAN_PHANTAN.frmSoLuong.resources
+C:\Users\GlenOrient\Desktop\QuanLyKhachSan_PhanTan_Wcf\QUANLYKHACHSAN_PHANTAN\obj\Debug\QUANLYKHACHSAN_PHANTAN.frmTraPhong.resources

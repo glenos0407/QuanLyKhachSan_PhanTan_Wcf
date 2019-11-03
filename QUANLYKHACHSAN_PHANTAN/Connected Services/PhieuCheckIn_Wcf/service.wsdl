@@ -43,6 +43,30 @@
   <wsdl:message name="IPhieuCheckIn_WCF_GetPhieuCheckIns_NoCheckOut_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetPhieuCheckIns_NoCheckOutResponse" />
   </wsdl:message>
+  <wsdl:message name="IPhieuCheckIn_WCF_TraPhong_InputMessage">
+    <wsdl:part name="parameters" element="tns:TraPhong" />
+  </wsdl:message>
+  <wsdl:message name="IPhieuCheckIn_WCF_TraPhong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TraPhongResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhieuCheckIn_WCF_isKhachThue_InputMessage">
+    <wsdl:part name="parameters" element="tns:isKhachThue" />
+  </wsdl:message>
+  <wsdl:message name="IPhieuCheckIn_WCF_isKhachThue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:isKhachThueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhieuCheckIn_WCF_GetPhieuCheckIns_NoCheckOut_byIDKhach_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhieuCheckIns_NoCheckOut_byIDKhach" />
+  </wsdl:message>
+  <wsdl:message name="IPhieuCheckIn_WCF_GetPhieuCheckIns_NoCheckOut_byIDKhach_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhieuCheckIns_NoCheckOut_byIDKhachResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPhieuCheckIn_WCF_lsPhieuCheckIn_ToMonth_InputMessage">
+    <wsdl:part name="parameters" element="tns:lsPhieuCheckIn_ToMonth" />
+  </wsdl:message>
+  <wsdl:message name="IPhieuCheckIn_WCF_lsPhieuCheckIn_ToMonth_OutputMessage">
+    <wsdl:part name="parameters" element="tns:lsPhieuCheckIn_ToMonthResponse" />
+  </wsdl:message>
   <wsdl:portType name="IPhieuCheckIn_WCF">
     <wsdl:operation name="ThemPhieuCheckIn">
       <wsdl:input wsaw:Action="http://tempuri.org/IPhieuCheckIn_WCF/ThemPhieuCheckIn" message="tns:IPhieuCheckIn_WCF_ThemPhieuCheckIn_InputMessage" />
@@ -67,6 +91,22 @@
     <wsdl:operation name="GetPhieuCheckIns_NoCheckOut">
       <wsdl:input wsaw:Action="http://tempuri.org/IPhieuCheckIn_WCF/GetPhieuCheckIns_NoCheckOut" message="tns:IPhieuCheckIn_WCF_GetPhieuCheckIns_NoCheckOut_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IPhieuCheckIn_WCF/GetPhieuCheckIns_NoCheckOutResponse" message="tns:IPhieuCheckIn_WCF_GetPhieuCheckIns_NoCheckOut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TraPhong">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhieuCheckIn_WCF/TraPhong" message="tns:IPhieuCheckIn_WCF_TraPhong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhieuCheckIn_WCF/TraPhongResponse" message="tns:IPhieuCheckIn_WCF_TraPhong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="isKhachThue">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhieuCheckIn_WCF/isKhachThue" message="tns:IPhieuCheckIn_WCF_isKhachThue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhieuCheckIn_WCF/isKhachThueResponse" message="tns:IPhieuCheckIn_WCF_isKhachThue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhieuCheckIns_NoCheckOut_byIDKhach">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhieuCheckIn_WCF/GetPhieuCheckIns_NoCheckOut_byIDKhach" message="tns:IPhieuCheckIn_WCF_GetPhieuCheckIns_NoCheckOut_byIDKhach_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhieuCheckIn_WCF/GetPhieuCheckIns_NoCheckOut_byIDKhachResponse" message="tns:IPhieuCheckIn_WCF_GetPhieuCheckIns_NoCheckOut_byIDKhach_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="lsPhieuCheckIn_ToMonth">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPhieuCheckIn_WCF/lsPhieuCheckIn_ToMonth" message="tns:IPhieuCheckIn_WCF_lsPhieuCheckIn_ToMonth_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPhieuCheckIn_WCF/lsPhieuCheckIn_ToMonthResponse" message="tns:IPhieuCheckIn_WCF_lsPhieuCheckIn_ToMonth_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IPhieuCheckIn_WCF" type="tns:IPhieuCheckIn_WCF">
@@ -118,6 +158,42 @@
     </wsdl:operation>
     <wsdl:operation name="GetPhieuCheckIns_NoCheckOut">
       <soap:operation soapAction="http://tempuri.org/IPhieuCheckIn_WCF/GetPhieuCheckIns_NoCheckOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TraPhong">
+      <soap:operation soapAction="http://tempuri.org/IPhieuCheckIn_WCF/TraPhong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isKhachThue">
+      <soap:operation soapAction="http://tempuri.org/IPhieuCheckIn_WCF/isKhachThue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhieuCheckIns_NoCheckOut_byIDKhach">
+      <soap:operation soapAction="http://tempuri.org/IPhieuCheckIn_WCF/GetPhieuCheckIns_NoCheckOut_byIDKhach" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="lsPhieuCheckIn_ToMonth">
+      <soap:operation soapAction="http://tempuri.org/IPhieuCheckIn_WCF/lsPhieuCheckIn_ToMonth" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
